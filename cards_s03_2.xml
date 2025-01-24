@@ -228,9 +228,9 @@ Whenever opponent plays a card of this type, draw a card.</Description>
 	<Target Zone="Hand" Side="Friendly" Amount="1">
             <Effect Type="MoveCardTo" Destination="Library" Duration="Immediate" />
         </Target>
-        <Description>Take a card from your hand and put it on the top of your library.
-Until end of turn:
-Spells you play cost [1:RESOURCES] less for each other spell you played this turn.</Description>
+        <Description>Until end of turn:
+Spells you play cost [1:RESOURCES] less for each other spell you played this turn.
+When Chain Casting enters the battleground, take a card from your hand and put it on the top of your library.</Description>
     </Card>
     <Card Rarity="Rare" Type="Fortune" Name="For_Aca_017" DisplayName="Offering to the Void" Faction="Academy" Cost="6" DestinyLevel="3" ID="544">
         <Target Zone="None" Side="Friendly">
