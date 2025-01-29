@@ -159,7 +159,7 @@
 		</Target>
 		<Description>Friendly creatures with Infect gain Infect Blast X, where X is equal to its Infect value.</Description>
 	</Card>
-	<Card  Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_103" DisplayName="Ichor Weaver" Faction="Necropolis" SubType="Magic|Shooter" Race="Namtaru" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="1021" School="Prime">
+	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_103" DisplayName="Ichor Weaver" Faction="Necropolis" SubType="Magic|Shooter" Race="Namtaru" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="1021" School="Prime">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Infect" Value="1"/>	
 		<Variable Type="LastAliveCounterCount" CounterType="Poison" FromTrigger="True"/>	
