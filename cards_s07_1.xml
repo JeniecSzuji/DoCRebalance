@@ -212,12 +212,11 @@ When Eternal Apprentice attacks, put 1 crippling counter on all enemy creatures 
                 		<Effect Type="AddCounter" CounterType="Crippling" Value="4"/>
             		</Target>
         	</Trigger>
-        	<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
-			<Target Zone="Battleground" Amount="Self"/>
-            		<Target Zone="Battleground" Amount="1" CardType="Unit" CantTargetPrevious="True" CantTargetSelf="True" Cancelable="False">
-                		<Effect Type="MoveCounter" CounterType="Crippling" Value="1"/>
-            		</Target>
-        	</Trigger>
+		<Target Zone="Battleground" Amount="Self" Side="Friendly">
+			<Variable Type="CounterCount" CounterType="Crippling" UseCurrentTarget="True"/>
+			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+			<Effect Type="ModifyAbility" Ability="SkeletonServantQA"/>
+		</Target>
         	<Description>When Skeleton Servant enters the battleground, put 4 crippling counters on it.
 At beginning of your turn, move 1 crippling counter from Skeleton Servant to target creature.</Description>
     	</Card>
