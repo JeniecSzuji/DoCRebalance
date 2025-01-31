@@ -110,12 +110,12 @@ Destroy all creatures at a building on the target line then destroy all building
 	<!-- Spells - Fire -->
 	<!--....................................................................-->
 	<Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_070" DisplayName="Magma Burst" School="Fire" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="788" Unique="False">
-        <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy">
-            <Effect Type="Damage" Value="3"/>
-        </Target>
-        <Target Zone="None" CardType="Unit" Amount="Same" Shape="AdjacentOnly">
-            <Effect Type="Damage" Value="2" />
-        </Target>
+        	<Target Zone="Battleground" CardType="Unit" Amount="1" Shape="AdjacentOnly">
+            		<Effect Type="Damage" Value="2" />
+        	</Target>
+        	<Target Zone="None" CardType="Unit" Amount="Same">
+            		<Effect Type="Damage" Value="3"/>
+        	</Target>
 		<Description>Deal 3 damage to target creature and 2 damage to all adjacent creatures.</Description>
 		<ExtraDescription>(Also damage friendly units.)</ExtraDescription>
 	</Card>
