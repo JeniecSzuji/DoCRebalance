@@ -304,12 +304,11 @@ Whenever opponent plays a card, they discard a card.</Description>
                     </Variable2>
                     <Condition Operator="GreaterThan" ValueA="Variable2" ValueB="Variable"/>
                     <Effect Type="MoveCardTo" Destination="Hand"/>
-					<Effect Type="ModifyCost" Value="-2" Duration="UntilEndOfTurn"/>
                 </Target>
-				<Target Zone="None" Amount="Same" ForceExecute="True" Persistent="True">
-				<Option Value="1"/>
-            <Effect Type="ModifyCost" Value="-2" Duration="UntilEndOfTurn"/>
-        </Target>
+		<Target Zone="None" Amount="Same" ForceExecute="True" Persistent="True">
+			<Option Value="1"/>
+            		<Effect Type="ModifyCost" Value="-2" Duration="UntilEndOfTurn"/>
+        	</Target>
             </Subgroup>
         </Target>
         <Description>Choose one: Draw a card OR If there are fewer friendly creatures than enemy creatures on the battleground, take target creature card from your graveyard and put it into your hand. Until end of turn, this creature costs [2:RESOURCES] less to play.</Description>
