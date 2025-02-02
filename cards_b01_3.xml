@@ -176,7 +176,7 @@ When Cyclone enters the battleground, deal 1 damage to all creatures on enchante
             <CardType Include="Unit"/>
             <Effect Type="ModifyDamage" Value="0.5xd" DamageIncludeFlags="Shooter"/>
         </Target>
-        <Description>Enchant line. Permanent:
+        <Description>Enchant row. Permanent:
 Combat damage dealt to creatures on enchanted line by shooter creatures is halved, rounded down.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Spell" Name="Spe_Air_006" DisplayName="Grounded" School="Air" Cost="2" MagicLevel="2" ID="196">
