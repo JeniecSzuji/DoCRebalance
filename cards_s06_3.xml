@@ -59,7 +59,7 @@ Enchanted creature and all adjacent creatures gain Range Reflect 2.</Description
             		</Target>
         	</Trigger>
     		<Description>Enchant creature. Permanent:
-At the beginning of each player's turn, put 1 crippling counter on enchanted creature. Then, if possible, Flaying Darkness enchants an random adjacent creature from same side.</Description>
+At the beginning of each player's turn, put 1 crippling counter on enchanted creature. Then, if possible, Flaying Darkness enchants a random adjacent creature from same side.</Description>
 	</Card>
 	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Dar_082" DisplayName="Creeping Darkness" School="Dark" Cost="4" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="884">
 		<Ongoing Duration="Permanent"/>
