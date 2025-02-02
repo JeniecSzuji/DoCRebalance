@@ -11,7 +11,7 @@
     <!--....................................................................-->
     <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Air_050" DisplayName="Air Trap" School="Air" Cost="1" MagicLevel="3" ID="573">
         <Ongoing Duration="Permanent" />
-        <Target Zone="BattlegroundLine" Amount="1" />
+        <Target Zone="BattlegroundLine" Amount="1" Side="Enemy" />
         <Trigger Type="OnDeployThisLine">
             <CardFilter IncludeUnitType="Flyer" />
             <Target Zone="Battleground" Amount="FromTrigger" CardType="Unit">
@@ -26,7 +26,7 @@
 				<CardFilter IncludeCardType="Unit" IncludeUnitType="Flyer" />
 			</Effect>
 		</Target>
-        <Description>Enchant line. Permanent:
+        <Description>Enchant enemy line. Permanent:
 Opponent's Flyer creatures cost [1:RESOURCES] more to play.
 When a flyer creature is deployed on enchanted line, destroy it and destroy Air Trap.</Description>
     </Card>
