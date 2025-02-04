@@ -63,7 +63,7 @@ Enchanted creature gains -[X:ATK] and -[X:RET] where X is equal to your [MAGIC] 
     <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Ear_060" DisplayName="Symbiotic Barkskin" School="Earth" Cost="3" MagicLevel="3" ID="639">
         <Ongoing Duration="Permanent" />
 	<Ability Type="Endurable" />
-        <Target Zone="Battleground" CardType="Unit" Side="Friendly" Amount="1" />
+        <Target Zone="Battleground" CardType="Unit" Amount="1" />
         <Target Zone="None" Amount="Parent">
             <Effect Type="ModifyMaxHp" Value="2" />
             <Effect Type="ModifyAbility" Ability="Regenerate" Value="1" />
