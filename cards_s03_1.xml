@@ -504,7 +504,8 @@ While Crusader Chaplain has no damage, it cannot be targeted.</Description>
     <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Inf_054" DisplayName="Abyssal Worm" Faction="Inferno" SubType="Melee" Race="Demon|Worm" Cost="6" MightLevel="6" Attack="8" Retaliate="4" HP="8" ID="502">
         <Ability Type="AttackAnywhere" />
         <Ability Type="KillOtherOnly" />
-        <Description>Abyssal Worm can only be deployed on another friendly creature, then destroy that creature.</Description>
+        <Description>Abyssal Worm can only be deployed on a position already occupied by another creature.
+When Abyssal Worm enters the battleground, choose a position occupied by a friendly creature. Destroy that creature and replace it with Abyssal Worm.</Description>
     </Card>
     <Card Rarity="Epic" Type="Unit" Name="Cre_Inf_055" DisplayName="Hikyu, Fists of Fury" Faction="Inferno" School="Fire" SubType="Magic|Shooter" Race="Human|Warrior" Unique="True" Cost="6" MightLevel="5" MagicLevel="1" Attack="4" Retaliate="3" HP="6" ID="503">
         <Ability Type="ImmuneToRetaliate" />
