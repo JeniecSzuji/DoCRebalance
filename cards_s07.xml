@@ -84,7 +84,8 @@
 				</Target>
 			</Subgroup>
 		</Target>
-		<Description>[0:RESOURCES]. Until end of turn. Choose one: Fire creatures cost [1:RESOURCES] less to play OR Dark creatures cost [1:RESOURCES] less to play.</Description>
+		<Description>[0:RESOURCES]: Until end of turn, Fire creatures cost [1:RESOURCES] less to play.
+[0:RESOURCES]: Until end of turn, Dark creatures cost [1:RESOURCES] less to play.</Description>
 	</Card>
 	<!--...............................................................................-->
 	<!-- Heroes Necropolis -->
