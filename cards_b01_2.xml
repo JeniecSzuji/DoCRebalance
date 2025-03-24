@@ -284,7 +284,8 @@ Whenever opponent plays a card, they discard a card.</Description>
 			<CardFilter IncludeCardType="Unit"/>
 		</Effect>
 	</Target>
-        <Description>Banish target creature card form your graveyard: your next creature card costs [1:RESOURCES] less to play. You can repeat this as many times as you want.</Description>
+        <Description>Banish target creature card form your graveyard: your next creature card costs [1:RESOURCES] less to play.
+You can repeat this as many times as you want.</Description>
     </Card>
     <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_005" DisplayName="Graveyard" Faction="Necropolis" Cost="2" DestinyLevel="2" ID="144">
         <Target Zone="None" Side="Friendly">
