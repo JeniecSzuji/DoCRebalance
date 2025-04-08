@@ -137,19 +137,23 @@ When enchanted creature dies, deal 3 damage to all creatures.</Description>
         </Target>
         <Description>Deal 2 damage to all creatures on target line.</Description>
     </Card>
-    <Card Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="3" MagicLevel="3" ID="584">
-        <Variable Type="TargetCount">
-          <Target Zone="Battleground" CardType="Unit" Amount="All" />
-        </Variable>
-        <Ongoing Duration="FromCondition">
-          <Condition Operator="GreaterThan" ValueA="Variable" ValueB="0" />
-        </Ongoing>
-        <Target Zone="Battleground" Amount="All" CardType="Unit">
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="3" MagicLevel="3" ID="584">
+        <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Enemy">
             <Effect Type="ModifyAbility" Ability="Berserk" />
         </Target>
-        <Description>
-          Permanent:
-          All creatures gain Berserk. When there are no creatures on the battleground, destroy [THIS].</Description>
+        <Trigger Type="OnTurnBegin" Side="Friendly">
+		<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly" Persistent="True" ForceExecute="True">
+			<Effect Type="ModifyAbility" Ability="Berserk" Duration="UntilEndOfTurn"/>
+				<Subgroup>
+					<Target Zone="Battleground" Amount="Self">
+						<Effect Type="MoveCardTo" Destination="Hand" />
+					</Target>
+				</Subgroup>
+		</Target>
+        </Trigger>
+        <Description>Permanent:
+All enemy creatures gain Berserk.
+At the beginning of your turn, all friendly creatures gain Berserk until end of turn, and Mass Rage returns to its owner's hand.</Description>
     </Card>
     <!--....................................................................-->
     <!-- Spells - Light -->
