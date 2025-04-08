@@ -40,7 +40,7 @@ Friendly Beastman creatures adjacent to a friendly Wizard creature gain +[1:ATK]
 	<!-- Heroes Haven -->
 	<!--...............................................................................-->
 	<Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Hav_009" DisplayName="Slava" Faction="Haven" School="Air|Fire|Light" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="19" ID="803">
-        	<Description>Slava gains +[1:MAGIC] for each friendly Priest creature on the battleground.</Description>
+        	<Description>Ongoing: Slava gains +[1:MAGIC] for each friendly Priest creature on the battleground.</Description>
         	<Target Zone="Hero" Amount="All" Side="Friendly">
             		<Variable Type="TargetCount">
                 		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
