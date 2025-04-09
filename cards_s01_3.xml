@@ -243,7 +243,7 @@ All Water creatures gain Regenerate 1.</Description>
                 </Target>
             </Trigger>
         </Target>
-        <Description>[1:RESOURCES]: Non-token creatures you deploy this turn gain + [1:RET].</Description>
+        <Description>[1:RESOURCES]: Any non-token creature that enters the battleground gains +[1:RET].</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Event" Name="Eve_Neu_021" DisplayName="Week of the Tamed Spirits" Faction="Neutral" Cost="2" ID="329">
         <Ongoing Duration="UntilYourNextTurn"/>
@@ -296,7 +296,6 @@ All Water creatures gain Regenerate 1.</Description>
                 </Target>
             </Trigger>
         </Target>
-        <Description>[1:RESOURCES]: Creatures that entered the battleground cannot be targeted until your next turn.</Description>
-	<DescriptionChinese>[1:RESOURCES]：进入战场的生物不能被指定，直到本方下回合开始。</DescriptionChinese>
+        <Description>[1:RESOURCES]: Any creature that enters the battleground cannot be targeted until your next turn.</Description>
  </Card>
 </Cards>
