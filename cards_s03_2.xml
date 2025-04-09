@@ -690,13 +690,13 @@ When Full Moon enters the battleground, draw a card.</Description>
     </Card>
     <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Neu_052" DisplayName="Second Chance" Faction="Neutral" Cost="3" DestinyLevel="3" ID="568">
         <Target Zone="Graveyard" Amount="1" Side="Friendly">
-<CardFilter IncludeCardType="Unit" ExcludeUnique="True" IncludeStatus="DiedThisTurn"/>
-<Effect Type="Deploy" Side="Friendly" EvaluationOrder="First"/>
-</Target>
-<Target Zone="Battleground" Side="Friendly" Amount="Same">
-<Variable Type="CardHealth" UseCurrentTarget="True" ValueModifier="0.5xd"/>
-<Effect Type="Damage" Value="Variable" EvaluationOrder="Last"/>
-</Target>
+	<CardFilter IncludeCardType="Unit" ExcludeUnique="True" IncludeStatus="DiedThisTurn"/>
+		<Effect Type="Deploy" Side="Friendly" EvaluationOrder="First"/>
+	</Target>
+	<Target Zone="Battleground" Side="Friendly" Amount="Same">
+	<Variable Type="CardHealth" UseCurrentTarget="True" ValueModifier="0.5xd"/>
+		<Effect Type="Damage" Value="Variable" EvaluationOrder="Last"/>
+	</Target>
 <Description>Take target creature card put into your graveyard since the end of your last turn. Deploy it for free and deal damage to it equal to the half of its max [HEALTH], rounded down.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Fortune" Name="For_Neu_053" DisplayName="Cosmic Singularity" Faction="Neutral" Cost="2" DestinyLevel="2" ID="569">
