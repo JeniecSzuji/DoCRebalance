@@ -203,7 +203,7 @@ All enemy creatures gains -[2:ATK].</Description>
 			<Effect Type="ModifyRetaliate" Value="2"/>
 		</Target>
 		<Description>Until your next turn:
-Target Centaur or Harpy creature and target Centaur or Harpy creature gain +[2:ATK] and +[2:RET].</Description>
+Target Centaur or Harpy creature and another creature of these types gain +[2:ATK] and +[2:RET].</Description>
 	</Card>
 	<!--....................................................................-->
 	<!--  Fortune - Neutral -->
