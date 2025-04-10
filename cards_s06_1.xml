@@ -389,8 +389,8 @@ Whenever Bloodtiger Warrior destroys a creature, put 1 Enrage counter on all oth
                 		<Effect Type="AddCounter" CounterType="Enrage" Value="1"/>
             		</Target>
         	</Trigger>
-		<Description>When Bloodshark Warrior dies, if there are 3 or more Enrage counters on it, put 1 Enrage counter on all friendly creatures with Bloodthirst.
-At the end of your turn, if there are 3 or more Enrage counters on Bloodshark Warrior, it loses 1 Enrage counter, then put 1 Enrage counter on all other friendly creatures with Bloodthirst.</Description>
+		<Description>When Bloodshark Warrior dies with 3 or more Enrage counters, put 1 Enrage counter on all friendly creatures with Bloodthirst.
+At the end of your turn, if it has 3 or more Enrage counters, remove 1, then put 1 Enrage counter on all other friendly creatures with Bloodthirst.</Description>
 	</Card>
 	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Str_087" DisplayName="Bloodmask Shaman" Faction="Stronghold" SubType="Magic|Shooter" Race="Orc|Shaman" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="841">
 		<Ability Type="ImmuneToRetaliate"/>
