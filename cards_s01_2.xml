@@ -172,8 +172,8 @@ While no friendly melee creature has attacked in a turn, all friendly creatures 
         <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Enemy">
 			<Effect Type="ModifyAbility" Ability="AttackAnywhere"/>
 		</Target>
-        <Description>Attach to creature. Until your next turn:
-All enemy creatures gain Attack Anywhere and can only attack target creature if able.</Description>
+        <Description>Attach to a friendly creature. Until your next turn:
+All enemy creatures gain Attack Anywhere and can only attack this creature if able.</Description>
     </Card>
     <Card Rarity="Rare" Type="Fortune" Name="For_San_002" DisplayName="Honored Land" Faction="Sanctuary" Cost="2" DestinyLevel="3" ID="150">
         <Ongoing Duration="UntilYourNextTurn"/>
