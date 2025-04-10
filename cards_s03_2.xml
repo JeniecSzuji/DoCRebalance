@@ -648,7 +648,7 @@ At the beginning of your turn, return Outraging Vision to its owner's hand.</Des
 		</Target>
         </Trigger>
 <Description>Attach to creature. Until end of turn:
-Target melee creature gains + [4:ATK] and Charge. After the creature attacks, destroy it.</Description>
+Target melee creature gains +[4:ATK] and Charge. After the creature attacks, destroy it.</Description>
     </Card>
     <Card Rarity="Rare" Type="Fortune" Name="For_Str_053" DisplayName="Rushing Assault" Faction="Stronghold" Cost="3" DestinyLevel="3" ID="565">
         <Ongoing Duration="UntilEndOfTurn" />
