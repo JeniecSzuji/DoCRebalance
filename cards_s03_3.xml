@@ -137,7 +137,7 @@ When enchanted creature dies, deal 3 damage to all creatures.</Description>
         </Target>
         <Description>Deal 2 damage to all creatures on target line.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="3" MagicLevel="3" ID="584">
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="2" MagicLevel="3" ID="584">
 	<Ongoing Duration="Permanent" />
         <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Enemy">
             <Effect Type="ModifyAbility" Ability="Berserk" />
