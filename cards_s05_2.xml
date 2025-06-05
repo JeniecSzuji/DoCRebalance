@@ -16,7 +16,8 @@
 		<Target Zone="Hero" Amount="All" Side="Friendly">
 		<Effect Type="IncreaseLevel" Value="3" LevelType="Magic"/>
 	</Target>
-	<Description>Pernament: Increase your [MAGIC] level by 3</Description>
+	<Description>Permanent:
+Increase your [MAGIC] level by 3.</Description>
 	</Card>
 	<Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_071" DisplayName="Crimson Link" Faction="Academy" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="749" Unique="False">
 		<Ongoing Duration="UntilYourNextTurn"/>
