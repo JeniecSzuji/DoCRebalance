@@ -17,7 +17,7 @@
 				<CardFilter IncludeRaces="Angel"/>
 			</Target>
 		</Variable2>
-		<Trigger Type="OnDamageHero">
+		<Trigger Type="OnDamageHero" Side="Friendly">
 			<Target Zone="Hero" Amount="All" Side="Friendly">
 				<Condition Operator="EqualTo" ValueA="Variable" ValueB="1"/>
 				<Effect Type="Heal" Value="Variable2"/>
