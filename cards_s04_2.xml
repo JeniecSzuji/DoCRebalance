@@ -78,7 +78,7 @@ Whenever you play a creature, if Memory Lapse is in your graveyard, take it and 
         <Target Zone="None" Side="Friendly">
             <Effect Type="Draw" Value="1" />
         </Target>
-        <Description>Take all creature cards in both graveyards and shuffle them into their owner's libraries. Draw a card.</Description>
+        <Description>Take all creature cards from both graveyards and shuffle them into their owners' libraries. Draw a card.</Description>
     </Card>
     <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Hav_061" DisplayName="Morgan's Inspiration" Faction="Haven" Cost="3" DestinyLevel="3" ID="618">
         <Ongoing Duration="UntilEndOfTurn" />
