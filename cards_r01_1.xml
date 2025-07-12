@@ -115,7 +115,7 @@
 				<Effect Type="AddCounter" CounterType="Fierce" Value="1"/>
 			</Target>
         	</Trigger>
-		<Description>When [THIS] enter the battleground, Put +1 ATK counter on all other friendly dark creatures.</Description>
+		<Description>When Abyssal Lilim enters the battleground, put +[1:ATK] counter on all friendly Dark creatures.</Description>
 	</Card>
 	<Card  Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Inf_103" DisplayName="Breeder Progenitor" Faction="Inferno" SubType="Magic|Shooter" Race="Demon|Breeder" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="1017">	
 		<Ability Type="ImmuneToRetaliate"/>
