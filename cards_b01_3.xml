@@ -546,11 +546,10 @@ Heal all damage from all friendly creatures.</Description>
             <Effect Type="ModifyDamage" Value="0.0x" Side="Enemy" DamageIncludeFlags="All"/>
         </Target>
 		<Trigger Type="OnThisDetach" >
-		<CardFilter SameGPID="True"/>
-            <Target Zone="Battleground" Amount="Parent">
-                <Effect Type="Banish"/>
-            </Target>
-        </Trigger>
+            		<Target Zone="Battleground" Amount="Parent">
+                		<Effect Type="Banish"/>
+            		</Target>
+        	</Trigger>
         <Description>Enchant friendly creature. Permanent:
 Enchanted creature gains Anchored.
 Prevent all damage dealt to friendly creatures from sources you don't control.
