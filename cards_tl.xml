@@ -626,7 +626,7 @@
     <TemplateEffect Name="NahlaEffect">
         <Target Zone="Battleground" Amount="Self">
             <Variable Type="TargetCount" UseCurrentTarget="True">
-                <Target Zone="Battleground" CardType="Unit" Amount="self" Side="Friendly" Shape="AdjacentOnly">
+                <Target Zone="Battleground" CardType="Unit" Amount="Self" Side="Friendly" Shape="AdjacentOnly">
                     <CardFilter IncludeRaces="Wizard"/>
                 </Target>
             </Variable>
@@ -662,3 +662,4 @@
     </TemplateEffect>
 
 </Cards>
+
