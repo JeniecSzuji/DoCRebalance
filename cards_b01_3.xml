@@ -376,21 +376,17 @@ Enchanted creature gains Infect 1 and Infect Blast 1.</Description>
         </Target>
         <Description>Gain control of target enemy creature and relocate it to a valid battleground position.</Description>
     </Card>
-    <Card Rarity="Common" Type="Spell" Name="Spe_Dar_003" DisplayName="Agony" School="Dark" Cost="1" MagicLevel="1" ID="217">
-        <Ongoing Duration="Permanent"/>
-        <Target Zone="Battleground" CardType="Unit" Amount="1"/>
-        <Trigger Type="OnThisPostAttack">
+    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Dar_003" DisplayName="Agony" School="Dark" Cost="1" MagicLevel="1" ID="217">
+        <Ongoing Duration="Permanent" />
+        <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" />
+        <Trigger Type="OnTurnEnd" Side="Enemy">
             <Target Zone="Battleground" CardType="Unit" Amount="Parent">
-                <Effect Type="Damage" Value="2"/>
+                <Variable Type="CardHealth" UseCurrentTarget="True" ValueModifier="0.5xu" />
+                <Effect Type="Damage" Value="Variable" />
             </Target>
         </Trigger>
-        <Trigger Type="OnThisMove">
-            <Target Zone="Battleground" CardType="Unit" Amount="Parent">
-                <Effect Type="Damage" Value="2"/>
-            </Target>
-        </Trigger>
-        <Description>Enchant creature. Permanent:
-After enchanted creature moves or attacks, deal 2 damage to it.</Description>
+        <Description>Enchant enemy creature. Permanent:
+At the end of opponent's turn, deal damage to enchanted creature equal to half of its remaining [HEALTH], rounded up.</Description>
     </Card>
     <Card Rarity="Rare" Type="Spell" Name="Spe_Dar_002" DisplayName="Curse of the Netherworld" School="Dark" Cost="6" MagicLevel="6" ID="218">
         <Target Zone="Battleground" CardType="Unit" Amount="All"/>
@@ -799,3 +795,4 @@ Week of Knowledge can only be played if you haven't played any card this turn.</
         <Description>[1:RESOURCES]: The next creature you deploy this turn gains +[1:ATK]</Description>
     </Card>
 </Cards>
+
