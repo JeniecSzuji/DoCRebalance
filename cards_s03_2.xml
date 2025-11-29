@@ -155,43 +155,74 @@ Whenever you play a magic creature, put the top 3 cards of opponent's library in
         <Description>Until your next turn:
 Whenever a friendly creature is attacked, put the top 3 cards of opponent's library into their graveyard.</Description>
     </Card>
-    <Card Rarity="Uncommon" Type="Fortune" Name="For_Aca_013" DisplayName="Thread of Fate" Faction="Academy" Cost="1" DestinyLevel="1" ID="540">
-        <Ongoing Duration="UntilYourNextTurn" />
-        <Target Zone="None" Side="Enemy">
-            <Effect Type="ChoiceOption" />
-            <Subgroup>
-                <Target Zone="None" Side="Enemy">
-                    <Option Value="0" DisplayText="Creature" />
-                    <Trigger Type="OnCardPlay" Side="Enemy">
-                        <CardFilter IncludeCardType="Unit" />
-                        <Target Zone="None" Side="Friendly">
-                            <Effect Type="Draw" Value="1" />
-                        </Target>
-                    </Trigger>
-                </Target>
-                <Target Zone="None" Side="Enemy">
-                    <Option Value="1" DisplayText="Spell" />
-                    <Trigger Type="OnCardPlay" Side="Enemy">
-                        <CardFilter IncludeCardType="Spell" />
-                        <Target Zone="None" Side="Friendly">
-                            <Effect Type="Draw" Value="1" />
-                        </Target>
-                    </Trigger>
-                </Target>
-                <Target Zone="None" Side="Enemy">
-                    <Option Value="2" DisplayText="Fortune" />
-                    <Trigger Type="OnCardPlay" Side="Enemy">
-                        <CardFilter IncludeCardType="Fortune" />
-                        <Target Zone="None" Side="Friendly">
-                            <Effect Type="Draw" Value="1" />
-                        </Target>
-                    </Trigger>
-                </Target>
-            </Subgroup>
-        </Target>
-        <Description>Until your next turn:
-Choose one: creature OR spell OR fortune.
-Whenever opponent plays a card of this type, draw a card.</Description>
+	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Aca_013" DisplayName="Thread of Fate" Faction="Academy" Cost="2" MagicLevel="2" DestinyLevel="2" ID="540">
+        <Ongoing Duration="Permanent"/>
+		<Variable Type="Level" Side="Friendly" LevelType="Magic"/>
+		<Variable2 Type="Level" Side="Enemy" LevelType="Magic"/>
+		<Trigger Type="OnCardPlay" Side="Friendly">
+			<CardFilter IncludeCardType="Spell"/>
+			<Target Zone="None">
+				<Effect Type="FreezeVariable"/>
+				<Subgroup>
+					<Target Zone="None">
+						<Effect Type="FreezeVariable" Unfreeze="True"/>
+						<Subgroup>
+							<Target Zone="None">
+								<Effect Type="FreezeVariable"/>
+								<Subgroup>				
+									<Target Zone="None" Side="Friendly">
+										<Effect Type="IncreaseLevel" Value="-1" LevelType="Magic"/>
+										<Subgroup>
+											<Target Zone="None" Side="Friendly">
+												<Variable3 Type="Level" Side="Friendly" LevelType="Magic"/>
+												<Condition Operator="GreaterThan" ValueA="Variable" ValueB="Variable3"/>
+												<Effect Type="Draw" Value="1"/>
+											</Target>
+											<Target Zone="None">
+												<Effect Type="FreezeVariable" Unfreeze="True"/>
+											</Target>
+										</Subgroup>
+									</Target>				
+								</Subgroup>
+							</Target>
+						</Subgroup>
+					</Target>
+				</Subgroup>
+			</Target>
+		</Trigger>
+		<Trigger Type="OnCardPlay" Side="Enemy">
+			<CardFilter IncludeCardType="Spell"/>
+			<Target Zone="None">
+				<Effect Type="FreezeVariable"/>
+				<Subgroup>
+					<Target Zone="None">
+						<Effect Type="FreezeVariable" Unfreeze="True"/>
+						<Subgroup>
+							<Target Zone="None">
+								<Effect Type="FreezeVariable"/>
+								<Subgroup>				
+									<Target Zone="None" Side="Enemy">
+										<Effect Type="IncreaseLevel" Value="-1" LevelType="Magic"/>
+										<Subgroup>
+											<Target Zone="None" Side="Enemy">
+												<Variable3 Type="Level" Side="Enemy" LevelType="Magic"/>
+												<Condition Operator="GreaterThan" ValueA="Variable2" ValueB="Variable3"/>
+												<Effect Type="Draw" Value="1"/>
+											</Target>
+											<Target Zone="None">
+												<Effect Type="FreezeVariable" Unfreeze="True"/>
+											</Target>
+										</Subgroup>
+									</Target>				
+								</Subgroup>
+							</Target>
+						</Subgroup>
+					</Target>
+				</Subgroup>
+			</Target>
+		</Trigger>
+        <Description>Permanent:
+Whenever a player plays a spell card, they must lower their [MAGIC] level by 1. If they do, they draw a card.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Fortune" Name="For_Aca_014" DisplayName="Forgotten Spell" Faction="Academy" Cost="3" MagicLevel="3" DestinyLevel="3" ID="541">
         <Target Zone="Graveyard" Side="Enemy" CardType="Spell" Amount="1">
@@ -759,3 +790,4 @@ Prevent [RESOURCES] gain from cards and abilities.</Description>
         <Description>Search your library for a Unique card and play it for free. Shuffle your library.</Description>
     </Card>
 </Cards>
+
