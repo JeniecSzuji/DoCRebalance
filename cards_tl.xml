@@ -654,13 +654,14 @@
 
     <TemplateEffect Name="SkeletonServantQA">
 	<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
-	<Target Zone="Battleground" Amount="Self"/>
-            <Target Zone="Battleground" Amount="1" CardType="Unit" CantTargetPrevious="True" CantTargetSelf="True" Cancelable="False">
-                <Effect Type="MoveCounter" CounterType="Crippling" Value="1"/>
-            </Target>
+		<Target Zone="Battleground" Amount="Self"/>
+    	<Target Zone="Battleground" Amount="1" CardType="Unit" CantTargetPrevious="True" CantTargetSelf="True" Cancelable="False">
+        	<Effect Type="MoveCounter" CounterType="Crippling" Value="1"/>
+    	</Target>
 	</Trigger>
     </TemplateEffect>
 
 </Cards>
+
 
 
