@@ -399,11 +399,11 @@ At the end of your turn, if it has 3 or more Enrage counters, remove 1, then put
 		<Variable Type="AbilityValue" Ability="Bloodmask"/>
 		<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
 			<Variable2 Type="CounterCount" CounterType="Enrage" UseCurrentTarget="True"/>
-                		<Condition Operator="And" ValueA="Condition" ValueB="Condition">
-					<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
-                    			<Condition Operator="GreaterThan" ValueA="Variable2" ValueB="2"/>
-                		</Condition>
-				<Effect Type="ModifyAbility" Ability="CannotTarget"/>
+            <Condition Operator="And" ValueA="Condition" ValueB="Condition">
+				<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+                <Condition Operator="GreaterThan" ValueA="Variable2" ValueB="2"/>
+            </Condition>
+			<Effect Type="ModifyAbility" Ability="CannotTarget"/>
 		</Target>
 		<Description>During opponent's turn, friendly creatures with 3 or more Enrage counters cannot be targeted.</Description>
 	</Card>
@@ -465,3 +465,4 @@ At the beginning of each turn, deal 1 damage to all enemy creatures in the same 
 		<Description>Whenever Hasafah, Chosen of the Shadows attacks and destroys a creature, deploy a token that's a copy of that creature under your control after the attack.</Description>
 	</Card>
 </Cards>
+
