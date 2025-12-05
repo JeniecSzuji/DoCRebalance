@@ -150,7 +150,7 @@ Friendly Fire creatures gain Area Blast 2 and +[1:ATK].</Description>
 		<Description>Enchant Creature. Permanent:
 Enchanted creature is Immobilized and gains Cannot Attack and Phased.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Lig_082" DisplayName="Avenging Wings" School="Light" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="893">
+	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Lig_082" DisplayName="Avenging Wings" School="Light" Cost="3" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="893">
 		<Ongoing Duration="Permanent"/>
 <Target Zone="Hero" Amount="All"/>
 <Trigger Type="OnPostAttack" Side="Enemy">
@@ -247,3 +247,4 @@ Friendly Water creatures gain Frozen Touch.</Description>
 		<Description>[1:RESOURCES]: The damage of the next spell you play this turn cannot be prevented or reduced.</Description>
 	</Card>
 </Cards>
+
