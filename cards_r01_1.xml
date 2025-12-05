@@ -171,9 +171,9 @@
 		<Target Zone="Battleground" Amount="All" CardType="Unit"  Side="Friendly">
 			<Effect Type="ModifyAbility" Ability="AbsorbPoisonDamage"/>
 		</Target>
-		<Description>All friendly creatures do not receive damage from poison counters. Whenever a creature with poison counters on it dies, put the same number of poison counters on other random creatures.</Description>
+		<Description>All friendly creatures do not receive damage from poison counters.
+Whenever a creature with poison counters on it dies, put the same number of poison counters on other random creatures.</Description>
 	</Card>
-	
 	<!--...............................................................................-->
 	<!-- Creatures - Sanctuary -->
 	<!--...............................................................................-->
@@ -425,3 +425,4 @@
     <!-- s04 - Erg Hunter -->
     	
 </Cards>
+
