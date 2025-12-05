@@ -661,7 +661,47 @@
 	</Trigger>
     </TemplateEffect>
 
+    <TemplateEffect Name="GazalLosHeal">
+	<Trigger Type="OnCardMill" Side="Friendly" ExecuteOncePerTransaction="True">
+        <Target Zone="Hero" Amount="All" Side="Enemy">
+			<Variable Type="Level" Side="Enemy" LevelType="Might"/>
+			<Variable2 Type="Level" Side="Enemy" LevelType="Destiny"/>
+			<Condition Operator="And" ValueA="Condition" ValueB="Condition">
+                <Condition Operator="GreaterThan" ValueA="Variable" ValueB="2"/>
+                <Condition Operator="GreaterThan" ValueA="Variable2" ValueB="3"/>
+            </Condition>
+			<Effect Type="Heal" Value="1"/>
+		</Target>			
+    </Trigger>
+    </TemplateEffect>
+	
+    <TemplateEffect Name="SihamTarget"/>
+
+    <TemplateEffect Name="SihamHealMe"/>
+
+    <TemplateEffect Name="SihamHealOpp">
+	<Trigger Type="OnUnitDeath" ExecuteOncePerTransaction="True">
+		<CardFilter IncludeAbility="SihamTarget"/>
+        <Target Zone="Hero" Amount="All" Side="Enemy">
+			<Variable Type="AbilityValue" Ability="SihamHealMe" UseCurrentTarget="True"/>
+			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+			<Effect Type="Heal" Value="1"/>
+		</Target>			
+    </Trigger>
+	<Trigger Type="OnTurnBegin" Side="Enemy">
+		<Target Zone="Hero" Amount="All" Side="Enemy" Persisten="True" ForceExecute="True">
+			<Effect Type="ModifyAbilityValue" Ability="SihamHealMe" Value="1="/>
+		</Target>
+    </Trigger>
+	<Trigger Type="OnSupplyPhaseEnd" Side="Enemy">
+		<Target Zone="Hero" Amount="All" Side="Enemy" Persisten="True" ForceExecute="True">
+			<Effect Type="ModifyAbilityValue" Ability="SihamHealMe" Value="0="/>
+		</Target>
+    </Trigger>
+    </TemplateEffect>
+
 </Cards>
+
 
 
 
