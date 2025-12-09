@@ -176,15 +176,59 @@ All Vampire creatures gain +[1:ATK] and +[1:RET]. All non-Vampire creatures gain
 		<Description>Look at the top card of opponent's library. You may put it into their graveyard. Do the same with your library.
 Whenever a friendly Priest creature enters the battleground, if Tea Ceremony is in your graveyard, take it and put it into your hand.</Description>
 	</Card>
-	<Card Rarity="Rare" Type="Fortune" Name="For_San_072" DisplayName="Honourable Challenge" Faction="Sanctuary" Cost="3" MightLevel="4" MagicLevel="0" DestinyLevel="2" ID="758" Unique="False">
-		<Ongoing Duration="UntilYourNextTurn"/>
-		<Variable Type="CardLevel" LevelType="Might" UseCurrentTarget="True" ValueModifier="-1"/>
-		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
-			<Effect Type="ModifyAbility" Ability="Fear" DontShowIcon="True" Value="Variable"/>
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_San_072" DisplayName="Honourable Challenge" Faction="Sanctuary" Cost="1" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="758" Unique="False">
+		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any"/>
+		<Target Zone="None">
+			<Subgroup>
+				<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Persistent="True" ForceExecute="True">	
+					<Effect Type="ModifyAbility" Ability="HonourableChallengeTL" Duration="UntilEndOfTurn" Value="1="/>
+					<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1="/>
+					<Subgroup>
+						<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" Persistent="True" ForceExecute="True">
+							<Effect Type="ModifyAbility" Ability="HonourableChallengeTL" Duration="UntilEndOfTurn" Value="1="/>
+							<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1="/>
+							<Subgroup>
+								<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Random="True">
+									<CardFilter IncludeAbility="HonourableChallengeTL"/>
+									<Variable Type="AbilityValue" Ability="HonourableChallengeTL" UseCurrentTarget="True"/>
+									<Condition Operator="EqualTo" ValueA="Variable" ValueB="1"/>
+									<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1=" EvaluationOrder="First"/>	
+								</Target>				
+								<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Enemy">
+									<CardFilter IncludeAbility="HonourableChallengeTL"/>
+									<Variable Type="AbilityValue" Ability="HonourableChallengeTL" UseCurrentTarget="True"/>
+									<Variable2 Type="CardAttack" UseLastTarget="True"/>
+									<Condition Operator="EqualTo" ValueA="Variable" ValueB="1"/>
+									<Effect Type="Damage" Value="Variable2" EvaluationOrder="Last"/>
+								</Target>
+								<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" Random="True">
+									<CardFilter IncludeAbility="HonourableChallengeTL"/>
+									<Variable Type="AbilityValue" Ability="HonourableChallengeTL" UseCurrentTarget="True"/>
+									<Condition Operator="EqualTo" ValueA="Variable" ValueB="1"/>
+									<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1=" EvaluationOrder="First"/>	
+								</Target>	
+								<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
+									<CardFilter IncludeAbility="HonourableChallengeTL"/>
+									<Variable Type="AbilityValue" Ability="HonourableChallengeTL" UseCurrentTarget="True"/>
+									<Variable2 Type="CardAttack" UseLastTarget="True"/>
+									<Condition Operator="EqualTo" ValueA="Variable" ValueB="1"/>
+									<Effect Type="Damage" Value="Variable2" EvaluationOrder="Last"/>
+								</Target>
+								<Target Zone="None">
+									<Subgroup>
+										<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any" ForceExecute="True">
+											<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="0="/>
+										</Target>
+									</Subgroup>
+								</Target>
+							</Subgroup>
+						</Target>
+					</Subgroup>
+				</Target>
+			</Subgroup>
 		</Target>
-		<Description>Until your next turn:
-Friendly creatures cannot be attacked by creatures with a lower [MIGHT] requirement.</Description>
-	</Card>
+        <Description>Choose target friendly and enemy creature. Deal damage to the enemy creature equal to the friendly creature's [ATK], and vice versa.</Description>
+    </Card>
 	<!--....................................................................-->
 	<!-- Fortune - Stronghold -->
 	<!--....................................................................-->
@@ -479,3 +523,4 @@ Creatures at Barricade gain +[1:RET] for each building adjacent to it.</Descript
 		<Description>Whenever you use your hero ability to increase your [MIGHT] level, if there is a creature at Training Ground, increase that level by 1 more and put [1:ATK] counter on the creature at Training Ground.</Description>
 	</Card>
 </Cards>
+
