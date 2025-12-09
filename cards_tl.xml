@@ -699,8 +699,11 @@
 		</Target>
     </Trigger>
     </TemplateEffect>
+	
+	<TemplateEffect Name="HonourableChallengeTL"/>
 
 </Cards>
+
 
 
 
