@@ -177,14 +177,27 @@ All Vampire creatures gain +[1:ATK] and +[1:RET]. All non-Vampire creatures gain
 Whenever a friendly Priest creature enters the battleground, if Tea Ceremony is in your graveyard, take it and put it into your hand.</Description>
 	</Card>
     <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_San_072" DisplayName="Honourable Challenge" Faction="Sanctuary" Cost="1" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="758" Unique="False">
-		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any"/>
-		<Target Zone="None">
+		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="True">
+			<Variable Type="TargetCount">
+				<Target Zone="Battleground" Amount="All" Side="Enemy" CardType="Unit" MustBeTargetable="True"/>
+			</Variable>
+			<Variable2 Type="TargetCount">
+				<Target Zone="Battleground" Amount="All" Side="Enemy" CardType="Unit" MustBeTargetable="True">
+					<CardFilter IncludeAbility="FortuneWard"/>
+				</Target>
+			</Variable2>
+			<Condition Operator="And" ValueA="Condition" ValueB="Condition">
+				<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+				<Condition Operator="GreaterThan" ValueA="Variable" ValueB="Variable2"/>
+			</Condition>
+		</Target>
+		<Target Zone="None" Amount="Same">
 			<Subgroup>
-				<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Persistent="True" ForceExecute="True">	
+				<Target Zone="None" Amount="Same" Persistent="True" ForceExecute="True">
 					<Effect Type="ModifyAbility" Ability="HonourableChallengeTL" Duration="UntilEndOfTurn" Value="1="/>
 					<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1="/>
 					<Subgroup>
-						<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" Persistent="True" ForceExecute="True">
+						<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" Persistent="True" ForceExecute="True" Cancelable="True">
 							<Effect Type="ModifyAbility" Ability="HonourableChallengeTL" Duration="UntilEndOfTurn" Value="1="/>
 							<Effect Type="ModifyAbilityValue" Ability="HonourableChallengeTL" Value="1="/>
 							<Subgroup>
@@ -523,4 +536,5 @@ Creatures at Barricade gain +[1:RET] for each building adjacent to it.</Descript
 		<Description>Whenever you use your hero ability to increase your [MIGHT] level, if there is a creature at Training Ground, increase that level by 1 more and put [1:ATK] counter on the creature at Training Ground.</Description>
 	</Card>
 </Cards>
+
 
