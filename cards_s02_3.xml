@@ -182,20 +182,23 @@ At the beginning of your turn, take a non-unique creature card at random from yo
         </Target>
         <Description>Look at opponent's hand and choose a fortune card from it. You can play this fortune for free. If you don't, put that card into opponent's graveyard.</Description>
     </Card>
-    <Card NotLocalized="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="3" ID="435">
+    <Card NotLocalized="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="4" ID="435">
         <Ongoing Duration="Permanent" />
-        <Target Zone="BattlegroundColumn" Amount="1" />
-        <Trigger Type="OnTurnBegin" Side="Any">
-            <Target Zone="Battleground" CardType="Unit" Amount="1" Cancelable="True">
-              <CardFilter IncludeColumn="True" Value="Variable2">
-                <Variable2 Type="CardColumn" />
-              </CardFilter>
-              <Effect Type="Banish" />
+        <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
+            <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
+				<CardFilter Side="Friendly" />
+                <Effect Type="Banish" />
+            </Target>
+        </Trigger>
+        <Trigger Type="OnSupplyPhaseBegin" Side="Enemy">
+            <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
+				<CardFilter Side="Enemy" />
+                <Effect Type="Banish" />
             </Target>
         </Trigger>
         <Description>
-          Enchant Row. Permanent:
-          At the beginning of the his turn, each player banish target creature on this row if he want.</Description>
+          Permanent:
+          At the beginning of the his turn, each player banish target friendly creature.</Description>
     </Card>
     <!--....................................................................-->
     <!-- Spells - Water -->
@@ -291,3 +294,4 @@ All friendly creatures gain +[1:ATK] and Fortune Ward.</Description>
         <Description>[4:RESOURCES], Deal 3 damage to your hero: Both players discard cards at random until they have a maximum of 6 in hand.</Description>
     </Card>
 </Cards>
+
