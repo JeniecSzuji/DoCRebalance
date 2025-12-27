@@ -42,7 +42,7 @@ Increase your [MAGIC] level by 3.</Description>
 		</Target>
 		<Description>Deploy a token that's a copy of target friendly building.</Description>
 	</Card>
-	<Card Rarity="Rare" Type="Fortune" Name="For_Hav_071" DisplayName="Avenge the Fallen" Faction="Haven" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="751" Unique="False">
+	<Card Rarity="Rare" Type="Fortune" Name="For_Hav_071" DisplayName="Avenge the Fallen" Faction="Haven" Cost="1" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="751" Unique="False">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Amount="All" Side="Friendly" CardType="Unit">
@@ -536,5 +536,6 @@ Creatures at Barricade gain +[1:RET] for each building adjacent to it.</Descript
 		<Description>Whenever you use your hero ability to increase your [MIGHT] level, if there is a creature at Training Ground, increase that level by 1 more and put [1:ATK] counter on the creature at Training Ground.</Description>
 	</Card>
 </Cards>
+
 
 
