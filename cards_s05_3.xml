@@ -150,13 +150,18 @@ All creatures gain +[1:ATK] and +[1:RET].</Description>
 		</Target>
 		<Description>Destroy all ongoing spells and fortunes on target friendly creature. Heal 2 damage from that creature for each card destroyed this way and put +[1:ATK] counter on it for each card destroyed this way.</Description>
 	</Card>
-	<Card Rarity="Uncommon" Type="Spell" Name="Spe_Lig_071" DisplayName="Avenging Shield" School="Light" Cost="2" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="792" Unique="False">
+	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Lig_071" DisplayName="Avenging Shield" School="Light" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="792" Unique="False">
 		<Ongoing Duration="Permanent"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly">
 			<Effect Type="ModifyAbility" Ability="AbsorbHeroDamage" Value="1"/>
 		</Target>
+		<Trigger Type="OnPostAttackHero" Side="Enemy">
+            <Target Zone="Battleground" CardType="Unit" Amount="FromTrigger">
+                <Effect Type="Damage" Value="1"/>
+            </Target>
+		</Trigger>
 		<Description>Enchant friendly creature. Permanent:
-Whenever damage is dealt to your hero, redirect 1 of that damage to enchanted creature.</Description>
+Whenever damage is dealt to your hero or your hero is attacked, redirect 1 of that damage to enchanted creature and deal 1 damage to the attacker.</Description>
 	</Card>
 	<Card Rarity="Rare" Type="Spell" Name="Spe_Lig_072" DisplayName="Sanctified Walls" School="Light" Cost="4" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="793" Unique="False">
 		<Ongoing Duration="Permanent"/>
@@ -271,3 +276,4 @@ Other friendly ongoing Water spells cannot be destroyed by enemy effects.</Descr
 		<Description>[4:RESOURCES]: Until end of turn, all creatures that share a creature type with target creature gain +[1:ATK] and +[1:RET].</Description>
 	</Card>
 </Cards>
+
