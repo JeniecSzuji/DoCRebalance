@@ -182,7 +182,7 @@ At the beginning of your turn, take a non-unique creature card at random from yo
         </Target>
         <Description>Look at opponent's hand and choose a fortune card from it. You can play this fortune for free. If you don't, put that card into opponent's graveyard.</Description>
     </Card>
-    <Card NotLocalized="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="4" ID="435">
+    <Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="4" ID="435">
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
             <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
@@ -294,4 +294,5 @@ All friendly creatures gain +[1:ATK] and Fortune Ward.</Description>
         <Description>[4:RESOURCES], Deal 3 damage to your hero: Both players discard cards at random until they have a maximum of 6 in hand.</Description>
     </Card>
 </Cards>
+
 
