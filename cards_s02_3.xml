@@ -186,18 +186,18 @@ At the beginning of your turn, take a non-unique creature card at random from yo
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
             <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
-				<CardFilter Side="Friendly" />
+				<CardFilter Side="Friendly" IncludeToken="False" ExcludeToken="True" />
                 <Effect Type="Banish" />
             </Target>
         </Trigger>
         <Trigger Type="OnSupplyPhaseBegin" Side="Enemy">
             <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
-				<CardFilter Side="Enemy" />
+				<CardFilter Side="Enemy" IncludeToken="False" ExcludeToken="True" />
                 <Effect Type="Banish" />
             </Target>
         </Trigger>
         <Description>Permanent:
-At the beginning of the his turn, each player banish target friendly creature.</Description>
+At the beginning of the his turn, each player banish target friendly non-token creature.</Description>
     </Card>
     <!--....................................................................-->
     <!-- Spells - Water -->
@@ -293,6 +293,7 @@ All friendly creatures gain +[1:ATK] and Fortune Ward.</Description>
         <Description>[4:RESOURCES], Deal 3 damage to your hero: Both players discard cards at random until they have a maximum of 6 in hand.</Description>
     </Card>
 </Cards>
+
 
 
 
