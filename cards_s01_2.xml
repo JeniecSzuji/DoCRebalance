@@ -254,14 +254,16 @@ When Hidden Temple enters the battleground, take a card from your hand and put i
         <Description>Until end of turn:
 While there are fewer friendly creatures than enemy creatures on the battleground, you can play non-unique creature cards for [2:RESOURCES].</Description>
     </Card>
-    <Card Rarity="Common" Type="Fortune" Name="For_San_030" DisplayName="Pillar of Foresight" Faction="Sanctuary" Cost="1" DestinyLevel="1" ID="294">
-        <Target Zone="Hand" Side="Enemy" Amount="All">
-            <Effect Type="Look"/>
-        </Target>
-        <Target Zone="None" Side="Friendly">
-            <Effect Type="Draw" Value="1"/>
-        </Target>
-        <Description>Look at opponent's hand. Draw a card.</Description>
+    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_030" DisplayName="Pillar of Foresight" Faction="Sanctuary" Cost="1" DestinyLevel="1" ID="294">
+		<Variable Type="CardInHandCount" Side="Enemy"/>
+		<PlayabilityCondition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+		<Target Zone="Hand" Side="Enemy" Amount="1" ForceExecute="True">
+			<Effect Type="ModifyCost" Value="2"/>
+		</Target>
+		<Target Zone="Hand" Side="Enemy" Amount="1" ForceExecute="True">
+			<Effect Type="ModifyCost" Value="2"/>
+		</Target>
+        <Description>Look at opponent's hand and choose a card from it twice. For each time a card is chosen, increase its [RESOURCES] cost by 2.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Fortune" Name="For_San_031" DisplayName="Avalanche" Faction="Sanctuary" Cost="4" DestinyLevel="4" ID="295">
         <Ongoing Duration="UntilYourNextTurn"/>
@@ -425,3 +427,4 @@ Draw a card.</Description>
         <Description>Both players discard cards at random until they have a maximum of 6 cards in hand. Deal damage to each hero equal to the number of cards discarded by their controller.</Description>
     </Card>
 </Cards>
+
