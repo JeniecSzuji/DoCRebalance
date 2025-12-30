@@ -384,7 +384,7 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 		</Trigger>
 		<Description>Whenever an Inferno creature at Sacrificial Pit dies, deal 1 damage to enemy hero.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="Bui_Inf_071" DisplayName="Ur-Traggal's Bastion" Faction="Inferno" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="770" Unique="False">
+	<Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="Bui_Inf_071" DisplayName="Ur-Traggal's Bastion" Faction="Inferno" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="770" Unique="False">
 		<Variable Type="OccupantCount"/>
 		<Target Zone="Hero" Amount="All" Side="Any">
 			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
@@ -394,9 +394,8 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
 			<Effect Type="PlayEffect" PlayEffectType="CannotHeal"/>
 			<Effect Type="PlayEffect" PlayEffectType="CannotGainAttack"/>
-			<Effect Type="PlayEffect" PlayEffectType="CannotGainRetaliate"/>
 		</Target>
-		<Description>While a Demon creatures is at Ur-Traggal's Bastion, heroes and all other creatures cannot be healed and their [ATK] and [RET] cannot exceed their base value.</Description>
+		<Description>While a Demon creatures is at Ur-Traggal's Bastion, heroes and all other creatures cannot be healed and their [ATK] cannot exceed their base value.</Description>
 	</Card>
 	<Card Rarity="Uncommon" Type="Building" Name="Bui_Inf_072" DisplayName="Hall of Agony" Faction="Inferno" Cost="2" MightLevel="2" MagicLevel="0" DestinyLevel="2" ID="771" Unique="False">
 		<Trigger Type="OnTurnEnd" Side="Enemy">
@@ -536,6 +535,7 @@ Creatures at Barricade gain +[1:RET] for each building adjacent to it.</Descript
 		<Description>Whenever you use your hero ability to increase your [MIGHT] level, if there is a creature at Training Ground, increase that level by 1 more and put [1:ATK] counter on the creature at Training Ground.</Description>
 	</Card>
 </Cards>
+
 
 
 
