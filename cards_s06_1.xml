@@ -199,7 +199,7 @@
 		<Target Zone="Battleground" Amount="Self">
 			<Effect Type="ModifyRetaliate" Value="Variable"/>
 		</Target>
-		<Description>Breeder Matron gains +[1:ATK] and +[1:RET] for each friendly battleground position with at least one Breeder.</Description>
+		<Description>Breeder Matron gains +[1:ATK] and +[1:RET] for each battleground position with at least one friendly Breeder.</Description>
 	</Card>
 	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Inf_084" DisplayName="Hatching Breeder" Faction="Inferno" SubType="Magic|Melee|Shooter" Race="Demon|Breeder" Cost="2" MightLevel="2" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="0" HP="3" ID="823">
 		<Trigger Type="OnThisCardDeath">
@@ -465,5 +465,6 @@ At the beginning of each turn, deal 1 damage to all enemy creatures in the same 
 		<Description>Whenever Hasafah, Chosen of the Shadows attacks and destroys a creature, deploy a token that's a copy of that creature under your control after the attack.</Description>
 	</Card>
 </Cards>
+
 
 
