@@ -244,13 +244,11 @@ Whenever opponent plays a card, they discard a card.</Description>
     <!--...............................................................................-->
     <!-- Fortune - Necropolis -->
     <!--...............................................................................-->
-    <Card Rarity="Rare" Type="Fortune" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="3" DestinyLevel="3" ID="140">
-        <Target Zone="Graveyard" Side="Friendly" Amount="All">
-            <CardType Include="Unit"/>
-            <CardFilter IncludeStatus="InHolderSinceYourLastTurn"/>
-            <Effect Type="MoveCardTo" Destination="Hand"/>
-        </Target>
-        <Description>Take all creature cards put into your graveyard since the end of your last turn and put them into your hand.</Description>
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="4" MightLevel="3" DestinyLevel="3" ID="140">
+		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
+			<Effect Type="ModifyAbility" Ability="SurviveOnce"/>
+		</Target>
+        <Description>While a creature at Altar of Eternal Servitude has 2 remaining health or more, when it dies, set its remaining health to 1 instead.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Fortune" Name="For_Nec_006" DisplayName="Shantiri Ruins" Faction="Necropolis" Cost="1" DestinyLevel="1" ID="141">
         <Target Zone="Hand" Side="Friendly" Amount="1">
@@ -659,3 +657,4 @@ Increase your [MIGHT] level by 3.</Description>
         <Description>Choose one: Destroy target friendly creature and target enemy creature OR Destroy target friendly creature. Take target creature card from your graveyard and deploy it for free.</Description>
     </Card>
 </Cards>
+
