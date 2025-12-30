@@ -689,12 +689,12 @@
 		</Target>			
     </Trigger>
 	<Trigger Type="OnTurnBegin" Side="Enemy">
-		<Target Zone="Hero" Amount="All" Side="Enemy" Persisten="True" ForceExecute="True">
+		<Target Zone="Hero" Amount="All" Side="Enemy" ForceExecute="True">
 			<Effect Type="ModifyAbilityValue" Ability="SihamHealMe" Value="1="/>
 		</Target>
     </Trigger>
 	<Trigger Type="OnSupplyPhaseEnd" Side="Enemy">
-		<Target Zone="Hero" Amount="All" Side="Enemy" Persisten="True" ForceExecute="True">
+		<Target Zone="Hero" Amount="All" Side="Enemy" ForceExecute="True">
 			<Effect Type="ModifyAbilityValue" Ability="SihamHealMe" Value="0="/>
 		</Target>
     </Trigger>
@@ -703,6 +703,7 @@
 	<TemplateEffect Name="HonourableChallengeTL"/>
 
 </Cards>
+
 
 
 
