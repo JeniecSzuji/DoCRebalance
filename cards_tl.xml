@@ -702,7 +702,18 @@
 	
 	<TemplateEffect Name="HonourableChallengeTL"/>
 
+    <TemplateEffect Name="BastionBurst">
+        <Trigger Type="OnDamaged">
+            <Target Zone="BattlegroundColumn" CardType="Unit" Amount="Self" Side="Enemy">
+                <Effect Type="Damage" Value="FromTrigger"/>
+            </Target>
+        </Trigger>
+    </TemplateEffect>
+	
+	<TemplateEffect Name="BastionTL"/>
+	
 </Cards>
+
 
 
 
