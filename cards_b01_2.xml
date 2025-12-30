@@ -244,7 +244,7 @@ Whenever opponent plays a card, they discard a card.</Description>
     <!--...............................................................................-->
     <!-- Fortune - Necropolis -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="4" MightLevel="3" DestinyLevel="3" ID="140">
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="4" MightLevel="2" DestinyLevel="2" ID="140">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
 			<Effect Type="ModifyAbility" Ability="SurviveOnce"/>
 		</Target>
@@ -657,4 +657,5 @@ Increase your [MIGHT] level by 3.</Description>
         <Description>Choose one: Destroy target friendly creature and target enemy creature OR Destroy target friendly creature. Take target creature card from your graveyard and deploy it for free.</Description>
     </Card>
 </Cards>
+
 
