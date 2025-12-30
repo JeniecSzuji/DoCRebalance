@@ -254,7 +254,7 @@ When Hidden Temple enters the battleground, take a card from your hand and put i
         <Description>Until end of turn:
 While there are fewer friendly creatures than enemy creatures on the battleground, you can play non-unique creature cards for [2:RESOURCES].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_030" DisplayName="Pillar of Foresight" Faction="Sanctuary" Cost="1" DestinyLevel="1" ID="294">
+    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_030" DisplayName="Pillar of Foresight" Faction="Sanctuary" Cost="0" DestinyLevel="3" ID="294">
 		<Variable Type="CardInHandCount" Side="Enemy"/>
 		<PlayabilityCondition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
 		<Target Zone="Hand" Side="Enemy" Amount="1" ForceExecute="True">
@@ -427,4 +427,5 @@ Draw a card.</Description>
         <Description>Both players discard cards at random until they have a maximum of 6 cards in hand. Deal damage to each hero equal to the number of cards discarded by their controller.</Description>
     </Card>
 </Cards>
+
 
