@@ -278,23 +278,23 @@ Ambush: Deal 1 damage to ambushed creature.
         <Description>Ambush: Deal 1 damage to ambushed creature.
 (Ambush abilities trigger when an enemy creature is deployed in the same row as this creature.)</Description>
     </Card>
-    <Card Rarity="Rare" Type="Unit" Name="Cre_Neu_062" DisplayName="Soul Consuming Wraith" Faction="Neutral" School="Prime" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="614">
+    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Neu_062" DisplayName="Soul Consuming Wraith" Faction="Neutral" School="Prime" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="614">
         <Ability Type="ImmuneToRetaliate" />
         <Trigger Type="OnTurnBegin" Side="Friendly">
-            <Target Zone="Graveyard" Amount="1" Side="Enemy" Cancelable="False">
+            <Target Zone="Graveyard" Amount="1" Side="Enemy" Random="True">
                 <Effect Type="Banish" />
             </Target>
         </Trigger>
         <Trigger Type="OnTurnBegin" Side="Friendly">
-            <Target Zone="Battleground" CardType="Unit" Amount="Self">
+            <Target Zone="Hero" Amount="All" Side="Friendly">
                 <Variable Type="TargetCount" MustBeTargetable="True">
                     <Target Zone="Graveyard" Amount="All" Side="Enemy" />
                 </Variable>
                 <Condition Operator="LesserThan" ValueA="Variable" ValueB="1" />
-                <Effect Type="Damage" Value="1" />
+                <Effect Type="Heal" Value="1" />
             </Target>
         </Trigger>
-        <Description>At the begining of your turn, banish target card from opponent's graveyard. If you can't, deal 1 damage to Soul Consuming Wraith.</Description>
+        <Description>At the begining of your turn, banish a random card from enemy graveyard. If you can't, heal 1 damage from your Hero.</Description>
     </Card>
     <Card Rarity="Rare" Type="Unit" Name="Cre_Neu_063" DisplayName="Greater Water Elemental" Faction="Neutral" School="Water" SubType="Magic|Melee|Shooter" Race="Spirit" Cost="5" MightLevel="3" MagicLevel="3" Attack="3" Retaliate="2" HP="6" ID="684">
         <Ability Type="ImmuneToRetaliate" />
@@ -305,4 +305,5 @@ Ambush: Deal 1 damage to ambushed creature.
         <Ability Type="PreemptiveStrike" />
     </Card>
 </Cards>
+
 
