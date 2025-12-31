@@ -273,12 +273,12 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
             <Target Zone="Graveyard" Side="Friendly" Amount="All" />
         </Variable>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
-			<Target Zone="Graveyard" Amount="1" Side="Enemy">
+			<Target Zone="Graveyard" Amount="1" Side="Enemy" Random="True">
 				<Effect Type="Banish"/>
 			</Target>
 		</Trigger>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
-			<Target Zone="Hero" Amount="All" Side="Friendly">
+			<Target Zone="Hero" Amount="All" Side="Enemy">
 				<Condition Operator="LesserThan" ValueA="Variable" ValueB="1"/>
 				<Effect Type="Damage" Value="1"/>
 			</Target>
@@ -376,3 +376,4 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
         <Ability Type="EnemySpellWard"/>
     </Card>
 </Cards>
+
