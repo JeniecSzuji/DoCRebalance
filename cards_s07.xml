@@ -84,8 +84,8 @@
 				</Target>
 			</Subgroup>
 		</Target>
-		<Description>[0:RESOURCES]: Until end of turn, Fire creatures cost [1:RESOURCES] less to play.
-[0:RESOURCES]: Until end of turn, Dark creatures cost [1:RESOURCES] less to play.</Description>
+		<Description>[0:RESOURCES]: Until end of turn, Dark creatures cost [1:RESOURCES] less to play.
+			[0:RESOURCES]: Until end of turn, Fire creatures cost [1:RESOURCES] less to play.</Description>
 	</Card>
 	<!--...............................................................................-->
 	<!-- Heroes Necropolis -->
@@ -155,3 +155,4 @@
 		<Description>[4:RESOURCES]: Target enemy creature gains Berserk until your next turn.</Description>
 	</Card>
 </Cards>
+
