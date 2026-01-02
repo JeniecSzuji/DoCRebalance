@@ -164,7 +164,7 @@ While you control more creatures than your opponent, target creature is immobili
                 <Condition Operator="GreaterThan" ValueA="Variable" ValueB="99"/>
         	</Effect>
         </Target>
-        <Description>Put target friendly non-token creature into graveyard, pay [1:RESOURCES] and heal 3 damage from your hero. You can repeat this as many times as you want, unless you have enough [RESOURCES] to pay Consume Minions cost.</Description>
+        <Description>Put target friendly non-token creature into graveyard, pay [1:RESOURCES] and heal 3 damage from your hero. You can repeat this as many times as you want, as long as you have enough [RESOURCES] to pay Consume Minions cost.</Description>
     </Card>
     <Card Rarity="Common" Type="Fortune" Name="For_Nec_041" DisplayName="Rite of Necromantic Restoration" Faction="Necropolis" Cost="2" DestinyLevel="3" ID="401">
         <Variable Type="TargetCount" ValueModifier="3mi">
@@ -438,5 +438,6 @@ Whenever a friendly creature dies, increase your [MIGHT] level by 1.</Descriptio
 <Description>Decrease opponent's [MIGHT], [MAGIC] or [DESTINY] level by one. Draw a card.</Description>
     </Card>
 </Cards>
+
 
 
