@@ -9,7 +9,7 @@
 	<!--....................................................................-->
 	<!-- Spells - Air -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Air_070" DisplayName="Lightning Burst" School="Air" Cost="4" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="779" Unique="False">
+	<Card Rarity="Uncommon" Type="Spell" Name="Spe_Air_070" DisplayName="Lightning Burst" School="Air" Cost="4" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="779" Unique="False">
 		<Target Zone="BattlegroundPosition" Amount="1" CardType="Unit" BattlegroundPositionState="NoUnit" Shape="AdjacentOnly">
 <Effect Type="Damage" Value="2"/>
 </Target>
@@ -18,7 +18,7 @@
 </Target>
 <Description>Choose 2 target battleground positions with no creature. For each of those positions, deal 2 damage to all creatures adjacent to that position.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Air_071" DisplayName="Lightning Curse" School="Air" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="780" Unique="False">
+	<Card Rarity="Rare" Type="Spell" Name="Spe_Air_071" DisplayName="Lightning Curse" School="Air" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="780" Unique="False">
 		<Ongoing Duration="Permanent"/>
 		<Effect ModifyAbility="Immobilized"/>
 		<Target Zone="Battleground" Amount="1" CardType="Unit"/>
@@ -42,7 +42,7 @@ Enchanted creature gains Swift and Charge.</Description>
 	<!--....................................................................-->
 	<!-- Spells - Dark -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Dar_070" DisplayName="Agonizing Purge" School="Dark" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="782" Unique="False">
+	<Card Rarity="Common" Type="Spell" Name="Spe_Dar_070" DisplayName="Agonizing Purge" School="Dark" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="782" Unique="False">
 		<Target Zone="Battleground" Amount="1" CardType="Unit" Side="Any">
 			<Variable Type="CardChildrenCount" UseCurrentTarget="True" ValueModifier="5x"/>
 			<Effect Type="Damage" Value="Variable"/>
@@ -89,7 +89,7 @@ When enchanted creature dies, return it to its owner's hand instead.</Descriptio
 		<Description>Permanent:
 Friendly Earth creatures on the front line gain Towering and Anchored.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Ear_072" DisplayName="Fissure" School="Earth" Cost="6" MightLevel="0" MagicLevel="6" DestinyLevel="0" ID="787" Unique="False">
+	<Card Rarity="Rare" Type="Spell" Name="Spe_Ear_072" DisplayName="Fissure" School="Earth" Cost="6" MightLevel="0" MagicLevel="6" DestinyLevel="0" ID="787" Unique="False">
 		<Target Zone="BattlegroundLine" Amount="1"/>
 		<Target Zone="None" Amount="Same">
 		<CardFilter IncludeCardType="Unit"/>
@@ -109,7 +109,7 @@ Destroy all creatures at a building on the target line then destroy all building
 	<!--....................................................................-->
 	<!-- Spells - Fire -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_070" DisplayName="Magma Burst" School="Fire" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="788" Unique="False">
+	<Card Rarity="Common" Type="Spell" Name="Spe_Fir_070" DisplayName="Magma Burst" School="Fire" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="788" Unique="False">
         	<Target Zone="Battleground" CardType="Unit" Amount="1" Shape="AdjacentOnly">
             		<Effect Type="Damage" Value="2" />
         	</Target>
@@ -128,7 +128,7 @@ Destroy all creatures at a building on the target line then destroy all building
 		<Description>Until your next turn:
 All creatures gain +[1:ATK] and +[1:RET].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Fir_072" DisplayName="Arkath's Wrath" School="Fire" Cost="5" MightLevel="0" MagicLevel="5" DestinyLevel="0" ID="790" Unique="False">
+	<Card Rarity="Rare" Type="Spell" Name="Spe_Fir_072" DisplayName="Arkath's Wrath" School="Fire" Cost="5" MightLevel="0" MagicLevel="5" DestinyLevel="0" ID="790" Unique="False">
 		<Target Zone="Battleground" CardType="Unit" Amount="All">
 			<Effect Type="Damage" Value="3" DamageFlags="Spell|Fire|Magic|Enforced|Disintegrate"/>
 			<Effect Type="Damage" Value="2" DamageFlags="Spell|Fire|Magic|Disintegrate"/>
@@ -138,7 +138,7 @@ All creatures gain +[1:ATK] and +[1:RET].</Description>
 	<!--....................................................................-->
 	<!-- Spells - Light -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Lig_070" DisplayName="Cleanse" School="Light" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="791" Unique="False">
+	<Card Rarity="Common" Type="Spell" Name="Spe_Lig_070" DisplayName="Cleanse" School="Light" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="791" Unique="False">
 		<Target Zone="Battleground" Amount="1" CardType="Unit" Side="Friendly">
 			<Variable Type="CardChildrenCount" UseCurrentTarget="True" ValueModifier="2x"/>
 			<Variable2 Type="CardChildrenCount" UseCurrentTarget="True"/>
@@ -150,7 +150,7 @@ All creatures gain +[1:ATK] and +[1:RET].</Description>
 		</Target>
 		<Description>Destroy all ongoing spells and fortunes on target friendly creature. Heal 2 damage from that creature for each card destroyed this way and put +[1:ATK] counter on it for each card destroyed this way.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Lig_071" DisplayName="Avenging Shield" School="Light" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="792" Unique="False">
+	<Card Rarity="Uncommon" Type="Spell" Name="Spe_Lig_071" DisplayName="Avenging Shield" School="Light" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="792" Unique="False">
 		<Ongoing Duration="Permanent"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly">
 			<Effect Type="ModifyAbility" Ability="AbsorbHeroDamage" Value="1"/>
@@ -209,7 +209,7 @@ Magic damage from friendly sources cannot be prevented or reduced.</Description>
 	<!--....................................................................-->
 	<!-- Spells - Water -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Wat_070" DisplayName="Deadly Hail" School="Water" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="797" Unique="False">
+	<Card Rarity="Common" Type="Spell" Name="Spe_Wat_070" DisplayName="Deadly Hail" School="Water" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="797" Unique="False">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Trigger Type="OnPostAttack">
 			<Target Zone="Battleground" CardType="Unit" Amount="FromTrigger">
@@ -224,7 +224,7 @@ Magic damage from friendly sources cannot be prevented or reduced.</Description>
 		<Description>Until your next turn:
 Whenever a creature attacks or moves, deal 2 damage to it.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Wat_071" DisplayName="Time Flow" School="Water" Cost="2" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="798" Unique="False">
+	<Card Rarity="Uncommon" Type="Spell" Name="Spe_Wat_071" DisplayName="Time Flow" School="Water" Cost="2" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="798" Unique="False">
 		<Ongoing Duration="Permanent"/>
     <Ability Type="Endurable"/>
     <Target Zone="Battleground" CardType="Unit" Amount="1">
@@ -251,7 +251,7 @@ Other friendly ongoing Water spells cannot be destroyed by enemy effects.</Descr
 	<!-- //	##      ##  #   ##      #  ##    ##        ## -->
 	<!-- //	#####     ##    #####   #   #    ##     ##### -->
 	<!--....................................................................-->
-	<Card NotLocalized="True" Rarity="Common" Type="Event" Name="Eve_Neu_070" DisplayName="Month of the Spider Queen" Faction="Neutral" ID="800" Unique="False">
+	<Card Rarity="Common" Type="Event" Name="Eve_Neu_070" DisplayName="Month of the Spider Queen" Faction="Neutral" ID="800" Unique="False">
     <Ongoing Duration="Permanent" />
     <Target Zone="Battleground" Amount="All" />
     <!-- Hack to add a permanent feedback -->

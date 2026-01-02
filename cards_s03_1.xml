@@ -126,7 +126,7 @@ While there is a friendly wizard on battle ground, [THIS] gain Swift. </Descript
         <Ability Type="Towering" />
         <Ability Type="Shockwave" Value="2" />
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Aca_019" DisplayName="Djinn Catalyst" Faction="Academy" School="Prime" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="2" MightLevel="1" MagicLevel="2" Attack="1" Retaliate="1" HP="4" ID="474">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Aca_019" DisplayName="Djinn Catalyst" Faction="Academy" School="Prime" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="2" MightLevel="1" MagicLevel="2" Attack="1" Retaliate="1" HP="4" ID="474">
         <Variable Type="CardChildrenCount" IncludeSchool="Fire" />
         <Variable2 Type="CardChildrenCount" IncludeSchool="Air" />
         <Variable3 Type="CardChildrenCount" IncludeSchool="Water" />
@@ -181,7 +181,7 @@ While there is a friendly wizard on battle ground, [THIS] gain Swift. </Descript
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_Aca_020" DisplayName="Obsidian Gargoyle" Faction="Academy" School="Prime" SubType="Magic|Flyer" Race="Gargoyle|Construct" Cost="4" MightLevel="3" MagicLevel="4" Attack="2" Retaliate="2" HP="6" ID="475">
         <Ability Type="MagicGuard" Value="1" />
     </Card>
-    <Card NotLocalized="True" Rarity="Uncommon" Type="Unit" Name="Cre_Aca_021" DisplayName="Nethermancer" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Human|Wizard" Cost="2" MightLevel="2" MagicLevel="1" DestinyLevel="1" Attack="1" Retaliate="0" HP="4" ID="476">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Aca_021" DisplayName="Nethermancer" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Human|Wizard" Cost="2" MightLevel="2" MagicLevel="1" DestinyLevel="1" Attack="1" Retaliate="0" HP="4" ID="476">
         <Ability Type="ImmuneToRetaliate" />
         <Trigger Type="OnThisDamageHero" Side="Enemy">
             <Target Zone="Library" Side="Enemy" Amount="3" AutoTakeFirstInputs="True">
@@ -214,7 +214,7 @@ While there is a friendly wizard on battle ground, [THIS] gain Swift. </Descript
         </Trigger>
         <Description>Whenever Void-Tainted Djinn destroys a creature, put the top 5 cards of opponent's library into their graveyard.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Aca_024" DisplayName="Arcane Archer" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Human|Archer|Wizard" Cost="4" MightLevel="3" MagicLevel="2" Attack="3" Retaliate="2" HP="6" ID="479">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Aca_024" DisplayName="Arcane Archer" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Human|Archer|Wizard" Cost="4" MightLevel="3" MagicLevel="2" Attack="3" Retaliate="2" HP="6" ID="479">
         <Ability Type="ImmuneToRetaliate"/>
 	<Trigger Type="OnThisPostDeadlyCombat">
 		<Target Zone="Hero" Amount="All" Side="Friendly" ForceExecute="True" Persistent="True">
@@ -279,7 +279,7 @@ While there is a friendly wizard on battle ground, [THIS] gain Swift. </Descript
         </Trigger>
         <Description>The first time a card is put into opponent's graveyard from their library during a turn, draw a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Aca_031" DisplayName="Void Shade" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Void|Spirit" Cost="3" MightLevel="2" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="0" HP="4" ID="486">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Aca_031" DisplayName="Void Shade" Faction="Academy" School="Prime" SubType="Magic|Shooter" Race="Void|Spirit" Cost="3" MightLevel="2" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="0" HP="4" ID="486">
         <Ability Type="ImmuneToRetaliate" />
         <Ability Type="Anchored" />
         <Trigger Type="OnThisCardDeploy">
@@ -478,7 +478,7 @@ While Crusader Chaplain has no damage, it cannot be targeted.</Description>
         </Target>
         <Description>While Demon Thrall has no adjacent friendly creature, it gains Cannot Attack.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Inf_052" DisplayName="Frenzied Maniac" Faction="Inferno" SubType="Melee" Race="Demon|Maniac" Cost="2" MightLevel="3" Attack="3" Retaliate="3" HP="3" ID="500">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Inf_052" DisplayName="Frenzied Maniac" Faction="Inferno" SubType="Melee" Race="Demon|Maniac" Cost="2" MightLevel="3" Attack="3" Retaliate="3" HP="3" ID="500">
         <Trigger Type="OnTurnEnd" Side="Friendly">
             <Target Zone="Hero" Amount="All" Side="Friendly">
                 <Variable Type="UnitAttackCount" />
@@ -501,7 +501,7 @@ While Crusader Chaplain has no damage, it cannot be targeted.</Description>
         </Target>
         <Description>Whenever a player plays a card or uses an ability targeting a single creature, it must target Imp Jester if possible.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Inf_054" DisplayName="Abyssal Worm" Faction="Inferno" SubType="Melee" Race="Demon|Worm" Cost="6" MightLevel="6" Attack="8" Retaliate="4" HP="8" ID="502">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Inf_054" DisplayName="Abyssal Worm" Faction="Inferno" SubType="Melee" Race="Demon|Worm" Cost="6" MightLevel="6" Attack="8" Retaliate="4" HP="8" ID="502">
         <Ability Type="AttackAnywhere" />
         <Ability Type="KillOtherOnly" />
         <Description>Abyssal Worm can only be deployed on a position already occupied by another creature.
@@ -525,7 +525,7 @@ When Abyssal Worm enters the battleground, choose a position occupied by a frien
     <!--...............................................................................-->
     <!-- Creatures - Necropolis -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Nec_050" DisplayName="Al-Betyl Ghoul" Faction="Necropolis" SubType="Melee" Race="Ghoul" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="504">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Nec_050" DisplayName="Al-Betyl Ghoul" Faction="Necropolis" SubType="Melee" Race="Ghoul" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="504">
 		<Ability Type="Infect" Value="1" />
 		<Trigger Type="OnTurnEnd" Side="Friendly">
 			<Target Zone="Graveyard" CardType="Unit" Amount="1" Side="Enemy" Random="True">
@@ -592,7 +592,7 @@ Putrid Ghoul's [ATK] is equal to the number of poison counters on friendly creat
         </Trigger>
         <Description>At the beginning of your supply phase, if Sahaar Mummy is in your graveyard and there are 5 cards or less in your graveyard, take Sahaar Mummy and put it into your hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Nec_054" DisplayName="Rotting Mummy" Faction="Necropolis" SubType="Melee" Race="Zombie" Cost="2" MightLevel="2" Attack="1" Retaliate="0" HP="4" ID="508" School="Earth">	
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Nec_054" DisplayName="Rotting Mummy" Faction="Necropolis" SubType="Melee" Race="Zombie" Cost="2" MightLevel="2" Attack="1" Retaliate="0" HP="4" ID="508" School="Earth">	
 		<Ability Type="AbsorbPoisonDamageHeal" />
 		<Variable Type="LastAliveCounterCount" CounterType="Poison" />
 		<Trigger Type="OnTurnEnd" Side="Friendly">
@@ -754,7 +754,7 @@ When Rotting Mummy dies with poison counters on it, put the same number of poiso
     <!--...............................................................................-->
     <!-- Creatures - Neutral -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_050" DisplayName="Burning Sand Elemental" Faction="Neutral" School="Fire" SubType="Magic|Melee" Race="Spirit" Cost="4" MightLevel="2" MagicLevel="3" Attack="2" Retaliate="0" HP="4" ID="522">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_050" DisplayName="Burning Sand Elemental" Faction="Neutral" School="Fire" SubType="Magic|Melee" Race="Spirit" Cost="4" MightLevel="2" MagicLevel="3" Attack="2" Retaliate="0" HP="4" ID="522">
         <Ability Type="FireBurst" Value="3" />
         <Ability Type="Ambush" />
         <Trigger Type="OnAmbush" Side="Enemy">
@@ -774,7 +774,7 @@ When Rotting Mummy dies with poison counters on it, put the same number of poiso
 Ambush: Deal 2 Fire damage to ambushed creature.
 (Ambush abilities trigger when an enemy creature is deployed in the same row as this creature.)</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_051" DisplayName="Sahaar Bedouin" Faction="Neutral" SubType="Melee" Race="Human" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" ID="523" >
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_051" DisplayName="Sahaar Bedouin" Faction="Neutral" SubType="Melee" Race="Human" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" ID="523" >
 	<Trigger Type="OnThisCardDeploy">
 		<Target Zone="Library" Side="Friendly">
 			<Effect Type="Shuffle" CardHolder="Library"/>

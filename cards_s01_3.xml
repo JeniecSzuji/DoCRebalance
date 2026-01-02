@@ -43,7 +43,7 @@ Enemy melee and flyer creatures gain Cannot Attack.</Description>
         </Target>
         <Description>Put 1 crippling counter on two target creatures.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Dar_031" DisplayName="Despair" School="Dark" Cost="2" MagicLevel="2" ID="311">
+    <Card Rarity="Uncommon" Type="Spell" Name="Spe_Dar_031" DisplayName="Despair" School="Dark" Cost="2" MagicLevel="2" ID="311">
 	<Ongoing Duration="UntilYourNextTurn"/>
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any">
             <CardFilter IncludeStatus="NoFriendlyAdjacent"/>
@@ -67,7 +67,7 @@ When Despair enters the battleground, deal 2 damage to all enemy creatures with 
     <!--....................................................................-->
     <!-- Spells - Earth -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Ear_030" DisplayName="Poisonous Bulb" School="Earth" Cost="4" MagicLevel="3" ID="313">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Ear_030" DisplayName="Poisonous Bulb" School="Earth" Cost="4" MagicLevel="3" ID="313">
       <Target Zone="Battleground" CardType="Unit" Amount="1" Shape="SelfAndAdjacent">
         <Effect Type="AddCounter" CounterType="Poison" Value="2"/>
       </Target>
@@ -90,7 +90,7 @@ All creatures lose Quick Attack.</Description>
     <!--....................................................................-->
     <!-- Spells - Fire -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_030" DisplayName="Combustion" School="Fire" Cost="2" MagicLevel="2" ID="316">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Fir_030" DisplayName="Combustion" School="Fire" Cost="2" MagicLevel="2" ID="316">
         <Ongoing Duration="Permanent"/>
         <Ability Type="Endurable"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1"/>
@@ -126,7 +126,7 @@ All friendly creatures gain +[2:ATK] and +[2:RET].</Description>
     <!--....................................................................-->
     <!-- Spells - Light -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Lig_030" DisplayName="Guardian Angel" School="Light" Cost="2" MagicLevel="2" ID="319">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Lig_030" DisplayName="Guardian Angel" School="Light" Cost="2" MagicLevel="2" ID="319">
         <Ongoing Duration="Permanent"/>
 		 <Target Zone="BattlegroundColumn" Amount="1"/>
 			<Trigger Type="OnDeployThisRow" Side="Friendly">
@@ -171,7 +171,7 @@ When Purity enters the battleground, remove all counters from all creatures.</De
     <!--....................................................................-->
     <!-- Spells - Prime -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Pri_030" DisplayName="Negate Magic" School="Prime" Cost="1" MagicLevel="2" ID="322">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Pri_030" DisplayName="Negate Magic" School="Prime" Cost="1" MagicLevel="2" ID="322">
         <Target Zone="Battleground" CardType="Unit" Amount="1">
             <Effect Type="RemoveCounter" CounterType="Any" Value="Infinite"/>
             <Effect Type="Cleanse"/>
@@ -194,13 +194,13 @@ When Purity enters the battleground, remove all counters from all creatures.</De
     <!--....................................................................-->
     <!-- Spells - Water -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Wat_030" DisplayName="Water Wall" School="Water" Cost="2" MagicLevel="2" ID="325">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Wat_030" DisplayName="Water Wall" School="Water" Cost="2" MagicLevel="2" ID="325">
         <Target Zone="BattlegroundPosition" Shape="Self" CardType="Unit" Amount="1">
             <Effect Type="Damage" Value="3" />
         </Target>
         <Description>Choose target battleground position. Deal 3 damage to any creature at targeted position.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Wat_031" DisplayName="Monsoon" School="Water" Cost="2" MagicLevel="3" ID="326">
+    <Card Rarity="Uncommon" Type="Spell" Name="Spe_Wat_031" DisplayName="Monsoon" School="Water" Cost="2" MagicLevel="3" ID="326">
         <Ongoing Duration="Permanent"/>
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any">
 			<CardFilter IncludeSchool="Water"/>
@@ -233,7 +233,7 @@ All Water creatures gain Regenerate 1.</Description>
     <!-- //	##      ##  #   ##      #  ##    ##        ## -->
     <!-- //	#####     ##    #####   #   #    ##     ##### -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Event" Name="Eve_Neu_020" DisplayName="Day of the Fallen Wolf" Cost="1" Faction="Neutral" ID="328">
+    <Card Rarity="Common" Type="Event" Name="Eve_Neu_020" DisplayName="Day of the Fallen Wolf" Cost="1" Faction="Neutral" ID="328">
         <Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="None" Side="Friendly" NeedActivation="True">
             <Trigger Type="OnDeploy">
@@ -287,7 +287,7 @@ All Water creatures gain Regenerate 1.</Description>
     </Trigger>
     <Description>Ongoing: Whenever you deploy a creature with a base cost of [4:RESOURCES] or less, pay [1:RESOURCES]. If you can't, deal 1 damage to your hero.</Description>
   </Card>
-  <Card UseXmlDescription="True" Rarity="Rare" Type="Event" Name="Eve_Neu_024" DisplayName="Path of the Ancestors" Cost="1" Faction="Neutral" ID="332">
+  <Card Rarity="Rare" Type="Event" Name="Eve_Neu_024" DisplayName="Path of the Ancestors" Cost="1" Faction="Neutral" ID="332">
         <Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="None" Side="Friendly" NeedActivation="True">
             <Trigger Type="OnDeploy">

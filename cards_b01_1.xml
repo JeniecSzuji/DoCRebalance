@@ -29,7 +29,7 @@
         <Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Stackable"/>
     </Card>
-    <Card NotLocalized="True" Rarity="Common" Type="Unit" Name="Cre_Hav_017" DisplayName="Devoted Sister" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Cost="2" MightLevel="1" MagicLevel="1" Attack="1" Retaliate="1" HP="5" ID="42">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Hav_017" DisplayName="Devoted Sister" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Cost="2" MightLevel="1" MagicLevel="1" Attack="1" Retaliate="1" HP="5" ID="42">
         <Ability Type="ImmuneToRetaliate"/>
       <Target Zone="Hero" Amount="All" Side="Friendly">
         <Effect Type="GlobalEffect" GlobalEffectType="ModifyCost" Value="-1">
@@ -51,7 +51,7 @@
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_Hav_018" DisplayName="Holy Praetorian" Faction="Haven" SubType="Melee" Race="Human|Soldier" Cost="2" MightLevel="2" Attack="1" Retaliate="2" HP="3" ID="47">
         <Ability Type="MeleeGuard" Value="2" />
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Hav_014" DisplayName="Expert Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="2" MightLevel="2" Attack="2" Retaliate="0" HP="3" ID="48">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Hav_014" DisplayName="Expert Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="2" MightLevel="2" Attack="2" Retaliate="0" HP="3" ID="48">
         <Ability Type="ImmuneToRetaliate"/>
         <Trigger Type="OnThisPreAttackUnit">
 			<CardFilter IncludeFrontLine="True"/>
@@ -61,7 +61,7 @@
         </Trigger>
 	<Description>Whenever Expert Marksman attacks a creature on a front line, deal 1 damage to a creature on a back line of the same row.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Hav_010" DisplayName="Vestal" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Cost="4" MightLevel="3" MagicLevel="2" Attack="1" Retaliate="1" HP="7" ID="49">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Hav_010" DisplayName="Vestal" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Cost="4" MightLevel="3" MagicLevel="2" Attack="1" Retaliate="1" HP="7" ID="49">
         <Ability Type="ImmuneToRetaliate" />
         <Trigger Type="OnCardPlay" Side="Friendly" >
 		<CardFilter IncludeCardType="Spell" IncludeSchool="Light"/>
@@ -71,7 +71,7 @@
 	</Trigger>
 	<Description>Whenever you play Light spell, heal 2 damage from all friendly creatures.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Hav_008" DisplayName="Imperial Griffin" Faction="Haven" SubType="Flyer" Race="Griffin" Cost="4" MightLevel="4" Attack="2" Retaliate="2" HP="6" ID="50">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Hav_008" DisplayName="Imperial Griffin" Faction="Haven" SubType="Flyer" Race="Griffin" Cost="4" MightLevel="4" Attack="2" Retaliate="2" HP="6" ID="50">
 	    <Ability Type="ImmuneToRetaliate"/>
 	    <Ability Type="BattleDive" Value="0"/>
 	<Description>At the end of turn, if Imperial Griffin did not attack, it gains +[2:ATK] and Attack Anywhere until it attacks.</Description>
@@ -119,7 +119,7 @@
         <Ability Type="AbsorbHeroDamage" Value="infinite"/>
         <Description>Redirect all damage dealt to your hero to Imperial Guard instead.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Type="Unit" Name="Cre_Hav_002" DisplayName="Eleonore, the Voice of Harmony" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Unique="True" Cost="5" MightLevel="3" MagicLevel="3" Attack="2" Retaliate="0" HP="5" ID="57">
+    <Card Rarity="Epic" Type="Unit" Name="Cre_Hav_002" DisplayName="Eleonore, the Voice of Harmony" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Priest" Unique="True" Cost="5" MightLevel="3" MagicLevel="3" Attack="2" Retaliate="0" HP="5" ID="57">
       <Ability Type="ImmuneToRetaliate"/>
       <Trigger Type="OnTurnEnd" Side="Friendly">
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
@@ -152,7 +152,7 @@
         <Ability Type="AreaBlast" Value="2"/>
     </Card>
     <Card Rarity="Common" Type="Unit" Name="Cre_Inf_012" DisplayName="Juggernaut" Faction="Inferno" SubType="Melee" Race="Demon|Juggernaut" Cost="3" MightLevel="3" Attack="4" Retaliate="3" HP="4" ID="27"/>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Inf_015" DisplayName="Pit Fiend" Faction="Inferno" SubType="Melee" Race="Demon" Cost="4" MightLevel="4" Attack="3" Retaliate="2" HP="5" ID="28" School="Dark">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Inf_015" DisplayName="Pit Fiend" Faction="Inferno" SubType="Melee" Race="Demon" Cost="4" MightLevel="4" Attack="3" Retaliate="2" HP="5" ID="28" School="Dark">
         <Ability Type="AttackAnywhere"/>
 		<Trigger Type="OnThisDamageUnit" Side="Enemy">
 			<Target Zone="Battleground" CardType="Unit" Amount="FromTrigger" ForceExecute="True" Persistent="True">
@@ -197,7 +197,7 @@
     <Card Rarity="Rare" Type="Unit" Name="Cre_Inf_007" DisplayName="Abyssal Lord" Faction="Inferno" SubType="Melee" Race="Demon" Cost="7" MightLevel="6" Attack="5" Retaliate="4" HP="9" ID="37" School="Dark">
         <Ability Type="AttackAnywhere"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Type="Unit" Name="Cre_Inf_001" DisplayName="Chaos Imp" Faction="Inferno" SubType="Shooter" Race="Demon|Imp" Cost="4" MightLevel="1" DestinyLevel="3" Attack="1" Retaliate="0" HP="1" ID="38">
+    <Card Rarity="Epic" Type="Unit" Name="Cre_Inf_001" DisplayName="Chaos Imp" Faction="Inferno" SubType="Shooter" Race="Demon|Imp" Cost="4" MightLevel="1" DestinyLevel="3" Attack="1" Retaliate="0" HP="1" ID="38">
         <Ability Type="ImmuneToRetaliate"/>
         <Description>Chaos Imp cannot be targeted.
 Whenever opponent plays a card, they discard a card.</Description>
@@ -239,7 +239,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="LifeDrain" Value="2"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Nec_005" DisplayName="Fate Spinner" Faction="Necropolis" SubType="Melee|Shooter" Race="Namtaru" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" School="Prime" ID="64">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Nec_005" DisplayName="Fate Spinner" Faction="Necropolis" SubType="Melee|Shooter" Race="Namtaru" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" School="Prime" ID="64">
         <Ability Type="Infect" Value="1"/>
 		<Ability Type="Ambush"/>
         <Trigger Type="OnAmbush" Side="Enemy">
@@ -266,7 +266,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="LifeDrain" Value="2"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Nec_011" DisplayName="Putrid Lamasu" Faction="Necropolis" SubType="Flyer" Race="Lamasu" Cost="5" MightLevel="5" Attack="3" Retaliate="2" HP="8" ID="69">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Nec_011" DisplayName="Putrid Lamasu" Faction="Necropolis" SubType="Flyer" Race="Lamasu" Cost="5" MightLevel="5" Attack="3" Retaliate="2" HP="8" ID="69">
         <Ability Type="Infect" Value="1"/>
         <Ability Type="SpellResist"/>
 	<Trigger Type="OnThisCardDeath">
@@ -285,7 +285,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         </Trigger>
         <Description>At the beginning of your turn and when Putrid Lamasu dies, put 1 poison counter on all other creatures in the same row as Putrid Lamasu.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Nec_004" DisplayName="Vampire Lord" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="6" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="70">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Nec_004" DisplayName="Vampire Lord" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="6" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="70">
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="LifeDrain" Value="3"/>
         <Ability Type="SurviveOnce"/>
@@ -299,7 +299,7 @@ Whenever opponent plays a card, they discard a card.</Description>
       <DescriptionRussian>Пока [THIS] имеет не менее 2 ед. оставшегося здоровья, когда он умирает, вместо этого его здоровье становится равным 1.</DescriptionRussian>
       <DescriptionPortuguese>Enquanto [THIS] tiver saúde restante igual a 2 ou mais, quando ela for destruída, sua saúde restante será 1 ao invés disso.</DescriptionPortuguese>
     </Card>
-    <Card NotLocalized="True" Rarity="Rare" Type="Unit" Name="Cre_Nec_003" DisplayName="Fate Weaver" Faction="Necropolis" SubType="Melee|Shooter" Race="Namtaru" Cost="5" MightLevel="4" Attack="2" Retaliate="2" HP="6" School="Prime" ID="71">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Nec_003" DisplayName="Fate Weaver" Faction="Necropolis" SubType="Melee|Shooter" Race="Namtaru" Cost="5" MightLevel="4" Attack="2" Retaliate="2" HP="6" School="Prime" ID="71">
       <Ability Type="Infect" Value="1"/>
 	  <Ability Type="ImmuneToRetaliate"/>
       <Ability Type="InfectBlast" Value="1"/>
@@ -401,7 +401,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="DoubleAttack"/>
     </Card>
     <Card Rarity="Common" Type="Unit" Name="Cre_Str_014" DisplayName="Tainted Orc" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="4" MightLevel="4" Attack="4" Retaliate="3" HP="7" ID="90"/>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Str_004" DisplayName="Raging Smasher" Faction="Stronghold" School="Air" SubType="Melee" Race="Orc|Warrior" Cost="6" MightLevel="6" Attack="4" Retaliate="2" HP="7" ID="91">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Str_004" DisplayName="Raging Smasher" Faction="Stronghold" School="Air" SubType="Melee" Race="Orc|Warrior" Cost="6" MightLevel="6" Attack="4" Retaliate="2" HP="7" ID="91">
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="Charge"/>
         <Ability Type="Enrage" Value="2"/>
@@ -416,7 +416,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="Enrage" Value="3"/>
         <Ability Type="MagicResist"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Type="Unit" Name="Cre_Str_002" DisplayName="Blood Caller" Faction="Stronghold" SubType="Magic|Melee" Race="Orc|Warrior" Unique="True" Cost="7" MightLevel="5" MagicLevel="1" Attack="0" Retaliate="0" HP="7" ID="93">
+    <Card Rarity="Epic" Type="Unit" Name="Cre_Str_002" DisplayName="Blood Caller" Faction="Stronghold" SubType="Magic|Melee" Race="Orc|Warrior" Unique="True" Cost="7" MightLevel="5" MagicLevel="1" Attack="0" Retaliate="0" HP="7" ID="93">
         <Description>When Blood Caller enters the battleground, you may destroy target friendly creature and target enemy creature. Blood Caller's [ATK] and [RET] are both equal to the total remaining health of the destroyed creatures.</Description>
         <Trigger Type="OnThisCardDeploy">
             <Target Zone="Battleground" CardType="Unit" Side="Friendly" Amount="1" Cancelable="True" CantTargetSelf="True">
@@ -430,7 +430,7 @@ Whenever opponent plays a card, they discard a card.</Description>
     <!--...............................................................................-->
     <!-- Creatures - Neutral -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_010" DisplayName="Pao Hunter" Faction="Neutral" SubType="Shooter" Race="Orc|Archer" Cost="2" MightLevel="1" Attack="1" Retaliate="0" HP="3" ID="112">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_010" DisplayName="Pao Hunter" Faction="Neutral" SubType="Shooter" Race="Orc|Archer" Cost="2" MightLevel="1" Attack="1" Retaliate="0" HP="3" ID="112">
         <Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Stackable"/>
 		<Trigger Type="OnDeployOnThis">
@@ -447,7 +447,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="ImmuneToRetaliate" />
     </Card>
     <Card Rarity="Common" Type="Unit" Name="Cre_Neu_016" DisplayName="Wild Griffin" Faction="Neutral" SubType="Flyer" Race="Griffin" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" ID="115"/>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_003" DisplayName="Sea Elf Archer" Faction="Neutral" SubType="Shooter" Race="Elf|Archer" Cost="3" MightLevel="3" Attack="3" Retaliate="0" HP="3" ID="116">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_003" DisplayName="Sea Elf Archer" Faction="Neutral" SubType="Shooter" Race="Elf|Archer" Cost="3" MightLevel="3" Attack="3" Retaliate="0" HP="3" ID="116">
         <Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="PerfectAttack"/>
         <Ability Type="PerfectRetaliate" DontShowIcon="True"/>
@@ -460,7 +460,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="Incorporeal" />
 	<Ability Type="Crippling" Value="1"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="119" >
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="119" >
 	<Description>At the beginning of your turn, you may destroy target friendly creature. If you do, heal all damage from Angry Wyvern and put +[1:ATK] counter on it. </Description>
 	<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
 		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="True" CantTargetSelf="True">

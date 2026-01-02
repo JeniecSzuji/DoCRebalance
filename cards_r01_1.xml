@@ -32,7 +32,7 @@
 		</Target>
 		<Description>Whenever a friendly construct destory a enemy with blast damage for the first time in a turn, it gains an additional attack.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Aca_103" DisplayName="Crimson Wizard" Faction="Academy" SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="1" HP="6" ID="1009">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Aca_103" DisplayName="Crimson Wizard" Faction="Academy" SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="1" HP="6" ID="1009">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
 			<CardFilter IncludeRaces="Beastmen"/>
@@ -108,7 +108,7 @@
         </Trigger>
 		<Description>When [THIS] attacks, increase the size of each friendly adjacent stacks by 1. </Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Inf_102" DisplayName="Abyssal Lilim" Faction="Inferno" SubType="Magic|Melee|Shooter" Race="Demon|Succubus" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="3" HP="8" ID="1016" School="Dark">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Inf_102" DisplayName="Abyssal Lilim" Faction="Inferno" SubType="Magic|Melee|Shooter" Race="Demon|Succubus" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="3" HP="8" ID="1016" School="Dark">
 		<Trigger Type="OnThisCardDeploy">
             		<Target Zone="Battleground" Amount="AllOther" CardType="Unit" Side="Friendly">
 			<CardFilter IncludeSchool="Dark"/>
@@ -139,7 +139,7 @@
         </Trigger>
 		<Description>When [THIS] attacks, deploy a Skeleton melee-shooter token with 1/0/1 and Stackable on target friendly battleground position</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Nec_101" DisplayName="Necromancer Reinforcer" Faction="Necropolis"  SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="1" Attack="2" Retaliate="0" HP="6" ID="1019">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Nec_101" DisplayName="Necromancer Reinforcer" Faction="Necropolis"  SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="1" Attack="2" Retaliate="0" HP="6" ID="1019">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Trigger Type="OnPostAttackUnit" Side="Friendly">
 			<CardFilter IncludeAbility="Stackable"/>
@@ -159,7 +159,7 @@
 		</Target>
 		<Description>Friendly creatures with Infect gain Infect Blast X, where X is equal to its Infect value.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_103" DisplayName="Ichor Weaver" Faction="Necropolis" SubType="Magic|Shooter" Race="Namtaru" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="1021" School="Prime">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_103" DisplayName="Ichor Weaver" Faction="Necropolis" SubType="Magic|Shooter" Race="Namtaru" Cost="5" MightLevel="4" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="1021" School="Prime">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Infect" Value="1"/>	
 		<Variable Type="LastAliveCounterCount" CounterType="Poison" FromTrigger="True"/>	
@@ -194,7 +194,7 @@ Whenever a creature with poison counters on it dies, put the same number of pois
 		</Trigger>
 		<Description>Whenever a spy deal damage to enemy hero, next Sanctuary fortune cost 1 less to play.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_San_102" DisplayName="Shinobi Whisperer" Faction="Sanctuary" SubType="Shooter" Race="Naga|Spy" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="2" Attack="3" Retaliate="3" HP="7" ID="1024">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_San_102" DisplayName="Shinobi Whisperer" Faction="Sanctuary" SubType="Shooter" Race="Naga|Spy" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="2" Attack="3" Retaliate="3" HP="7" ID="1024">
 		<Ability Type="ImmuneToRetaliate"/>				
 		<Trigger Type="OnUnitKillUnit" DamageIncludeFlags="Attack" Side="Friendly" ExecuteOncePerTurn="True">	
 			<CardFilter IncludeRaces="Spy"/>
@@ -232,7 +232,7 @@ Whenever a creature with poison counters on it dies, put the same number of pois
 		</Target>
 		<Description>Adjacent friendly Air creature gain +[1:ATK]. Adjacent friendly Earth creature gain +[1:HEALTH].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Str_102" DisplayName="Bone Ancestor" Faction="Stronghold" SubType="Magic|Melee" Race="Orc|Spirit" Cost="5" MightLevel="5" MagicLevel="1" DestinyLevel="0" Attack="4" Retaliate="2" HP="7" ID="1028" School="Earth">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Str_102" DisplayName="Bone Ancestor" Faction="Stronghold" SubType="Magic|Melee" Race="Orc|Spirit" Cost="5" MightLevel="5" MagicLevel="1" DestinyLevel="0" Attack="4" Retaliate="2" HP="7" ID="1028" School="Earth">
 		<Ability Type="Regeneration" Value="1"/>
 		<Target Zone="Battleground" Amount="All" Shape="AdjacentOnly" CardType="Unit" Side="Friendly">
 			<CardFilter IncludeSchool="Earth"/>
@@ -241,7 +241,7 @@ Whenever a creature with poison counters on it dies, put the same number of pois
 		</Target>
 		<Description>Friendly adjacent Earth creatures gain Regenerate 1 and Armor 1.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Str_103" DisplayName="Sahaar Raging Chieftain" Faction="Stronghold" SubType="Melee|Shooter" Race="Orc" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="1029" School="Air|Earth">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Str_103" DisplayName="Sahaar Raging Chieftain" Faction="Stronghold" SubType="Melee|Shooter" Race="Orc" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="1029" School="Air|Earth">
 		<Ability Type="Enrage" Value="1"/>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
             <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">

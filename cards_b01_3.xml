@@ -34,7 +34,7 @@
         <Description>Deal 10 damage to all creatures.</Description>
         <ExtraDescription>(Also damage friendly units.)</ExtraDescription>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_004" DisplayName="Fire Trap" School="Fire" Cost="1" MagicLevel="3" ID="184">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Fir_004" DisplayName="Fire Trap" School="Fire" Cost="1" MagicLevel="3" ID="184">
       <Ongoing Duration="Permanent"/>
       <Target Zone="BattlegroundColumn" Amount="1"/>
       <Trigger Type="OnDeployThisRow">
@@ -81,7 +81,7 @@ When a creature is deployed, moves into, or is relocated to enchanted row, deal 
 At the beginning of each player's turn, deal 1 damage to all creatures. When there are no creatures on the battleground, destroy Immolation.</Description>
         <ExtraDescription>(Also damage friendly units.)</ExtraDescription>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_006" DisplayName="Fire Shield" School="Fire" Cost="2" MagicLevel="2" ID="186">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Fir_006" DisplayName="Fire Shield" School="Fire" Cost="2" MagicLevel="2" ID="186">
         <Ongoing Duration="Permanent" />
 		 <Target Zone="Battleground" CardType="Unit" Amount="1">
             <Effect Type="ModifyAbility" Ability="FireResist" />
@@ -170,7 +170,7 @@ Enemy shooter and flyer creatures gain Cannot Attack.</Description>
 Creatures on enchanted line gain Cannot Attack.
 When Cyclone enters the battleground, deal 1 damage to all creatures on enchanted line.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Air_011" DisplayName="Wind Shield" School="Air" Cost="1" MagicLevel="1" ID="195">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Air_011" DisplayName="Wind Shield" School="Air" Cost="1" MagicLevel="1" ID="195">
         <Ongoing Duration="Permanent"/>
         <Target Zone="BattlegroundColumn" Amount="1">
             <CardType Include="Unit"/>
@@ -290,7 +290,7 @@ Enchanted creature gains +[3:ATK].</Description>
         <Description>Deal 2 damage to all non-flyer creatures.</Description>
         <ExtraDescription>(Also damage friendly units.)</ExtraDescription>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Ear_011" DisplayName="Rock Wall" School="Earth" Cost="1" MagicLevel="3" ID="208">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Ear_011" DisplayName="Rock Wall" School="Earth" Cost="1" MagicLevel="3" ID="208">
         <Ongoing Duration="UntilDamagedAbsorbedAtEndOfTurn"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1">
             <Effect Type="ModifyDamage" Value="0.0x"/>
@@ -299,7 +299,7 @@ Enchanted creature gains +[3:ATK].</Description>
 Prevent all damage dealt to enchanted Creature.
 At the end of the turn, if damage was prevented in this way this turn, destroy Rock Wall.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Ear_002" DisplayName="Contagion" School="Earth" Cost="3" MagicLevel="3" ID="209">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Ear_002" DisplayName="Contagion" School="Earth" Cost="3" MagicLevel="3" ID="209">
 		<Ongoing Duration="Permanent"/>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
 			<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" Random="True">
@@ -346,7 +346,7 @@ Combat damage dealt to enchanted creature is halved, rounded down.</Description>
 Prevent all damage dealt to your Hero.
 At the end of the turn, if damage was prevented in this way this turn, destroy Stone Shield.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Ear_010" DisplayName="Venomous Touch" School="Earth" Cost="1" MagicLevel="2" ID="214">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Ear_010" DisplayName="Venomous Touch" School="Earth" Cost="1" MagicLevel="2" ID="214">
         <Ongoing Duration="Permanent"/>
         <Ability Type="Endurable"/>
         <Target Zone="Battleground" CardType="Unit" Amount="1">
@@ -376,7 +376,7 @@ Enchanted creature gains Infect 1 and Infect Blast 1.</Description>
         </Target>
         <Description>Gain control of target enemy creature and relocate it to a valid battleground position.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Dar_003" DisplayName="Agony" School="Dark" Cost="1" MagicLevel="1" ID="217">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Dar_003" DisplayName="Agony" School="Dark" Cost="1" MagicLevel="1" ID="217">
         <Ongoing Duration="Permanent" />
         <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy" />
         <Trigger Type="OnTurnEnd" Side="Enemy">
@@ -415,7 +415,7 @@ Enchanted creature gains Life Drain 2.</Description>
         </Target>
         <Description>Destroy target creature.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Dar_004" DisplayName="Shadow Image" School="Dark" Cost="4" MagicLevel="4" ID="221">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Dar_004" DisplayName="Shadow Image" School="Dark" Cost="4" MagicLevel="4" ID="221">
         <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Enemy">
 		<CardFilter ExcludeUnique="True"/>
             <Effect Type="Clone"/>
@@ -429,7 +429,7 @@ Deploy a token that's a copy of target non-unique enemy creature. That token gai
 When any damage is dealt to the token, destroy it.</Description>
         <ExtraDescription>You put the copy on your side of the battleground, on a valid deploy position.</ExtraDescription>
     </Card>
-    <Card NotLocalized="True" Rarity="Common" Type="Spell" Name="Spe_Dar_005" DisplayName="Death Seal" School="Dark" Cost="3" MagicLevel="3" ID="222">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Dar_005" DisplayName="Death Seal" School="Dark" Cost="3" MagicLevel="3" ID="222">
       <Variable2 Type="TargetCount">
         <Target Zone="Battleground" CardType="Unit" Amount="All">
           <CardFilter IncludeColumn="True" Value="Variable3">
@@ -453,7 +453,7 @@ When any damage is dealt to the token, destroy it.</Description>
 When combat damage is dealt to a creature on enchanted row, destroy that creature.
 When there are no creatures on enchanted row, destroy [THIS].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Dar_007" DisplayName="Purge" School="Dark" Cost="1" MagicLevel="1" ID="223">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Dar_007" DisplayName="Purge" School="Dark" Cost="1" MagicLevel="1" ID="223">
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Any">
             <Variable Type="CounterCount" CounterType="Crippling" UseCurrentTarget="True"/>
             <Effect Type="Damage" Value="Variable"/>
@@ -533,7 +533,7 @@ Heal all damage from all friendly creatures.</Description>
         </Target>
         <Description>Deal 3 damage to all creatures on target row.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Lig_006" DisplayName="Martyr" School="Light" Cost="3" MagicLevel="3" ID="233">
+    <Card Rarity="Uncommon" Type="Spell" Name="Spe_Lig_006" DisplayName="Martyr" School="Light" Cost="3" MagicLevel="3" ID="233">
         <Ongoing Duration="UntilDamagedAbsorbedAtEndOfTurn"/>
         <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly">
           <Effect Type="ModifyAbility" Ability="Anchored"/>
@@ -555,7 +555,7 @@ At end of turn, if damage was prevented in this way this turn, destroy Martyr.</
     <!--...............................................................................-->
     <!-- Spells - Prime -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Pri_007" DisplayName="Spell Twister" School="Prime" Cost="3" MagicLevel="5" ID="234">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Pri_007" DisplayName="Spell Twister" School="Prime" Cost="3" MagicLevel="5" ID="234">
         <Target Zone="Hand" Amount="1" Side="Enemy">
             <CardFilter IncludeCardType="Spell"/>
             <Effect Type="Play" Free="True" CancelDestination="Graveyard"/>
@@ -650,7 +650,7 @@ Enchanted creature gains Magic Shield.</Description>
     <!-- //	##      ##  #   ##      #  ##    ##        ## -->
     <!-- //	#####     ##    #####   #   #    ##     ##### -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Event" Name="Eve_Neu_002" DisplayName="Market of Wonders" Faction="Neutral" Cost="3" ID="243">
+    <Card Rarity="Rare" Type="Event" Name="Eve_Neu_002" DisplayName="Market of Wonders" Faction="Neutral" Cost="3" ID="243">
         <Target Zone="Library" Side="Friendly" Amount="1" AmountVisible="3">
             <Effect Type="MoveCardTo" Destination="Hand"/>
         </Target>
@@ -682,7 +682,7 @@ Enchanted creature gains Magic Shield.</Description>
         </Target>
         <Description>[3:RESOURCES]: Until end of turn, play with the top card of your library revealed. While that card is a creature card, all friendly creatures gain +[1:ATK]. Otherwise, all enemy creatures gain +[1:RET].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Event" Name="Eve_Neu_003" DisplayName="Week of Taxes" Faction="Neutral" ID="245">
+    <Card Rarity="Uncommon" Type="Event" Name="Eve_Neu_003" DisplayName="Week of Taxes" Faction="Neutral" ID="245">
       <Ongoing Duration="Permanent"/>
       <Target Zone="Battleground" Amount="All"/>
       <!-- Hack to add a permanent feedback -->
@@ -727,7 +727,7 @@ The effect does not affect Dragon Crystal.</Description>
         </Target>
         <Description>[2:RESOURCES]: Each player draws a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Event" Name="Eve_Neu_014" DisplayName="Month of the Emerald Song" Faction="Neutral" Cost="4" ID="248">
+    <Card Rarity="Uncommon" Type="Event" Name="Eve_Neu_014" DisplayName="Month of the Emerald Song" Faction="Neutral" Cost="4" ID="248">
 		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly" Persistent="True" ForceExecute="True" NeedActivation="True">
 			<Effect Type="ModifyMaxHp" Value="1" Duration="Permanent"/>
 		</Target>
@@ -742,7 +742,7 @@ The effect does not affect Dragon Crystal.</Description>
         </Target>
         <Description>[3:RESOURCES]: Discard a card, then draw a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Event" Name="Eve_Neu_001" DisplayName="Month of the Dancing Flames" Faction="Neutral" Cost="3" ID="250">
+    <Card Rarity="Common" Type="Event" Name="Eve_Neu_001" DisplayName="Month of the Dancing Flames" Faction="Neutral" Cost="3" ID="250">
         <Target Zone="Battleground" CardType="Unit" Side="Any" Amount="1" NeedActivation="True" Persistent="True" ForceExecute="True">
             <Effect Type="ModifyAttack" Value="2" Duration="UntilYourNextTurn"/>
         </Target>

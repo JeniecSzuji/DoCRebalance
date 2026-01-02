@@ -9,7 +9,7 @@
     <!--...............................................................................-->
     <!-- Heroes Academy -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Aca_001" DisplayName="Gazal, Lady of Secrets" Faction="Academy" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="444">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Aca_001" DisplayName="Gazal, Lady of Secrets" Faction="Academy" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="444">
         <School Name="Prime" />
         <School Name="Light" />
         <Description>Whenever an effect causes cards to go from your opponent's library to their graveyard, if your [MIGHT] level is 3 or more and your [DESTINY] level is 4 or more, heal 1 damage from your hero.</Description>
@@ -87,7 +87,7 @@
             </Subgroup>
         </Target>
     </Card>
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Heroic" Type="Hero" Name="Her_Aca_006" DisplayName="Akane, Caller of Memories" Faction="Academy" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="449">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Aca_006" DisplayName="Akane, Caller of Memories" Faction="Academy" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="449">
         <School Name="Air" />
         <School Name="Water" />
         <Description>[5:RESOURCES]: Take target non-unique spell card put into your graveyard since the end of your last turn and put it into your hand.</Description>

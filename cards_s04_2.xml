@@ -62,7 +62,7 @@ Whenever you play a creature, if Memory Lapse is in your graveyard, take it and 
     <!--....................................................................-->
     <!-- Fortune - Haven -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Hav_060" DisplayName="Prayer for the Departed" Faction="Haven" Cost="2" DestinyLevel="3" ID="617">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_060" DisplayName="Prayer for the Departed" Faction="Haven" Cost="2" DestinyLevel="3" ID="617">
         <Target Zone="Graveyard" Amount="All" CardType="Unit" Side="Friendly">
             <Effect Type="MoveCardTo" Destination="Library" />
         </Target>
@@ -80,7 +80,7 @@ Whenever you play a creature, if Memory Lapse is in your graveyard, take it and 
         </Target>
         <Description>Take all creature cards from both graveyards and shuffle them into their owners' libraries. Draw a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Hav_061" DisplayName="Morgan's Inspiration" Faction="Haven" Cost="3" DestinyLevel="3" ID="618">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_061" DisplayName="Morgan's Inspiration" Faction="Haven" Cost="3" DestinyLevel="3" ID="618">
         <Ongoing Duration="UntilEndOfTurn" />
         <Target Zone="None" Side="Friendly">
             <Effect Type="ChoiceOption" />
@@ -105,7 +105,7 @@ Whenever you play a creature, if Memory Lapse is in your graveyard, take it and 
         <Description>Until end of turn:
 Choose one: All friendly creatures gain Charge OR Gain [2:RESOURCES]. Whenever you play a creature, heal 1 damage from your hero.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Hav_062" DisplayName="Favor of the Just" Faction="Haven" Cost="3" DestinyLevel="2" ID="659">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Hav_062" DisplayName="Favor of the Just" Faction="Haven" Cost="3" DestinyLevel="2" ID="659">
         <Ongoing Duration="UntilYourNextTurn" />
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
 		<CardFilter IncludeRaces="Priest" />
@@ -118,7 +118,7 @@ Friendly Priest creatures gain Combat Guard 1 and cannot be targeted.</Descripti
     <!--....................................................................-->
     <!-- Fortune - Inferno -->
     <!--...................................................................-->
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Inf_060" DisplayName="Phrias' Gift" Faction="Inferno" Cost="2" DestinyLevel="3" ID="619">
+    <Card Rarity="Common" Type="Fortune" Name="For_Inf_060" DisplayName="Phrias' Gift" Faction="Inferno" Cost="2" DestinyLevel="3" ID="619">
         <Ongoing Duration="UntilEndOfTurn" />
         <Target Zone="Battleground" CardType="Unit" Amount="1" />
 		<Trigger Type="OnThisPostDeadlyCombat" ExecuteOncePerTransaction="True">
@@ -172,7 +172,7 @@ When opponent discards one or more cards, draw 2 cards and destroy Pleasure in P
     <!--....................................................................-->
     <!-- Fortune - Necropolis -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_060" DisplayName="Ariana's Will" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="621">
+    <Card Rarity="Common" Type="Fortune" Name="For_Nec_060" DisplayName="Ariana's Will" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="621">
         <Target Zone="None" Side="Friendly">
 	    <Effect Type="Draw" Value="1" />
             <Effect Type="ChoiceOption" />
@@ -204,7 +204,7 @@ Choose one: Take 5 target creature cards from your graveyard and shuffle them in
         <Description>Until your next turn:
 Whenever a creature dies, heal 1 damage from your hero.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Nec_062" DisplayName="Unholy Communion" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="661">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Nec_062" DisplayName="Unholy Communion" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="661">
         <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
             <Variable Type="InPlayCounterCount" Side="Friendly" CounterType="Poison" />
             <Effect Type="Heal" Value="Variable" />
@@ -224,7 +224,7 @@ Whenever a creature dies, heal 1 damage from your hero.</Description>
     <!--....................................................................-->
     <!-- Fortune - Sanctuary -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_060" DisplayName="Noboru's Insight" Faction="Sanctuary" Cost="3" DestinyLevel="2" ID="623">
+    <Card Rarity="Common" Type="Fortune" Name="For_San_060" DisplayName="Noboru's Insight" Faction="Sanctuary" Cost="3" DestinyLevel="2" ID="623">
         <Target Zone="None" Side="Friendly">
             <Effect Type="ChoiceOption" />
             <Subgroup>
@@ -264,7 +264,7 @@ You can play Sanctuary creatures without meeting their level requirements.</Desc
     <!--....................................................................-->
     <!-- Fortune - Stronghold -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Str_060" DisplayName="Zefiria's Celerity" Faction="Stronghold" Cost="4" DestinyLevel="4" ID="625">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_060" DisplayName="Zefiria's Celerity" Faction="Stronghold" Cost="4" DestinyLevel="4" ID="625">
         <Ongoing Duration="UntilEndOfTurn" />
         <Target Zone="Battleground" CardType="Unit" Amount="1">
         </Target>
@@ -297,7 +297,7 @@ Choose one: Target creature gains Quick Attack OR Target creature gains Double A
         </Target>
         <Description>Destroy target friendly creature. Destroy target building, ongoing spell or fortune of equal or lower cost.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Str_062" DisplayName="Surprise Assault" Faction="Stronghold" Cost="1" DestinyLevel="1" ID="663">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_062" DisplayName="Surprise Assault" Faction="Stronghold" Cost="1" DestinyLevel="1" ID="663">
         <Ongoing Duration="UntilYourNextTurn" />
         <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
             <CardFilter IncludeAbility="Ambush" />
@@ -321,7 +321,7 @@ All friendly creatures with Ambush get +[1:ATK] and +[1:RET].</Description>
 		</Target>
         <Description>Discard a non-creature card. Destroy target card of the same type on the battleground.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_061" DisplayName="Mana Burst" Faction="Neutral" Cost="1" DestinyLevel="2" ID="628">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_061" DisplayName="Mana Burst" Faction="Neutral" Cost="1" DestinyLevel="2" ID="628">
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnCardPlay" Side="Friendly">
             <CardFilter IncludeCardType="Spell" />
@@ -344,7 +344,7 @@ All friendly creatures with Ambush get +[1:ATK] and +[1:RET].</Description>
         <Description>Permanent:
 Whenever a spell is played, deal 2 damage to that spell's controller's hero and destroy Mana Burst.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_Neu_062" DisplayName="The Price of the Void" Faction="Neutral" Cost="1" MagicLevel="0" DestinyLevel="2" ID="629">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Neu_062" DisplayName="The Price of the Void" Faction="Neutral" Cost="1" MagicLevel="0" DestinyLevel="2" ID="629">
         <Target Zone="Battleground" Amount="1">
             <CardFilter IncludeCardType="Fortune|Building" />
             <Effect Type="Banish" />
@@ -396,7 +396,7 @@ All creatures gain +[1:ATK] and +[1:RET] for each other creature with the same n
     <!--....................................................................-->
     <!-- Building - Haven -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_Hav_060" DisplayName="Watchtower" Faction="Haven" Cost="2" MightLevel="2" DestinyLevel="2" ID="651">
+    <Card Rarity="Uncommon" Type="Building" Name="Bui_Hav_060" DisplayName="Watchtower" Faction="Haven" Cost="2" MightLevel="2" DestinyLevel="2" ID="651">
         <Trigger Type="OnDeployThisRow" Side="Enemy">
             <Target Zone="Battleground" Amount="FromTrigger" Side="Any" CardType="Unit">
                 <Variable Type="OccupantCount"/>
@@ -409,7 +409,7 @@ All creatures gain +[1:ATK] and +[1:RET] for each other creature with the same n
     <!--....................................................................-->
     <!-- Building - Inferno -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_Inf_060" DisplayName="Hall of Nightmares" Faction="Inferno" Cost="2" MightLevel="2" DestinyLevel="2" ID="652">
+    <Card Rarity="Uncommon" Type="Building" Name="Bui_Inf_060" DisplayName="Hall of Nightmares" Faction="Inferno" Cost="2" MightLevel="2" DestinyLevel="2" ID="652">
          <Variable Type="TargetCount" ValueModifier="1">
                 <Target Zone="Battleground" Side="Friendly" Amount="All">
                     <CardFilter IncludeCardID="Bui_Inf_060" />
@@ -423,7 +423,7 @@ All creatures gain +[1:ATK] and +[1:RET] for each other creature with the same n
     <!--....................................................................-->
     <!-- Building - Necropolis -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_Nec_060" DisplayName="Soul Spire" Faction="Necropolis" Cost="2" MightLevel="2" MagicLevel="2" ID="653">
+    <Card Rarity="Uncommon" Type="Building" Name="Bui_Nec_060" DisplayName="Soul Spire" Faction="Necropolis" Cost="2" MightLevel="2" MagicLevel="2" ID="653">
         <Target Zone="Battleground" CardType="Unit" Amount="Occupant">
             <Effect Type="ModifyAbility" Ability="Crippling" Value="1" />
         </Target>
@@ -437,7 +437,7 @@ All creatures gain +[1:ATK] and +[1:RET] for each other creature with the same n
     <!--....................................................................-->
     <!-- Building - Sanctuary -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_San_060" DisplayName="Hidden Dojo" Faction="Sanctuary" Cost="2" MightLevel="2" DestinyLevel="2" ID="654">
+    <Card Rarity="Uncommon" Type="Building" Name="Bui_San_060" DisplayName="Hidden Dojo" Faction="Sanctuary" Cost="2" MightLevel="2" DestinyLevel="2" ID="654">
         <Target Zone="Battleground" CardType="Unit" Amount="Occupant">
             <Effect Type="ModifyAbility" Ability="Honor" Value="1" />
         </Target>
@@ -511,7 +511,7 @@ Necropolis creatures at Tower of the Gardener gain Regenerate 2.</Description>
         <Description>Whenever a creature at Tower of the Smith attacks enemy hero, opponent discards a card at random.
 While an Inferno creature is at Tower of the Smith, players cannot draw cards outside of their supply phase.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Building" Name="Bui_Neu_063" DisplayName="Tower of the Inventor" Faction="Neutral" Cost="4" MightLevel="3" ID="633">
+    <Card Rarity="Epic" Unique="True" Type="Building" Name="Bui_Neu_063" DisplayName="Tower of the Inventor" Faction="Neutral" Cost="4" MightLevel="3" ID="633">
         <Target Zone="Battleground" CardType="Unit" Amount="Occupant">
             <CardFilter IncludeFaction="Haven" />
             <Effect Type="ModifyAbility" Ability="PreemptiveStrike" />

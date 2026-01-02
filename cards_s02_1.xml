@@ -14,7 +14,7 @@
         <Ability Type="Retribution"/>	
 		<Ability Type="PerfectRetaliate"/>	
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Hav_041" DisplayName="Griffin Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="4" MightLevel="4" Attack="3" Retaliate="2" HP="6" ID="346">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Hav_041" DisplayName="Griffin Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="4" MightLevel="4" Attack="3" Retaliate="2" HP="6" ID="346">
         <Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="PerfectAttack"/>
         <Ability Type="PerfectRetaliate" DontShowIcon="True"/>
@@ -23,7 +23,7 @@
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_Hav_042" DisplayName="Griffin Mounted Spearman" Faction="Haven" SubType="Melee" Race="Human|Knight" Cost="4" MightLevel="4" Attack="3" Retaliate="2" HP="6" ID="347">
         <Ability Type="Swift"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Hav_043" DisplayName="Griffin Knight" Faction="Haven" SubType="Flyer" Race="Human|Knight" Cost="3" MightLevel="3" Attack="1" Retaliate="2" HP="5" ID="348">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Hav_043" DisplayName="Griffin Knight" Faction="Haven" SubType="Flyer" Race="Human|Knight" Cost="3" MightLevel="3" Attack="1" Retaliate="2" HP="5" ID="348">
         <Ability Type="FlyerGuard" Value="2"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="Self">
             <Variable Type="TargetCount">
@@ -121,7 +121,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
         <Ability Type="CannotAttack"/>
         <Ability Type="Regenerate" Value="1"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Nec_041" DisplayName="Skeleton Archer" Faction="Necropolis" SubType="Shooter" Race="Skeleton" Cost="3" MightLevel="2" Attack="2" Retaliate="1" HP="4" ID="358">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Nec_041" DisplayName="Skeleton Archer" Faction="Necropolis" SubType="Shooter" Race="Skeleton" Cost="3" MightLevel="2" Attack="2" Retaliate="1" HP="4" ID="358">
         <Ability Type="ImmuneToRetaliate" />
 	<Ability Type="Ambush" />
 		<Trigger Type="OnAmbush" Side="Enemy">
@@ -163,7 +163,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
     <Card Rarity="Common" Type="Unit" Name="Cre_San_040" DisplayName="Waterfall Guardians" Faction="Sanctuary" School="Water" SubType="Melee" Race="Spirit" Cost="2" MightLevel="1" Attack="0" Retaliate="2" HP="5" ID="363">
         <Ability Type="Hypnotize"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_San_041" DisplayName="Naga Yokujin" Faction="Sanctuary" SubType="Shooter" Race="Naga|Archer" Cost="3" MightLevel="3" Attack="2" Retaliate="1" HP="6" ID="364">
+    <Card Rarity="Common" Type="Unit" Name="Cre_San_041" DisplayName="Naga Yokujin" Faction="Sanctuary" SubType="Shooter" Race="Naga|Archer" Cost="3" MightLevel="3" Attack="2" Retaliate="1" HP="6" ID="364">
         <Ability Type="ImmuneToRetaliate"/>
 		<Trigger Type="OnThisPreAttack">
             <Target Zone="Battleground" CardType="Unit" Amount="1" ForceExecute="True" Persistent="True" Cancelable="False">
@@ -218,7 +218,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
         <Ability Type="QuickAttack"/>
         <Ability Type="Swift"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Str_044" DisplayName="Bloodfrenzied Wyvern" Faction="Stronghold" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="8" ID="373">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Str_044" DisplayName="Bloodfrenzied Wyvern" Faction="Stronghold" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="8" ID="373">
 	<Ability Type="Bloodthirst" Value="1"/>
 	<Trigger Type="OnThisPostDeadlyCombat">
             <Target Zone="Battleground" Amount="Self">
@@ -267,7 +267,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
         <Ability Type="Towering"/>
         <Ability Type="Anchored"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Neu_045" DisplayName="Void Keeper" Faction="Neutral" School="Prime" SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="380">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Neu_045" DisplayName="Void Keeper" Faction="Neutral" School="Prime" SubType="Magic|Shooter" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="380">
         <Ability Type="ImmuneToRetaliate"/>
         <Variable Type="TargetCount" MustBeTargetable="True">
             <Target Zone="Graveyard" Side="Friendly" Amount="All" />
@@ -296,7 +296,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
         </Trigger>
         <Description>When Angel of Mercy enters the battleground, take a creature card at random from your graveyard and put it into your hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Hav_047" DisplayName="Chosen of Elrath" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Knight" Cost="4" MightLevel="3" MagicLevel="2" Attack="2" Retaliate="2" HP="6" ID="382">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Hav_047" DisplayName="Chosen of Elrath" Faction="Haven" School="Light" SubType="Magic|Shooter" Race="Human|Knight" Cost="4" MightLevel="3" MagicLevel="2" Attack="2" Retaliate="2" HP="6" ID="382">
         <Ability Type="ImmuneToRetaliate"/>
 		<Trigger Type="OnThisCardDeploy">
             <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="False" Persistent="True" ForceExecute="True">
@@ -313,7 +313,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_Inf_046" DisplayName="Lurker in the Dark" Faction="Inferno" School="Dark" SubType="Melee" Race="Demon|Breeder" Cost="2" MightLevel="3" Attack="2" Retaliate="0" HP="4" ID="383">
         <Ability Type="Fear" Value="2"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Inf_047" DisplayName="Ur-Khrag Enforcer" Faction="Inferno" SubType="Melee" Race="Demon|Juggernaut" Cost="5" MightLevel="5" Attack="5" Retaliate="5" HP="7" ID="384">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Inf_047" DisplayName="Ur-Khrag Enforcer" Faction="Inferno" SubType="Melee" Race="Demon|Juggernaut" Cost="5" MightLevel="5" Attack="5" Retaliate="5" HP="7" ID="384">
         <Ability Type="SweepAttack"/>
         <Ability Type="Berserk"/>
 		<Trigger Type="OnThisPostDeadlyCombat" >
@@ -355,7 +355,7 @@ When Chaos Seer leaves the battleground during opponent's turn, they discard a c
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_San_047" DisplayName="Venerable Kappa" Faction="Sanctuary" SubType="Melee" Race="Spirit" Cost="4" MightLevel="4" DestinyLevel="1" Attack="3" Retaliate="3" HP="6" ID="388">
         <Ability Type="FortuneWard"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Str_047" DisplayName="Blackskull Spellsmasher" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="4" MightLevel="4" Attack="2" Retaliate="2" HP="7" ID="389">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Str_047" DisplayName="Blackskull Spellsmasher" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="4" MightLevel="4" Attack="2" Retaliate="2" HP="7" ID="389">
         <Variable Type="TargetCount" Side="Any" MustBeTargetable="True">
 		<Target Zone="Battleground" Amount="All">
 			<CardFilter IncludeCardType="Spell" Damaged="True"/>

@@ -26,7 +26,7 @@
 Whenever a friendly magic creature attacks, put the top card of opponent's library into their graveyard.
 At the beginning of your turn, return Shifting Sands to its owner's hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_002" DisplayName="Unraveled Fate" Faction="Academy" Cost="1" DestinyLevel="3" ID="529">
+    <Card Rarity="Common" Type="Fortune" Name="For_Aca_002" DisplayName="Unraveled Fate" Faction="Academy" Cost="1" DestinyLevel="3" ID="529">
 		<Ongoing Duration="Permanent" />
 		<Trigger Type="OnTurnBegin" Side="Friendly">
 			<Target Zone="Library" Side="Enemy" Amount="1" AutoTakeFirstInputs="True">
@@ -36,7 +36,7 @@ At the beginning of your turn, return Shifting Sands to its owner's hand.</Descr
         <Description>Permanent:
 At the beginning of your turn, put the top card of opponent's library into their graveyard.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_003" DisplayName="Arcane Research" Faction="Academy" Cost="3" DestinyLevel="4" ID="530">
+    <Card Rarity="Common" Type="Fortune" Name="For_Aca_003" DisplayName="Arcane Research" Faction="Academy" Cost="3" DestinyLevel="4" ID="530">
         <Target Zone="None" Side="Friendly">
             <Variable Type="Level" Side="Friendly" LevelType="Magic" ValueModifier="0.5xd"/>
             <Effect Type="Draw" Value="Variable" />
@@ -103,13 +103,13 @@ At the beginning of your turn, put the top card of opponent's library into their
         </Target>
         <Description>Put the top X cards of opponent's library into their graveyard, where X is equal to the number of friendly magic creatures on the battleground.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_007" DisplayName="Conversion to the Void" Faction="Academy" Cost="1" DestinyLevel="1" ID="534">
+    <Card Rarity="Common" Type="Fortune" Name="For_Aca_007" DisplayName="Conversion to the Void" Faction="Academy" Cost="1" DestinyLevel="1" ID="534">
         <Target Zone="Library" Side="Enemy" Amount="3" AutoTakeFirstInputs="True" Cancelable="False">
             <Effect Type="Banish" />
          </Target>
         <Description>Banish the top 3 cards of opponent's library.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_008" DisplayName="Rivalry" Faction="Academy" Cost="2" DestinyLevel="2" ID="535">
+    <Card Rarity="Common" Type="Fortune" Name="For_Aca_008" DisplayName="Rivalry" Faction="Academy" Cost="2" DestinyLevel="2" ID="535">
         <Target Zone="Hero" Amount="All" Side="Enemy">
             <Variable Type="Level" LevelType="Magic" Side="Friendly" />
             <Variable2 Type="Level" LevelType="Magic" Side="Enemy" />
@@ -118,13 +118,13 @@ At the beginning of your turn, put the top card of opponent's library into their
         </Target>
         <Description>If your [MAGIC] level is higher than opponent's, deal 2 damage to enemy hero.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_009" DisplayName="Scrying Orb" Faction="Academy" Cost="3" DestinyLevel="3" ID="536">
+    <Card Rarity="Common" Type="Fortune" Name="For_Aca_009" DisplayName="Scrying Orb" Faction="Academy" Cost="3" DestinyLevel="3" ID="536">
 		<Target Zone="Library" Side="Enemy" Amount="1" AmountVisible="3" >
 			<Effect Type="Play" Free="True" CancelDestination="Library" RequireLevel="True" Force="True" />
 		</Target>
         <Description>Look at the top 3 cards of opponent's library and choose one for which you meet its level requirements. Play it for free.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Aca_010" DisplayName="Void Tainted Ritual" Faction="Academy" Cost="2" MightLevel="2" DestinyLevel="3" ID="537">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Aca_010" DisplayName="Void Tainted Ritual" Faction="Academy" Cost="2" MightLevel="2" DestinyLevel="3" ID="537">
         <Ongoing Duration="UntilEndOfTurn" />
         <Trigger Type="OnCardPlay" Side="Friendly">
             <CardFilter IncludeCardType="Unit" IncludeUnitType="Magic" />
@@ -155,7 +155,7 @@ Whenever you play a magic creature, put the top 3 cards of opponent's library in
         <Description>Until your next turn:
 Whenever a friendly creature is attacked, put the top 3 cards of opponent's library into their graveyard.</Description>
     </Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Aca_013" DisplayName="Thread of Fate" Faction="Academy" Cost="2" MagicLevel="2" DestinyLevel="2" ID="540">
+	<Card Rarity="Uncommon" Type="Fortune" Name="For_Aca_013" DisplayName="Thread of Fate" Faction="Academy" Cost="2" MagicLevel="2" DestinyLevel="2" ID="540">
         <Ongoing Duration="Permanent"/>
 		<Variable Type="Level" Side="Friendly" LevelType="Magic"/>
 		<Variable2 Type="Level" Side="Enemy" LevelType="Magic"/>
@@ -243,7 +243,7 @@ Whenever a player plays a spell card, they must lower their [MAGIC] level by 1. 
         </Target>
         <Description>Gain [RESOURCES] equal to your [MAGIC] level. Deal damage to your hero equal to your [MAGIC] level.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_Aca_016" DisplayName="Chain Casting" Faction="Academy" Cost="1" DestinyLevel="1" ID="543">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Aca_016" DisplayName="Chain Casting" Faction="Academy" Cost="1" DestinyLevel="1" ID="543">
         <Ongoing Duration="UntilEndOfTurn" />
         <Variable Type="CardPlayedCount" ValueModifier="-1.0x">
             <CardFilter IncludeCardType="Spell" />
@@ -300,7 +300,7 @@ When Chain Casting enters the battleground, take a card from your hand and put i
     <!--....................................................................-->
     <!-- Fortune - Haven -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Hav_050" DisplayName="Fleeting Oasis" Faction="Haven" Cost="2" DestinyLevel="2" ID="546">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_050" DisplayName="Fleeting Oasis" Faction="Haven" Cost="2" DestinyLevel="2" ID="546">
         <Ongoing Duration="Permanent" />
         <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
             <Effect Type="ModifyAbility" Ability="Mending" />
@@ -420,7 +420,7 @@ At the beginning of your turn, return Garden of Ecstasy to its owner's hand.</De
 Whenever a creature dies, shuffle it into its owner's library instead.
 At the beginning of your turn, return Eternal Battlefield to its owner's hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Nec_051" DisplayName="Harvesting the Dead" Faction="Necropolis" Cost="5" DestinyLevel="4" ID="555">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Nec_051" DisplayName="Harvesting the Dead" Faction="Necropolis" Cost="5" DestinyLevel="4" ID="555">
 		<Ongoing Duration="UntilEndOfTurn" />
         <Variable Type="TargetCount" ValueModifier="1">
             <Target Zone="Graveyard" Side="Friendly" Amount="All">
@@ -563,7 +563,7 @@ When Harvesting the Dead enters the battleground, banish target creature card wi
         </Target>
         <Description>Take target non-unique card from each player's graveyard and put it on top of their library.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_Nec_053" DisplayName="A Life for a Life" Faction="Necropolis" Cost="4" DestinyLevel="4" ID="557">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Nec_053" DisplayName="A Life for a Life" Faction="Necropolis" Cost="4" DestinyLevel="4" ID="557">
         <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly">
 	<CardFilter ExcludeToken="True"/>
             <Effect Type="Kill" />
@@ -625,7 +625,7 @@ All Sanctuary creatures gain Honor 1.</Description>
     <!--....................................................................-->
     <!-- Fortune - Stronghold -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Str_050" DisplayName="Outraging Vision" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="562">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_050" DisplayName="Outraging Vision" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="562">
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnTurnBegin" Side="Friendly">
             <Target Zone="Battleground" Amount="Self">
@@ -644,7 +644,7 @@ All Sanctuary creatures gain Honor 1.</Description>
 Whenever a friendly creature with Enrage counters deals damage to a creature, that creature gains Cannot Attack until your next turn.
 At the beginning of your turn, return Outraging Vision to its owner's hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Str_051" DisplayName="Ancestral Guidance" Faction="Stronghold" Cost="2" DestinyLevel="3" ID="563">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_051" DisplayName="Ancestral Guidance" Faction="Stronghold" Cost="2" DestinyLevel="3" ID="563">
         <Target Zone="Battleground" CardType="Unit" Amount="all">
 		<Variable Type="TargetCount" ValueModifier="1">
 			<Target Zone="Graveyard" Side="Friendly" Amount="All">
@@ -655,7 +655,7 @@ At the beginning of your turn, return Outraging Vision to its owner's hand.</Des
 	</Target>
 	<Description>Deal X damage to all creatures, where X is equal to 1 plus the number of cards named Ancestral Guidance in your graveyard.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Str_052" DisplayName="Desperate Assault" Faction="Stronghold" Cost="2" MightLevel="4" DestinyLevel="4" ID="564">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Str_052" DisplayName="Desperate Assault" Faction="Stronghold" Cost="2" MightLevel="4" DestinyLevel="4" ID="564">
 	<Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="Battleground" CardType="Unit" Side="Friendly" Amount="1">
 		<CardFilter IncludeUnitType="Melee"/>
@@ -687,7 +687,7 @@ Whenever you deploy a creature, that creature deals damage equal to its [ATK] to
     <!--....................................................................-->
     <!--  Fortune - Neutral -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_050" DisplayName="Fortune Telling" Faction="Neutral" Cost="4" DestinyLevel="2" ID="566">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_050" DisplayName="Fortune Telling" Faction="Neutral" Cost="4" DestinyLevel="2" ID="566">
 	<Target Zone="Library" Side="Friendly" Amount="2" AmountVisible="5">
 		<Effect Type="MoveCardTo" Destination="Hand"/>
 	</Target>
@@ -696,7 +696,7 @@ Whenever you deploy a creature, that creature deals damage equal to its [ATK] to
 	</Target>
         <Description>Look at the top 5 cards of your library. Put 2 of them into your hand and the rest into your graveyard.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_051" DisplayName="Full Moon" Faction="Neutral" Cost="1" MagicLevel="2" DestinyLevel="2" ID="567">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_051" DisplayName="Full Moon" Faction="Neutral" Cost="1" MagicLevel="2" DestinyLevel="2" ID="567">
 	<Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="Battleground" Amount="All" CardType="Unit">
 		<Effect Type="ModifyAbility" Ability="CannotTarget" Remove="True" />
@@ -708,7 +708,7 @@ Whenever you deploy a creature, that creature deals damage equal to its [ATK] to
 All creatures with "cannot be targeted" can now be targeted.
 When Full Moon enters the battleground, draw a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Neu_052" DisplayName="Second Chance" Faction="Neutral" Cost="3" DestinyLevel="3" ID="568">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Neu_052" DisplayName="Second Chance" Faction="Neutral" Cost="3" DestinyLevel="3" ID="568">
         <Target Zone="Graveyard" Amount="1" Side="Friendly">
 	<CardFilter IncludeCardType="Unit" IncludeStatus="InHolderSinceYourLastTurn"/>
 		<Effect Type="Deploy" Side="Friendly" EvaluationOrder="First"/>
@@ -760,7 +760,7 @@ When Cosmic Singularity is discarded, banish it and shuffle both graveyards into
         <Description>Until your next turn:
 At the end of each player's turn, that player can deploy a non-unique creature for free. They must meet its level requirements.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_Neu_055" DisplayName="Black Fang Extortion" Faction="Neutral" Cost="2" DestinyLevel="3" ID="571">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Neu_055" DisplayName="Black Fang Extortion" Faction="Neutral" Cost="2" DestinyLevel="3" ID="571">
         <Ongoing Duration="Permanent" />
 		<Target Zone="Hero" Amount="All" Side="Any">
             <Effect Type="GlobalEffect" GlobalEffectType="CantGainResources" />

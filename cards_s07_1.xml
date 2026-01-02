@@ -19,7 +19,7 @@
 		</Trigger>
 		<Description>When Captive Djinn enters the battleground, you may banish target non-unique ongoing spell or fortune.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Aca_091" DisplayName="Surging Djinn" Faction="Academy" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="3" MightLevel="3" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="1" HP="7" ID="912" School="Prime">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Aca_091" DisplayName="Surging Djinn" Faction="Academy" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="3" MightLevel="3" MagicLevel="2" DestinyLevel="0" Attack="3" Retaliate="1" HP="7" ID="912" School="Prime">
 		<Trigger Type="OnThisCardDeath">
 			<Target Zone="None" Side="Friendly">
 				<Effect Type="IncreaseLevel" Value="-1" LevelType="Magic"/>
@@ -64,7 +64,7 @@
 	<!--...............................................................................-->
 	<!-- Creatures - Haven -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Hav_090" DisplayName="Warding Inquisitor" Faction="Haven" SubType="Magic|Shooter" Race="Human|Priest" Cost="5" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="916" School="Light">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Hav_090" DisplayName="Warding Inquisitor" Faction="Haven" SubType="Magic|Shooter" Race="Human|Priest" Cost="5" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="916" School="Light">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="Battleground" CardType="Unit" Amount="Self" Side="Friendly" Shape="SelfAndAdjacent" ForceExecute="True" Persistent="True">
@@ -152,7 +152,7 @@
         <Description>Adjacent fire creatures gain +[1:ATK].
 Adjacent dark creatures gain +[1:ATK].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Inf_093" DisplayName="Spell Stealer Heretic" Faction="Inferno" SubType="Magic|Melee" Race="Human|Wizard" Cost="3" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="2" Retaliate="1" HP="6" ID="924" School="Dark">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Inf_093" DisplayName="Spell Stealer Heretic" Faction="Inferno" SubType="Magic|Melee" Race="Human|Wizard" Cost="3" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="2" Retaliate="1" HP="6" ID="924" School="Dark">
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="Graveyard" CardType="Spell" Side="Friendly" Amount="1">
 				<CardFilter IncludeSchool="Fire|Dark" IncludeOngoingType="Immediate"/>
@@ -162,7 +162,7 @@ Adjacent dark creatures gain +[1:ATK].</Description>
 		</Trigger>
 		<Description>When Spell Stealer Heretic enters the battleground, you may take target instant Dark or Fire spell from your graveyard and play it. You must still meet its level requirements and pay the cost. If you do, banish that spell.</Description>	
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Inf_094" DisplayName="Executioner Succubus" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Succubus" Cost="6" MightLevel="4" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="925" School="Dark">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Inf_094" DisplayName="Executioner Succubus" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Succubus" Cost="6" MightLevel="4" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="925" School="Dark">
 		<Trigger Type="OnThisCardDeploy" Side="Friendly">
 			<Target Zone="Battleground" CardType="Unit" Amount="1" Cancelable="True"/>	
 			<Target Zone="Battleground" CardType="Unit" Amount="Same" ValidateFilterOnExecute="True">
@@ -179,7 +179,7 @@ Adjacent dark creatures gain +[1:ATK].</Description>
 	<!--...............................................................................-->
 	<!-- Creatures - Necropolis -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Nec_090" DisplayName="Eternal Apprentice" Faction="Necropolis" SubType="Magic|Melee" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="926" School="Dark">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Nec_090" DisplayName="Eternal Apprentice" Faction="Necropolis" SubType="Magic|Melee" Race="Human|Wizard" Cost="4" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="926" School="Dark">
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="BattlegroundColumn" Amount="Self" Side="Enemy" CardType="Unit" BattlegroundPositionState="DontCare">
 				<Effect Type="AddCounter" CounterType="Crippling" Value="1"/>
@@ -193,7 +193,7 @@ Adjacent dark creatures gain +[1:ATK].</Description>
 		<Description>When Eternal Apprentice enters the battleground, put 1 crippling counter on all enemy creatures in the same row. 
 When Eternal Apprentice attacks, put 1 crippling counter on all enemy creatures in the same row as Eternal Apprentice.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Nec_091" DisplayName="Ancient Ghost" Faction="Necropolis" School="Prime" SubType="Magic|Melee" Race="Ghost" Cost="1" MightLevel="1" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="2" ID="927">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Nec_091" DisplayName="Ancient Ghost" Faction="Necropolis" School="Prime" SubType="Magic|Melee" Race="Ghost" Cost="1" MightLevel="1" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="2" ID="927">
 		<Ability Type="Incorporeal"/>
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" CardType="Unit" Amount="Self" Shape="AdjacentOnly">
@@ -206,7 +206,7 @@ When Eternal Apprentice attacks, put 1 crippling counter on all enemy creatures 
 		</Target>
 		<Description>Ancient Ghost gains +[1:ATK] and +[1:RET] for each adjacent Ghost creatures.</Description>
 	</Card>
-    	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Nec_092" DisplayName="Skeleton Servant" Faction="Necropolis" SubType="Melee" Race="Skeleton" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="5" Retaliate="5" HP="7" ID="928" School="Dark">
+    	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Nec_092" DisplayName="Skeleton Servant" Faction="Necropolis" SubType="Melee" Race="Skeleton" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="5" Retaliate="5" HP="7" ID="928" School="Dark">
         	<Trigger Type="OnThisCardDeploy">
             		<Target Zone="Battleground" Amount="Self">
                 		<Effect Type="AddCounter" CounterType="Crippling" Value="4"/>
@@ -250,7 +250,7 @@ At beginning of your turn, move 1 crippling counter from Skeleton Servant to tar
 		</Trigger>
 		<Description>When a creature with a crippling counter dies, put a +[1:ATK] counter on Eternal Mentor.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_096" DisplayName="Eternal Archon" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="3" HP="8" ID="932" School="Dark">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Nec_096" DisplayName="Eternal Archon" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="3" HP="8" ID="932" School="Dark">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Crippling" Value="1"/>
 		<Ability Type="LifeDrain" Value="2" />
@@ -300,7 +300,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 		<Ability Type="Hypnotize"/>
 		<!-- S07 NEW STUFF : OnUnitDamaged - A simple trigger triggered whenever a creature is damaged. -->
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Unit" Name="Cre_San_093" DisplayName="Shogun" Faction="Sanctuary" SubType="Magic|Melee" Race="Naga" Cost="6" MightLevel="4" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="936" School="Water">
+	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_San_093" DisplayName="Shogun" Faction="Sanctuary" SubType="Magic|Melee" Race="Naga" Cost="6" MightLevel="4" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="936" School="Water">
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="BattlegroundPosition" CardType="Unit" Amount="1" Shape="SelfAndAdjacent" Cancelable="True">
 				<Effect Type="Damage" Value="2"/>
@@ -342,7 +342,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 		</Target>
 		<Description>While there is another friendly Centaur creature on the battleground, Juvenile Centaur gains Attack Anywhere.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Str_092" DisplayName="Pao Scout" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="1" HP="5" ID="940">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Str_092" DisplayName="Pao Scout" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="1" HP="5" ID="940">
 		<Trigger Type="OnThisPreAttackHero">
 			<Target Zone="None" Side="Friendly">
 				<Effect Type="IncreaseLevel" Value="1" LevelType="Might"/>
@@ -363,7 +363,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 		<Ability Type="QuickAttack"/>
 		<Description></Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_095" DisplayName="Elder Centaur" Faction="Stronghold" SubType="Melee" Race="Centaur" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="5" ID="943">
+	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_095" DisplayName="Elder Centaur" Faction="Stronghold" SubType="Melee" Race="Centaur" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="5" ID="943">
 		<Ability Type="MagicResist"/>
 		<Variable Type="TargetCount">
 			<Target Zone="BattlegroundColumn" Amount="Self" Side="Enemy" CardType="Unit" BattlegroundPositionState="DontCare"/>
@@ -383,7 +383,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 </Target>
 <Description> While there is another friendly Centaur creature on the battleground, Elder Centaur gains Charge. While there is no enemy creatures on the same row as Elder Centaur, Elder Centaur gains +[1:ATK].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Str_096" DisplayName="Centaur Chieftain" Faction="Stronghold" SubType="Shooter" Race="Centaur" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="944">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Str_096" DisplayName="Centaur Chieftain" Faction="Stronghold" SubType="Shooter" Race="Centaur" Cost="5" MightLevel="5" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="944">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
 			<CardFilter IncludeAbility="AttackAnywhere"/>
@@ -411,7 +411,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 	<!--...............................................................................-->
 	<!-- Creatures - Neutral -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Neu_090" DisplayName="Agyn Mercenary" Faction="Neutral" SubType="Melee" Race="Human|Mercenary" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="0" Retaliate="3" HP="8" ID="946">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Neu_090" DisplayName="Agyn Mercenary" Faction="Neutral" SubType="Melee" Race="Human|Mercenary" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="0" Retaliate="3" HP="8" ID="946">
 		<Variable Type="Resources" Side="Friendly" ValueModifier="0.5xd"/>
 		<Variable2 Type="Resources" Side="Friendly" ValueModifier="0.5xu"/>
 		<Target Zone="Battleground" Amount="Self">

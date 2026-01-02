@@ -48,7 +48,7 @@
 	<!--...................................................................-->
 	<!-- Fortune - Inferno -->
 	<!--...................................................................-->
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Fortune" Name="For_Inf_090" DisplayName="Scarification" Faction="Inferno" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="955">
+	<Card Rarity="Uncommon" Unique="False" Type="Fortune" Name="For_Inf_090" DisplayName="Scarification" Faction="Inferno" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="955">
 		<Target Zone="Hero" Amount="All" Side="Friendly"/>
 		<Target Zone="Hero" Amount="Same" Side="Friendly">
 			<Variable Type="Level" Side="Friendly" LevelType="Destiny"/>
@@ -95,7 +95,7 @@
 		</Target>
 		<Description>Deal X damage to your hero, where X is equal to 8 minus your [DESTINY] level. Then draw 5 cards.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Fortune" Name="For_Inf_091" DisplayName="Ritual of the Dark Flame" Faction="Inferno" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="956">
+	<Card Rarity="Common" Unique="False" Type="Fortune" Name="For_Inf_091" DisplayName="Ritual of the Dark Flame" Faction="Inferno" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="956">
 		<Ongoing Duration="Permanent"/>
 		<Variable Type="TargetCount">
 			<Target Zone="Graveyard" Amount="All" Side="Friendly">
@@ -167,7 +167,7 @@ Friendly Spirits creatures gain +1 [ATK].</Description>
 		<Description>Until your next turn:
 All enemy creatures gains -[2:ATK].</Description>
 	</Card>
-	<Card UseXmlDescription="True" NotLocalized="True" Rarity="Rare" Unique="False" Type="Fortune" Name="For_San_092" DisplayName="Foreknowledge" Faction="Sanctuary" Cost="4" MightLevel="0" MagicLevel="0" DestinyLevel="4" ID="961">
+	<Card Rarity="Rare" Unique="False" Type="Fortune" Name="For_San_092" DisplayName="Foreknowledge" Faction="Sanctuary" Cost="4" MightLevel="0" MagicLevel="0" DestinyLevel="4" ID="961">
         	<Target Zone="None" Side="Friendly">
 		<Effect Type="ChoiceOption" />
         	<Subgroup>
@@ -195,7 +195,7 @@ All enemy creatures gains -[2:ATK].</Description>
 	<!--....................................................................-->
 	<!-- Fortune - Stronghold -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Fortune" Name="For_Str_090" DisplayName="Beastman Warcry" Faction="Stronghold" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="962">
+	<Card Rarity="Uncommon" Unique="False" Type="Fortune" Name="For_Str_090" DisplayName="Beastman Warcry" Faction="Stronghold" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="962">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Target Zone="Battleground" Amount="2" CardType="Unit" ForceExecute="True" Persistent="True">
 			<CardFilter IncludeRaces="Centaur|Harpy"/>
@@ -336,7 +336,7 @@ While a Wizard creature is at Crimson Tower, friendly Beastmen cannot be targert
 	<!--....................................................................-->
 	<!-- Building - Haven -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Building" Name="Bui_Hav_090" DisplayName="Holy Lighthouse" Faction="Haven" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="969">
+	<Card Rarity="Common" Unique="False" Type="Building" Name="Bui_Hav_090" DisplayName="Holy Lighthouse" Faction="Haven" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="969">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
 			<CardFilter IncludeFaction="Haven"/>
 			<Effect Type="ModifyAbility" Ability="DarkWard"/>
@@ -384,7 +384,7 @@ While a Wizard creature is at Crimson Tower, friendly Beastmen cannot be targert
 		</Trigger>
 		<Description>After the creature at Walls of Destruction is attacked, deal 3 damage to the attacking creature.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Building" Name="Bui_Inf_091" DisplayName="Heretic Library" Faction="Inferno" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="973">
+	<Card Rarity="Uncommon" Unique="False" Type="Building" Name="Bui_Inf_091" DisplayName="Heretic Library" Faction="Inferno" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="973">
 		<Variable Type="OccupantCount">
 			<CardFilter IncludeFaction="Inferno"/>
 		</Variable>
@@ -395,7 +395,7 @@ While a Wizard creature is at Crimson Tower, friendly Beastmen cannot be targert
 				<Effect Type="MoveCardTo" Destination="Hand"/>
 			</Target>
 		</Trigger>
-	<Description>At the beginning of your turn, if an Inferno creature is at Heretic Library, take target Inferno forune card from your graveyard ad put it into your hand.</Description>
+	<Description>At the beginning of your turn, if an Inferno creature is at Heretic Library, take target Inferno fortune card from your graveyard ad put it into your hand.</Description>
 	</Card>
 	<Card Rarity="Rare" Unique="False" Type="Building" Name="Bui_Inf_092" DisplayName="Throne of Ahribban" Faction="Inferno" Cost="4" MightLevel="2" MagicLevel="2" DestinyLevel="0" ID="974">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
@@ -408,7 +408,7 @@ While a Wizard creature is at Crimson Tower, friendly Beastmen cannot be targert
 	<!--....................................................................-->
 	<!-- Building - Necropolis -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Building" Name="Bui_Nec_090" DisplayName="Statue of the Spider Godess" Faction="Necropolis" Cost="2" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="975">
+	<Card Rarity="Uncommon" Unique="False" Type="Building" Name="Bui_Nec_090" DisplayName="Statue of the Spider Godess" Faction="Necropolis" Cost="2" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="975">
 		<Variable Type="OccupantCount">
 			<CardFilter IncludeRaces="Namtaru|Spider"/>
 		</Variable>

@@ -46,7 +46,7 @@
         <Description>Enchant creature. Permanent:
 At the beginning of enchanted creature's controller's turn, deal 1 damage to their Hero.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Dar_041" DisplayName="Intimidation" School="Dark" Cost="2" MagicLevel="2" ID="422">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Dar_041" DisplayName="Intimidation" School="Dark" Cost="2" MagicLevel="2" ID="422">
         <Ongoing Duration="UntilYourNextTurn" />
         <Target Zone="Battleground" CardType="Unit" Amount="All">
             <Variable Type="CardCost" UseCurrentTarget="True" />
@@ -56,7 +56,7 @@ At the beginning of enchanted creature's controller's turn, deal 1 damage to the
         <Description>Until your next turn:
 Enemy creatures with a cost of [2:RESOURCES] or less gain Cannot Attack.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Dar_042" DisplayName="The Silent Death" School="Dark" Cost="4" MagicLevel="4" ID="423">
+    <Card Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Dar_042" DisplayName="The Silent Death" School="Dark" Cost="4" MagicLevel="4" ID="423">
         <Ongoing Duration="Permanent" />
       <Target Zone="Battleground" CardType="Unit" Amount="1">
         <Effect Type="ModifyAbility" Ability="CannotAttack" />
@@ -87,7 +87,7 @@ Enemy creatures with a cost of [2:RESOURCES] or less gain Cannot Attack.</Descri
         <Description>Enchant creature. Permanent:
 Enchanted creature gains Anchored.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Ear_041" DisplayName="Sylanna's Embrace" School="Earth" Cost="2" MagicLevel="2" ID="425">
+    <Card Rarity="Uncommon" Type="Spell" Name="Spe_Ear_041" DisplayName="Sylanna's Embrace" School="Earth" Cost="2" MagicLevel="2" ID="425">
         <Ongoing Duration="Permanent" />
         <Ability Type="Endurable"/>
         <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any">
@@ -108,7 +108,7 @@ Damage dealt to friendly melee creatures in the front line is halved, rounded do
     <!--....................................................................-->
     <!-- Spells - Fire -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_040" DisplayName="Heat Wave" School="Fire" Cost="1" MagicLevel="2" ID="427">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Fir_040" DisplayName="Heat Wave" School="Fire" Cost="1" MagicLevel="2" ID="427">
         <Target Zone="BattlegroundLine" CardType="Unit" Amount="1" Side="Enemy">
             <BattlegroundFilter Line="Front" />
             <Effect Type="Damage" Value="1" />
@@ -128,7 +128,7 @@ Damage dealt to friendly melee creatures in the front line is halved, rounded do
         <Description>Enchant creature. Permanent:
 Enchanted creature gains +[1:ATK] and Berserk.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Fir_042" DisplayName="The Forbidden Flame" School="Fire" Cost="5" MagicLevel="3" ID="429">
+    <Card Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Fir_042" DisplayName="The Forbidden Flame" School="Fire" Cost="5" MagicLevel="3" ID="429">
         <Target Zone="Battleground" Side="Any" Amount="All" CardType="Unit">
             <Variable Type="Level" LevelType="Magic" ValueModifier="2.0x" Side="Friendly" />
             <Effect Type="Damage" Value="Variable" DamageFlags="Spell|Fire|Magic|Enforced" />
@@ -175,14 +175,14 @@ At the beginning of your turn, take a non-unique creature card at random from yo
         </Target>
         <Description>Return target ongoing spell or fortune to its owner's hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Spell" Name="Spe_Pri_041" DisplayName="Fate Twister" School="Prime" Cost="3" MagicLevel="4" DestinyLevel="1" ID="434">
+    <Card Rarity="Uncommon" Type="Spell" Name="Spe_Pri_041" DisplayName="Fate Twister" School="Prime" Cost="3" MagicLevel="4" DestinyLevel="1" ID="434">
         <Target Zone="Hand" Amount="1" Side="Enemy">
             <CardFilter IncludeCardType="Fortune" />
             <Effect Type="Play" Free="True" CancelDestination="Graveyard" />
         </Target>
         <Description>Look at opponent's hand and choose a fortune card from it. You can play this fortune for free. If you don't, put that card into opponent's graveyard.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="4" ID="435">
+    <Card Rarity="Epic" Unique="True" Type="Spell" Name="Spe_Pri_042" DisplayName="The Gate to Nowhere" School="Prime" Cost="3" MagicLevel="4" ID="435">
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
             <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Any" Cancelable="False">
@@ -248,13 +248,13 @@ All friendly creatures gain +[1:ATK] and Fortune Ward.</Description>
     <!-- //	##      ##  #   ##      #  ##    ##        ## -->
     <!-- //	#####     ##    #####   #   #    ##     ##### -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Event" Name="Eve_Neu_040" DisplayName="Day of the Sanctuary" Cost="0" Faction="Neutral" ID="439">
+    <Card Rarity="Uncommon" Type="Event" Name="Eve_Neu_040" DisplayName="Day of the Sanctuary" Cost="0" Faction="Neutral" ID="439">
         <Target Zone="Battleground" CardType="Unit" Amount="1" ForceExecute="True" Persistent="True">
             <Effect Type="ModifyAbility" Ability="CannotTarget" Duration="UntilYourNextTurn" />
         </Target>
         <Description>[0:RESOURCES]: Until your next turn, target creature cannot be targeted.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Event" Name="Eve_Neu_041" DisplayName="Hail Storm" Cost="3" Faction="Neutral" ID="440">
+    <Card Rarity="Common" Type="Event" Name="Eve_Neu_041" DisplayName="Hail Storm" Cost="3" Faction="Neutral" ID="440">
         <Target Zone="Battleground" CardType="Unit" Amount="All" NeedActivation="True">
             <Effect Type="Damage" Value="1" />
         </Target>

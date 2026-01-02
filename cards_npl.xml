@@ -259,7 +259,7 @@
     <!--...............................................................................-->
     <!-- Heros - Cheat -->
     <!--...............................................................................-->
-    <Card NotLocalized="True" Rarity="NotPlayable" Type="Hero" Name="Her_Che_002" DisplayName="Robin, Invoker of Loss" Faction="Neutral" MightLevel="5" MagicLevel="5" DestinyLevel="5" HP="1" ID="15003">
+    <Card Rarity="NotPlayable" Type="Hero" Name="Her_Che_002" DisplayName="Robin, Invoker of Loss" Faction="Neutral" MightLevel="5" MagicLevel="5" DestinyLevel="5" HP="1" ID="15003">
         <School Name="Light"/>
         <School Name="Dark"/>
         <School Name="Air"/>

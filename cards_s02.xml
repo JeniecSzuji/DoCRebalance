@@ -9,7 +9,7 @@
     <!--...............................................................................-->
     <!-- Heroes Haven -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Heroic" Type="Hero" Name="Her_Hav_006" DisplayName="Alia, Caller of Faith" Faction="Haven" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="20" ID="340">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Hav_006" DisplayName="Alia, Caller of Faith" Faction="Haven" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="20" ID="340">
         <School Name="Fire"/>
         <School Name="Light"/>
         <Description>[5:RESOURCES]: Heal all damage from all friendly creatures.</Description>

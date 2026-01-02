@@ -124,7 +124,7 @@
     <!--...............................................................................-->
     <!-- Heros - Inferno -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Heroic" Type="Hero" Name="Her_Inf_005" DisplayName="Phrias, Prince of Annihilation" Faction="Inferno" MightLevel="2" MagicLevel="1" DestinyLevel="0" HP="19" ID="257">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Inf_005" DisplayName="Phrias, Prince of Annihilation" Faction="Inferno" MightLevel="2" MagicLevel="1" DestinyLevel="0" HP="19" ID="257">
         <School Name="Fire"/>
         <School Name="Prime"/>
         <Description>[2:RESOURCES]: Until end of turn, target creature gains Sweep Attack.
@@ -157,7 +157,7 @@
             </Subgroup>
         </Target>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Inf_007" DisplayName="Ignatius" Faction="Inferno" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="452">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Inf_007" DisplayName="Ignatius" Faction="Inferno" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="452">
         <School Name="Dark"/>
         <School Name="Fire"/>
         <Description>The first time opponent discards a card in a turn, if your [MIGHT] level is 2 or more and your [DESTINY] level is 4 or more, deal 2 damage to their hero.</Description>
@@ -207,7 +207,7 @@
             </Subgroup>
         </Target>
     </Card>
-	<Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Nec_007" DisplayName="Siham, Spirit Severer" Faction="Necropolis" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="453">
+	<Card Rarity="Heroic" Type="Hero" Name="Her_Nec_007" DisplayName="Siham, Spirit Severer" Faction="Necropolis" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="453">
         <School Name="Dark"/>
         <School Name="Earth"/>
         <Description>If your [MIGHT] level is 5 or more and your [DESTINY] level is 4 or more:
@@ -248,7 +248,7 @@ At the beginning of your turn, you may destroy target creature with a cost of [2
     <!--...............................................................................-->
     <!-- Heroes Sanctuary -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_San_005" DisplayName="Akane, Mourner of Lost Memories" Faction="Sanctuary" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="19" ID="258">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_San_005" DisplayName="Akane, Mourner of Lost Memories" Faction="Sanctuary" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="19" ID="258">
         <School Name="Air"/>
         <School Name="Prime"/>
         <Description>[1:RESOURCES]: Remove all counters and destroy all ongoing spells and fortunes on target creature.</Description>
@@ -347,7 +347,7 @@ At the beginning of your turn, you may destroy target creature with a cost of [2
     <!--...............................................................................-->
     <ExistingCard Name="Cre_Neu_041" Rarity="Epic"/>
 	
-	<!--Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Fortune" Name="For_Neu_111" DisplayName="For_Neu_111" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="1" DestinyLevel="1" ID="1092">
+	<!--Card Rarity="Rare" Unique="False" Type="Fortune" Name="For_Neu_111" DisplayName="For_Neu_111" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="1" DestinyLevel="1" ID="1092">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" CardType="Building" Amount="All"/>
 		</Variable>
@@ -361,7 +361,7 @@ At the beginning of your turn, you may destroy target creature with a cost of [2
 When an  creature on building dies, destroy that building.
 When no building on the battleground, destroy [THIS].</Description>
 	</Card>	
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Fortune" Name="For_Neu_112" DisplayName="For_Neu_112" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="3" DestinyLevel="1" ID="1096">
+	<Card Rarity="Epic" Unique="False" Type="Fortune" Name="For_Neu_112" DisplayName="For_Neu_112" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="3" DestinyLevel="1" ID="1096">
         <Target Zone="Battleground" CardType="Unit" Amount="1">
             <Effect Type="RemoveCounter" CounterType="Any" Value="Infinite"/>
             <Effect Type="Cleanse"/>
@@ -372,7 +372,7 @@ When no building on the battleground, destroy [THIS].</Description>
         </Target>
 		<Description>Remove all ongoing spells and counters on target creature, and that creature lose lts abilitlies. Draw a card.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Neu_128" Unique="False" DisplayName="Cre_Neu_128" Faction="Neutral" SubType="Shooter" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="0" HP="5" ID="1091">
+	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_128" Unique="False" DisplayName="Cre_Neu_128" Faction="Neutral" SubType="Shooter" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="0" HP="5" ID="1091">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Battleground" Amount="Self">
 			<Effect Type="PlayEffect" PlayEffectType="AttackBonus" Value="2">
@@ -387,7 +387,7 @@ When no building on the battleground, destroy [THIS].</Description>
 		
 		<Description>When attack a creature on building, deal 2 more damage and destroy that building.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Neu_129" Unique="False" DisplayName="Cre_Neu_129" Faction="Neutral" SubType="Magic|Shooter" Race="Wizard" Cost="5" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="1097">
+	<Card Rarity="Rare" Type="Unit" Name="Cre_Neu_129" Unique="False" DisplayName="Cre_Neu_129" Faction="Neutral" SubType="Magic|Shooter" Race="Wizard" Cost="5" MightLevel="3" MagicLevel="3" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="1097">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Hero" Amount="All" Side="Friendly">
 			<Effect Type="GlobalEffect" GlobalEffectType="ModifyDamage" Value="1">
@@ -396,7 +396,7 @@ When no building on the battleground, destroy [THIS].</Description>
 		</Target>	
 		<Description>Friendly Spell deal 1 more damage.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Building" Name="Bui_Neu_111" DisplayName="Bui_Neu_111" Faction="Neutral" Cost="3" MightLevel="1" MagicLevel="3" DestinyLevel="0" ID="1093">
+	<Card Rarity="Rare" Unique="False" Type="Building" Name="Bui_Neu_111" DisplayName="Bui_Neu_111" Faction="Neutral" Cost="3" MightLevel="1" MagicLevel="3" DestinyLevel="0" ID="1093">
 		<Trigger Type="OnDeployOnThis">
 			<Target Zone="Battleground" Amount="1" Cancelable="True">
 				<CardFilter IncludeCardType="Fortune|Spell" IncludeOngoingType="Ongoing"/>
@@ -405,7 +405,7 @@ When no building on the battleground, destroy [THIS].</Description>
 		</Trigger>
 		<Description>When you deploy a creature on this, you may destory target ongoing spell or fortune.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="False" Type="Event" Name="Eve_Neu_114" DisplayName="Eve_Neu_114" Cost="1" Faction="Neutral" ID="1099">
+	<Card Rarity="Epic" Unique="False" Type="Event" Name="Eve_Neu_114" DisplayName="Eve_Neu_114" Cost="1" Faction="Neutral" ID="1099">
 		<Target Zone="Battleground" Amount="1" CardType="Building" Side="Any">
 			<Effect Type="Relocate" Side="Context"/>
 		</Target>

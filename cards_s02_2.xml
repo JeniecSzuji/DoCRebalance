@@ -9,7 +9,7 @@
     <!--....................................................................-->
     <!-- Fortune - Haven -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Hav_040" DisplayName="Elrath's Blessing" Faction="Haven" Cost="2" DestinyLevel="3" ID="392">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_040" DisplayName="Elrath's Blessing" Faction="Haven" Cost="2" DestinyLevel="3" ID="392">
 		<Ongoing Duration="Permanent"/>
 		<Variable Type="HeroHP" Side="Friendly"/>
 		<Variable2 Type="TargetCount" ValueModifier="1">
@@ -34,7 +34,7 @@
 While your hero has 2 remaining health or more, when its health drops to 0 or less, set its remaining health to 1.
 When your hero health drops to 1, destroy Elrath's Blessing and heal X damage from your hero, where X is equal to 1 plus the number of friendly Angel creatures on the battleground.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Hav_041" DisplayName="Sister's Tent" Faction="Haven" Cost="2" DestinyLevel="2" ID="393">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_041" DisplayName="Sister's Tent" Faction="Haven" Cost="2" DestinyLevel="2" ID="393">
 		<Ongoing Duration="Permanent" />
 		<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
 			<Target Zone="Battleground" CardType="Unit" Side="Friendly" Amount="1" Cancelable="False">
@@ -53,7 +53,7 @@ At the beginning of your turn, heal 3 damage from target friendly creature.</Des
         </Target>
         <Description>For each friendly creature on the battleground, heal 1 damage from your hero.</Description>
     </Card>
-    <Card NotLocalized="True" Rarity="Rare" Type="Fortune" Name="For_Hav_043" DisplayName="Offensive Stance" Faction="Haven" Cost="3" DestinyLevel="2" ID="395">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Hav_043" DisplayName="Offensive Stance" Faction="Haven" Cost="3" DestinyLevel="2" ID="395">
         <Ongoing Duration="Permanent" />
         <Target Zone="Battleground" CardType="Unit" Side="Friendly" Amount="All">
             <Effect Type="ModifyAbility" Ability="PerfectRetaliate" />
@@ -107,7 +107,7 @@ At the beginning of your turn, return [THIS] to its owner's hand.</Description>
 Choose one: creature OR spell OR fortune.
 Whenever opponent plays a card of this type, they discard a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Inf_041" DisplayName="Halls of Inertia" Faction="Inferno" Cost="3" DestinyLevel="2" ID="397">
+    <Card Rarity="Common" Type="Fortune" Name="For_Inf_041" DisplayName="Halls of Inertia" Faction="Inferno" Cost="3" DestinyLevel="2" ID="397">
         <Ongoing Duration="Permanent"/>
 	<Target Zone="Battleground" Side="Enemy" Amount="1" CardType="Unit">
 		</Target>
@@ -152,7 +152,7 @@ While you control more creatures than your opponent, target creature is immobili
     <!--....................................................................-->
     <!-- Fortune - Necropolis -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_040" DisplayName="Consume Minions" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="400">
+    <Card Rarity="Common" Type="Fortune" Name="For_Nec_040" DisplayName="Consume Minions" Faction="Necropolis" Cost="1" DestinyLevel="2" ID="400">
 	<Variable Type="Resources" Side="Friendly"/>
 	<Variable2 Type="CardCost" UseParent="True"/>
 	<Ongoing Duration="Repeatable"/>
@@ -166,7 +166,7 @@ While you control more creatures than your opponent, target creature is immobili
         </Target>
         <Description>Put target friendly non-token creature into graveyard, pay [1:RESOURCES] and heal 3 damage from your hero. You can repeat this as many times as you want, unless you have enough [RESOURCES] to pay Consume Minions cost.</Description>
     </Card>
-    <Card NotLocalized="True" UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_041" DisplayName="Rite of Necromantic Restoration" Faction="Necropolis" Cost="2" DestinyLevel="3" ID="401">
+    <Card Rarity="Common" Type="Fortune" Name="For_Nec_041" DisplayName="Rite of Necromantic Restoration" Faction="Necropolis" Cost="2" DestinyLevel="3" ID="401">
         <Variable Type="TargetCount" ValueModifier="3mi">
             <Target Zone="Graveyard" Side="Friendly"  Amount="All" CardType="Unit"/>
         </Variable>
@@ -246,7 +246,7 @@ While you control more creatures than your opponent, target creature is immobili
     <!--....................................................................-->
     <!-- Fortune - Sanctuary -->
     <!--....................................................................-->
-    <Card NotLocalized="True" UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_040" DisplayName="Hall of Fortune" Faction="Sanctuary" Cost="1" DestinyLevel="2" ID="404">
+    <Card Rarity="Common" Type="Fortune" Name="For_San_040" DisplayName="Hall of Fortune" Faction="Sanctuary" Cost="1" DestinyLevel="2" ID="404">
 		<Target Zone="None" Side="Friendly">
 			<Variable Type="TargetCount">
 				<Target Zone="Library" Amount="All" Side="Enemy"/>
@@ -284,7 +284,7 @@ While you control more creatures than your opponent, target creature is immobili
         </Target>
         <Description>Look at the top 5 cards of your library and put them back in any order.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_San_042" DisplayName="Spy Report" Faction="Sanctuary" Cost="1" DestinyLevel="2" ID="406">
+    <Card Rarity="Common" Type="Fortune" Name="For_San_042" DisplayName="Spy Report" Faction="Sanctuary" Cost="1" DestinyLevel="2" ID="406">
 <Target Side="Enemy">
 <Effect Type="Shuffle" CardHolder="Library"/>
 </Target>
@@ -308,7 +308,7 @@ While you control more creatures than your opponent, target creature is immobili
     <!--....................................................................-->
     <!-- Fortune - Stronghold -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Str_041" DisplayName="Orc Armory" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="409">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_041" DisplayName="Orc Armory" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="409">
         <Target Zone="None" Side="Friendly">
 		<Effect Type="IncreaseLevel" Value="2" LevelType="Might"/>
 	</Target>
@@ -347,7 +347,7 @@ Whenever a friendly creature dies, increase your [MIGHT] level by 1.</Descriptio
     <!--....................................................................-->
     <!--  Fortune - Neutral -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Neu_040" DisplayName="Higher Learning" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="2" DestinyLevel="2" ID="412">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_040" DisplayName="Higher Learning" Faction="Neutral" Cost="3" MightLevel="2" MagicLevel="2" DestinyLevel="2" ID="412">
 	    <Target Zone="None" Side="Enemy">
 			<Effect Type="ChoiceOption"/>
 			<Subgroup>
@@ -408,7 +408,7 @@ Whenever a friendly creature dies, increase your [MIGHT] level by 1.</Descriptio
         </Target>
         <Description>Reveal the top card of your library. If you meet its level requirements, play it for free.</Description>
     </Card>
-    <Card NotLocalized="True" Rarity="Rare" Type="Fortune" Name="For_Neu_045" DisplayName="Turncoats" Faction="Neutral" Cost="2" DestinyLevel="2" ID="417">
+    <Card Rarity="Rare" Type="Fortune" Name="For_Neu_045" DisplayName="Turncoats" Faction="Neutral" Cost="2" DestinyLevel="2" ID="417">
         <Target Zone="None" Side="Enemy">
 <Effect Type="ChoiceOption"/>
 <Subgroup>

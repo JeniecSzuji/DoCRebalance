@@ -10,7 +10,7 @@
     <!--...............................................................................-->
     <!-- Creatures - Haven -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Hav_020" DisplayName="Wolf Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" ID="260">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Hav_020" DisplayName="Wolf Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="3" MightLevel="3" Attack="2" Retaliate="2" HP="4" ID="260">
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="Retribution"/>
         <Target Zone="Battleground" CardType="Unit" Amount="Self">
@@ -124,7 +124,7 @@
     <Card Rarity="Rare" Type="Unit" Name="Cre_San_013" DisplayName="Mizu-Kami" Faction="Sanctuary" School="Water" SubType="Magic|Melee" Race="Spirit" Cost="5" MightLevel="3" MagicLevel="2" Attack="3" Retaliate="1" HP="5" ID="104">
         <Ability Type="MagicShield"/>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_San_009" DisplayName="Yuki-Onna" Faction="Sanctuary" School="Water" SubType="Shooter" Race="Spirit" Cost="5" MightLevel="4" MagicLevel="2" Attack="2" Retaliate="2" HP="8" ID="105">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_San_009" DisplayName="Yuki-Onna" Faction="Sanctuary" School="Water" SubType="Shooter" Race="Spirit" Cost="5" MightLevel="4" MagicLevel="2" Attack="2" Retaliate="2" HP="8" ID="105">
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="Hypnotize"/>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
@@ -169,7 +169,7 @@
         <Ability Type="BlockDeploy"/>
         <Description>Enemy creatures cannot be deployed on the same row as Nyorai Sairensa.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_San_016" DisplayName="Wanizame" Faction="Sanctuary" SubType="Melee" Race="Beastmen|Warrior" Cost="4" MightLevel="4" Attack="3" Retaliate="1" HP="5" School="Water" ID="101">
+    <Card Rarity="Common" Type="Unit" Name="Cre_San_016" DisplayName="Wanizame" Faction="Sanctuary" SubType="Melee" Race="Beastmen|Warrior" Cost="4" MightLevel="4" Attack="3" Retaliate="1" HP="5" School="Water" ID="101">
         <Ability Type="Honor" Value="1"/>
 			<Target Zone="Battleground" Amount="Self">
 			<Variable Type="TargetCount">
@@ -210,7 +210,7 @@
     <!--...............................................................................-->
     <!-- Creatures - Stronghold -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Str_020" DisplayName="Blackskull Warchanter" Faction="Stronghold" SubType="Melee" Race="Orc" Cost="1" MightLevel="1" Attack="0" Retaliate="0" HP="2" ID="276">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Str_020" DisplayName="Blackskull Warchanter" Faction="Stronghold" SubType="Melee" Race="Orc" Cost="1" MightLevel="1" Attack="0" Retaliate="0" HP="2" ID="276">
         <Trigger Type="OnTurnBegin" Side="Friendly">
             <Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
                 <CardFilter IncludeAbility="Enrage"/>
@@ -249,7 +249,7 @@
     <!--...............................................................................-->
     <!-- Creatures - Neutral -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_020" DisplayName="Dire Wolf" Faction="Neutral" SubType="Melee" Race="Wolf" Cost="2" MightLevel="2" Attack="1" Retaliate="2" HP="2" ID="280">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_020" DisplayName="Dire Wolf" Faction="Neutral" SubType="Melee" Race="Wolf" Cost="2" MightLevel="2" Attack="1" Retaliate="2" HP="2" ID="280">
         <Ability Type="Retribution"/>
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="Library" Side="Friendly" CardType="Unit" Amount="1" RevealToOther="True">
@@ -262,7 +262,7 @@
 		</Trigger>
 		<Description>When Dire Wolf enters the battleground, search your library for a card named Dire Wolf, put it into your hand, then shuffle your library.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_021" DisplayName="Black Vulture" Faction="Neutral" SubType="Flyer" Race="Bird" Cost="2" MightLevel="2" Attack="2" Retaliate="1" HP="2" ID="281">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Neu_021" DisplayName="Black Vulture" Faction="Neutral" SubType="Flyer" Race="Bird" Cost="2" MightLevel="2" Attack="2" Retaliate="1" HP="2" ID="281">
         <Variable Type="DeadCardLastTurnCount" Side="Enemy">
             <CardFilter Side="Friendly" IncludeCardType="Unit"/>
         </Variable>        
@@ -274,7 +274,7 @@
         </Trigger>
         <Description>At the beginning of your turn, if any friendly creature died during opponent's last turn, Black Vulture gains +[1:ATK] until end of your turn.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Neu_022" DisplayName="Blind Brother" Faction="Neutral" SubType="Melee|Shooter" Race="Human|Seer" Cost="3" MightLevel="1" DestinyLevel="3" Attack="1" Retaliate="1" HP="5" ID="282">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_022" DisplayName="Blind Brother" Faction="Neutral" SubType="Melee|Shooter" Race="Human|Seer" Cost="3" MightLevel="1" DestinyLevel="3" Attack="1" Retaliate="1" HP="5" ID="282">
         <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
             <Target Zone="None" Side="Friendly">
                 <Effect Type="Draw" Value="1"/>
@@ -297,7 +297,7 @@ Players cannot search their library.</Description>
         <Ability Type="ShuffleOnEnterGraveyard" />
         <Description>When Shi-No-Shi is put into your graveyard, shuffle it into your library instead.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Neu_025" DisplayName="Deep Mountain Turtle" Faction="Neutral" School="Earth" SubType="Melee" Race="Beast" Cost="3" MightLevel="3" Attack="1" Retaliate="3" HP="5" ID="333">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_025" DisplayName="Deep Mountain Turtle" Faction="Neutral" School="Earth" SubType="Melee" Race="Beast" Cost="3" MightLevel="3" Attack="1" Retaliate="3" HP="5" ID="333">
         <Ability Type="PreemptiveStrike"/>
 	<Ability Type="Turtling" Value="0"/>
 	<Description>At the end of turn, if Deep Mountain Turtle did not attack, it gains Anchored and Armor 1 until end of your next turn.</Description>

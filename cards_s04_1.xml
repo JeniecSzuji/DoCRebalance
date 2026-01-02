@@ -20,7 +20,7 @@
         <Description>Ambush: Put the top 2 cards of opponent's library into their graveyard.
 (Ambush abilities trigger when an enemy creature is deployed in the same row as this creature.)</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Aca_061" DisplayName="Insatiable Djinn" Faction="Academy" School="Prime" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="5" MightLevel="4" MagicLevel="4" Attack="3" Retaliate="3" HP="9" ID="601">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Aca_061" DisplayName="Insatiable Djinn" Faction="Academy" School="Prime" SubType="Magic|Flyer" Race="Spirit|Djinn" Cost="5" MightLevel="4" MagicLevel="4" Attack="3" Retaliate="3" HP="9" ID="601">
         <Trigger Type="OnTurnBegin" Side="Friendly">
             <Target Zone="Graveyard" CardType="Spell" Amount="1" Side="Enemy" Random="True">
 				<Variable Type="TargetCount">
@@ -91,7 +91,7 @@
         </Target>
         <Description>While Crusader Vanguard has no damage, it gains +[1:ATK] and +[1:RET].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Hav_064" DisplayName="Angel of Mourning" Faction="Haven" School="Light" SubType="Magic|Flyer" Race="Angel" Cost="3" MightLevel="3" MagicLevel="2" Attack="2" Retaliate="2" HP="6" ID="671">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Hav_064" DisplayName="Angel of Mourning" Faction="Haven" School="Light" SubType="Magic|Flyer" Race="Angel" Cost="3" MightLevel="3" MagicLevel="2" Attack="2" Retaliate="2" HP="6" ID="671">
         <Trigger Type="OnUnitDeath" Side="Friendly">
 <CardFilter IncludeRaces="Human" ExcludeToken="True"/>
 <Target Zone="Hero" Amount="All" Side="Friendly">
@@ -130,7 +130,7 @@
         </Trigger>
         <Description>When Reborn Incubus is put into your graveyard from your library, put it into your hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Inf_063" DisplayName="Soul-Consuming Efreet" Faction="Inferno" School="Fire" SubType="Magic|Flyer" Race="Djinn|Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="2" HP="5" ID="673">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Inf_063" DisplayName="Soul-Consuming Efreet" Faction="Inferno" School="Fire" SubType="Magic|Flyer" Race="Djinn|Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="2" HP="5" ID="673">
 		<Trigger Type="OnThisPreAttackHero">	
 			<Target Zone="None" Amount="Self" ForceExecute="True">
 				<Variable Type="TargetCount" ValueModifier="0.2xd">
@@ -178,7 +178,7 @@
     <!--...............................................................................-->
     <!-- Creatures - Sanctuary -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_San_060" DisplayName="Sayama Predator" Faction="Sanctuary" SubType="Melee" Race="Naga|Warrior" Cost="4" MightLevel="4" Attack="2" Retaliate="0" HP="5" ID="608">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_San_060" DisplayName="Sayama Predator" Faction="Sanctuary" SubType="Melee" Race="Naga|Warrior" Cost="4" MightLevel="4" Attack="2" Retaliate="0" HP="5" ID="608">
         <Target Zone="Hero" Amount="All" Side="Enemy">
             <Effect Type="GlobalEffect" GlobalEffectType="AmbushOnRelocate" />
         </Target>
@@ -207,7 +207,7 @@ Ambush: Deal 1 damage to ambushed creature.
         <Description>For every 5 cards in your graveyard, Honor Bound Kami gains Honor 1.</Description>
 		<DescriptionChinese>本方墓地中每有5张牌，荣耀之神获得荣耀1。</DescriptionChinese>
 	</Card>
-  <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_San_064" DisplayName="Sand Kame" Faction="Sanctuary" SubType="Melee" Race="Beast" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="680">
+  <Card Rarity="Common" Type="Unit" Name="Cre_San_064" DisplayName="Sand Kame" Faction="Sanctuary" SubType="Melee" Race="Beast" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="680">
         <Target Zone="Battleground" Amount="Self" CardType="Unit">
             <Effect Type="ModifyDamage" Value="-1" />
         </Target>
@@ -242,7 +242,7 @@ Ambush: Deal 1 damage to ambushed creature.
         <Ability Type="Bloodthirst" Value="1" />
         <Ability Type="Enrage" Value="1" />
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Str_063" DisplayName="Erg Hunter" Faction="Stronghold" SubType="Shooter" Race="Orc|Hunter" Cost="3" MightLevel="3" Attack="2" Retaliate="1" HP="5" ID="682" School="Earth">
+    <Card Rarity="Common" Type="Unit" Name="Cre_Str_063" DisplayName="Erg Hunter" Faction="Stronghold" SubType="Shooter" Race="Orc|Hunter" Cost="3" MightLevel="3" Attack="2" Retaliate="1" HP="5" ID="682" School="Earth">
         <Ability Type="ImmuneToRetaliate" />
         <Ability Type="Ambush" />
         <Trigger Type="OnAmbush" Side="Enemy">
@@ -278,7 +278,7 @@ Ambush: Deal 1 damage to ambushed creature.
         <Description>Ambush: Deal 1 damage to ambushed creature.
 (Ambush abilities trigger when an enemy creature is deployed in the same row as this creature.)</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Neu_062" DisplayName="Soul Consuming Wraith" Faction="Neutral" School="Prime" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="614">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Neu_062" DisplayName="Soul Consuming Wraith" Faction="Neutral" School="Prime" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="614">
         <Ability Type="ImmuneToRetaliate" />
         <Trigger Type="OnTurnBegin" Side="Friendly">
             <Target Zone="Graveyard" Amount="1" Side="Enemy" Random="True">

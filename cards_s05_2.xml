@@ -9,7 +9,7 @@
 	<!--....................................................................-->
 	<!-- Fortune - Academy -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Aca_070" DisplayName="Circle of Nine" Faction="Academy" Cost="3" MightLevel="0" MagicLevel="1" DestinyLevel="3" ID="748" Unique="False">
+	<Card Rarity="Uncommon" Type="Fortune" Name="For_Aca_070" DisplayName="Circle of Nine" Faction="Academy" Cost="3" MightLevel="0" MagicLevel="1" DestinyLevel="3" ID="748" Unique="False">
 		<Ongoing Duration="FromCondition"/>
 		<Variable Type="HeroHP"/>
 		<Condition ValueA="Variable" ValueB="99" Operator="LesserThan"/>
@@ -19,7 +19,7 @@
 	<Description>Permanent:
 Increase your [MAGIC] level by 3.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Aca_071" DisplayName="Crimson Link" Faction="Academy" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="749" Unique="False">
+	<Card Rarity="Common" Type="Fortune" Name="For_Aca_071" DisplayName="Crimson Link" Faction="Academy" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="749" Unique="False">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
 			<CardFilter IncludeRaces="Beastmen"/>
@@ -176,7 +176,7 @@ All Vampire creatures gain +[1:ATK] and +[1:RET]. All non-Vampire creatures gain
 		<Description>Look at the top card of opponent's library. You may put it into their graveyard. Do the same with your library.
 Whenever a friendly Priest creature enters the battleground, if Tea Ceremony is in your graveyard, take it and put it into your hand.</Description>
 	</Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Fortune" Name="For_San_072" DisplayName="Honourable Challenge" Faction="Sanctuary" Cost="1" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="758" Unique="False">
+    <Card Rarity="Rare" Type="Fortune" Name="For_San_072" DisplayName="Honourable Challenge" Faction="Sanctuary" Cost="1" MightLevel="0" MagicLevel="0" DestinyLevel="3" ID="758" Unique="False">
 		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="True">
 			<Variable Type="TargetCount">
 				<Target Zone="Battleground" Amount="All" Side="Enemy" CardType="Unit" MustBeTargetable="True"/>
@@ -324,7 +324,7 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 		</Trigger>
 		<Description>Whenever a creature moves to Dervish's Tent, it gains Swift until end of turn.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Building" Name="Bui_Aca_071" DisplayName="Spirit Gateway" Faction="Academy" Cost="1" MightLevel="1" MagicLevel="2" DestinyLevel="0" ID="764" Unique="False">
+	<Card Rarity="Common" Type="Building" Name="Bui_Aca_071" DisplayName="Spirit Gateway" Faction="Academy" Cost="1" MightLevel="1" MagicLevel="2" DestinyLevel="0" ID="764" Unique="False">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
 			<Effect Type="ModifyAbility" Ability="Incorporeal"/>
 		</Target>
@@ -347,7 +347,7 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 		</Target>
 		<Description>Whenever a non-unique Haven creature at Shrine of Elrath dies, put it on the top of its owner's library instead.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="Bui_Hav_071" DisplayName="Emperor's Wall" Faction="Haven" Cost="2" MightLevel="3" MagicLevel="0" DestinyLevel="1" ID="767" Unique="False">
+	<Card Rarity="Rare" Type="Building" Name="Bui_Hav_071" DisplayName="Emperor's Wall" Faction="Haven" Cost="2" MightLevel="3" MagicLevel="0" DestinyLevel="1" ID="767" Unique="False">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Side="Friendly" Amount="All">
 				<CardFilter IncludeCardID="Bui_Hav_071"/>
@@ -359,7 +359,7 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 		</Target>
 		<Description>Creatures at Emperor's Wall gain Perfect Retaliation and gain +[1:RET] for each card named Emperor's Wall on your side of the battleground.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Building" Name="Bui_Hav_072" DisplayName="Treasury" Faction="Haven" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="768" Unique="False">
+	<Card Rarity="Common" Type="Building" Name="Bui_Hav_072" DisplayName="Treasury" Faction="Haven" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="768" Unique="False">
 		<Variable Type="OccupantCount" />
 		<Target Zone="Hero" Amount="All" Side="Friendly">
 			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
@@ -384,7 +384,7 @@ When an enemy creature attacks, opponent cannot deploy creatures.</Description>
 		</Trigger>
 		<Description>Whenever an Inferno creature at Sacrificial Pit dies, deal 1 damage to enemy hero.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="Bui_Inf_071" DisplayName="Ur-Traggal's Bastion" Faction="Inferno" Cost="4" MightLevel="2" MagicLevel="2" DestinyLevel="2" ID="770" Unique="False">	
+	<Card Rarity="Rare" Type="Building" Name="Bui_Inf_071" DisplayName="Ur-Traggal's Bastion" Faction="Inferno" Cost="4" MightLevel="2" MagicLevel="2" DestinyLevel="2" ID="770" Unique="False">	
 		<Ability Type="BastionTL" Value="0"/>		
 		<Variable Type="AbilityValue" Ability="BastionTL"/>
         <Trigger Type="OnTurnEnd" Side="Friendly">
@@ -451,7 +451,7 @@ If such creature dies in Boneyard, then banish it.
 	<!--....................................................................-->
 	<!-- Building - Sanctuary -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Type="Building" Name="Bui_San_070" DisplayName="Kabuki Dojo" Faction="Sanctuary" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="773" Unique="False">
+	<Card Rarity="Common" Type="Building" Name="Bui_San_070" DisplayName="Kabuki Dojo" Faction="Sanctuary" Cost="3" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="773" Unique="False">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
 			<CardFilter IncludeFaction="Sanctuary"/>
 			<Effect Type="ModifyAbility" Ability="ShuffleOnEnterGraveyard"/>
@@ -466,7 +466,7 @@ If such creature dies in Boneyard, then banish it.
 		</Trigger>
 		<Description>Whenever a Sanctuary creature at Kabuki Dojo dies, shuffle it in its owner's library instead, then draw a card.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_San_071" DisplayName="Kensei Dojo" Faction="Sanctuary" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="3" ID="774" Unique="False">
+	<Card Rarity="Uncommon" Type="Building" Name="Bui_San_071" DisplayName="Kensei Dojo" Faction="Sanctuary" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="3" ID="774" Unique="False">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Side="Friendly" Amount="All">
 				<CardFilter IncludeCardID="Bui_San_071"/>
@@ -512,7 +512,7 @@ If such creature dies in Boneyard, then banish it.
 		<Description>Creatures at Makeshift Shelter cannot be targeted. Prevent all attack damage dealt by melee creatures to creatures at Makeshift Shelter.
 When a creature at Makeshift Shelter attacks or moves, destroy Makeshift Shelter.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Building" Name="Bui_Neu_071" DisplayName="Barricade" Faction="Neutral" Cost="2" MightLevel="1" MagicLevel="0" DestinyLevel="0" ID="777" Unique="False">
+	<Card Rarity="Common" Type="Building" Name="Bui_Neu_071" DisplayName="Barricade" Faction="Neutral" Cost="2" MightLevel="1" MagicLevel="0" DestinyLevel="0" ID="777" Unique="False">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" CardType="Building" Amount="Self" Shape="AdjacentOnly"/>
 		</Variable>
@@ -531,7 +531,7 @@ When a creature at Makeshift Shelter attacks or moves, destroy Makeshift Shelter
 		<Description>When Barricade enters the battleground, search your library for a card named Barricade, put it into your hand, then shuffle your library.
 Creatures at Barricade gain +[1:RET] for each building adjacent to it.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Building" Name="Bui_Neu_072" DisplayName="Training Ground" Faction="Neutral" Cost="3" MightLevel="1" MagicLevel="0" DestinyLevel="1" ID="778" Unique="False">
+	<Card Rarity="Uncommon" Type="Building" Name="Bui_Neu_072" DisplayName="Training Ground" Faction="Neutral" Cost="3" MightLevel="1" MagicLevel="0" DestinyLevel="1" ID="778" Unique="False">
 		<Variable Type="OccupantCount"/>
 		<Trigger Type="OnHeroIncreaseMightLevel" Side="Friendly">
 			<Target Zone="None" Side="Friendly">

@@ -57,7 +57,7 @@
 		<Description>While there is a friendly Wizard creature on the battleground, Loyal Rakshasa gains Sweep Attack.
 While Loyal Rakshasa is adjacent to a friendly Wizard creature, it gains +[2:ATK].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Aca_074" DisplayName="Crimson Apprentice" Faction="Academy" SubType="Magic|Shooter" Race="Human|Wizard" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="712" Unique="False">
+	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Aca_074" DisplayName="Crimson Apprentice" Faction="Academy" SubType="Magic|Shooter" Race="Human|Wizard" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="712" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="Self" Shape="AdjacentOnly">
 			<CardFilter IncludeRaces="Beastmen"/>
@@ -96,7 +96,7 @@ While Loyal Rakshasa is adjacent to a friendly Wizard creature, it gains +[2:ATK
     </Target>
 		<Description>Friendly Human creatures at a building gain +[1:HEALTH] and Mending.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Hav_074" DisplayName="Falcon Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="717" Unique="False">
+	<Card Rarity="Common" Type="Unit" Name="Cre_Hav_074" DisplayName="Falcon Marksman" Faction="Haven" SubType="Shooter" Race="Human|Archer" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="717" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Target Zone="Battleground" Amount="Self">
 			<CardFilter IncludeOccupant="True"/>
@@ -160,7 +160,7 @@ While Loyal Rakshasa is adjacent to a friendly Wizard creature, it gains +[2:ATK
 		</Trigger>
 		<Description>When Maniac Taskmaster enters the battleground, if you control 3 or more Demon creatures, opponent discards a card at random.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Inf_074" DisplayName="Swelling Breeder" Faction="Inferno" SubType="Magic|Shooter" Race="Demon|Breeder" Cost="3" MightLevel="1" MagicLevel="2" DestinyLevel="0" Attack="1" Retaliate="1" HP="6" ID="722" Unique="False">
+	<Card Rarity="Common" Type="Unit" Name="Cre_Inf_074" DisplayName="Swelling Breeder" Faction="Inferno" SubType="Magic|Shooter" Race="Demon|Breeder" Cost="3" MightLevel="1" MagicLevel="2" DestinyLevel="0" Attack="1" Retaliate="1" HP="6" ID="722" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="SpellResist"/>
 		<Ability Type="MagicChannel" Value="1"/>
@@ -192,7 +192,7 @@ While Loyal Rakshasa is adjacent to a friendly Wizard creature, it gains +[2:ATK
 		</Target>
 		<Description>Putrid Dragon gains +[1:ATK] for each poison counter on enemy creatures.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Type="Unit" Name="Cre_Nec_073" DisplayName="Death Lord" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="726" Unique="False">
+	<Card Rarity="Rare" Type="Unit" Name="Cre_Nec_073" DisplayName="Death Lord" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="7" ID="726" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="LifeDrain" Value="2"/>
 		<Trigger Type="OnUnitKillUnit">
@@ -208,7 +208,7 @@ While Loyal Rakshasa is adjacent to a friendly Wizard creature, it gains +[2:ATK
 		<Description>Whenever a friendly Vampire creature destroys a creature, heal 1 damage from your Hero.
 Whenever a friendly Vampire creature attacks a creature with [ATK] of 1 or less for the first time in a turn, it gains an additional attack.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Nec_074" DisplayName="Blood Ritualist" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="3" MightLevel="2" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="0" HP="5" ID="727" Unique="False">
+	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Nec_074" DisplayName="Blood Ritualist" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="3" MightLevel="2" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="0" HP="5" ID="727" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly">
@@ -221,7 +221,7 @@ Whenever a friendly Vampire creature attacks a creature with [ATK] of 1 or less 
 		</Target>
 		<Description>All other friendly Vampire creatures gain Life Drain X, where X is equal to the number of friendly Vampire creatures on the battleground.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Nec_075" DisplayName="Vampire Connoisseur" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="6" ID="728" Unique="False">
+	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Nec_075" DisplayName="Vampire Connoisseur" Faction="Necropolis" SubType="Flyer" Race="Vampire" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="6" ID="728" Unique="False">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Trigger Type="OnThisKillUnit">
 			<Target Zone="Battleground" Amount="Self">
@@ -322,7 +322,7 @@ While there are fewer friendly creatures than enemy creatures on the battlegroun
 		</Target>
 		<Description>While your [MIGHT] level is 10 or more, Pao Warchief gains +[3:ATK] and Quick Attack.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Str_072" DisplayName="Pao Wrecker" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="6" MightLevel="6" MagicLevel="0" DestinyLevel="0" Attack="5" Retaliate="4" HP="8" ID="737" Unique="False">
+	<Card Rarity="Common" Type="Unit" Name="Cre_Str_072" DisplayName="Pao Wrecker" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="6" MightLevel="6" MagicLevel="0" DestinyLevel="0" Attack="5" Retaliate="4" HP="8" ID="737" Unique="False">
 		<Trigger Type="OnThisCardDeploy">
 <Target Zone="Battleground" CardType="Unit" Amount="1" Cancelable="True"/>
 <Target Zone="Battleground" CardType="Unit" Amount="Same">
@@ -332,7 +332,7 @@ While there are fewer friendly creatures than enemy creatures on the battlegroun
 </Trigger>
 <Description> When Pao Wrecker enters the battleground, you may deal damage to target creature equal to half of your [MIGHT] level, rounded down. </Description>
 	</Card>
-    	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Str_073" DisplayName="Pao Veteran" Faction="Stronghold" SubType="Melee|Shooter" Race="Orc|Warrior" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="738" Unique="False">
+    	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Str_073" DisplayName="Pao Veteran" Faction="Stronghold" SubType="Melee|Shooter" Race="Orc|Warrior" Cost="4" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="738" Unique="False">
         	<Variable Type="Level" LevelType="Might" Side="Friendly"/>
         	<Target Zone="Battleground" Amount="All" CardType="Unit">
             	<CardFilter IncludeRaces="Warrior" Side="Friendly"/>
@@ -348,7 +348,7 @@ While there are fewer friendly creatures than enemy creatures on the battlegroun
         	<Description>Whenever a friendly Warrior creature attacks a creature, it deals 1 more attack damage.
 While your [MIGHT] level is 10 or more, damage dealt by friendly Warrior creatures cannot be prevented or reduced.</Description>
     	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Str_074" DisplayName="Warbound Cyclops" Faction="Stronghold" SubType="Melee|Shooter" Race="Cyclops|Warrior" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="0" Retaliate="1" HP="7" ID="739" Unique="False">
+	<Card Rarity="Common" Type="Unit" Name="Cre_Str_074" DisplayName="Warbound Cyclops" Faction="Stronghold" SubType="Melee|Shooter" Race="Cyclops|Warrior" Cost="4" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="0" Retaliate="1" HP="7" ID="739" Unique="False">
 		<Ability Type="DoubleAttack"/>
 		<Trigger Type="OnOtherPostAttack" Side="Friendly">
 			<CardFilter IncludeRaces="Warrior"/>
@@ -381,7 +381,7 @@ While your [MIGHT] level is 10 or more, damage dealt by friendly Warrior creatur
 		</Trigger>
 		<Description>Whenever you use your hero ability to increase your [MIGHT] level, put 1 Enrage counter on Stormrage Hunter.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Type="Unit" Name="Cre_Str_077" DisplayName="Ancestral Champion" Faction="Stronghold" SubType="Melee" Race="Orc|Spirit" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="4" Retaliate="3" HP="5" ID="742" Unique="False">
+	<Card Rarity="Uncommon" Type="Unit" Name="Cre_Str_077" DisplayName="Ancestral Champion" Faction="Stronghold" SubType="Melee" Race="Orc|Spirit" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="4" Retaliate="3" HP="5" ID="742" Unique="False">
 		<Trigger Type="OnThisCardDeath">
 			<Target Zone="None" Side="Friendly">
 				<Effect Type="IncreaseLevel" Value="-1" LevelType="Might"/>
@@ -393,7 +393,7 @@ While your [MIGHT] level is 10 or more, damage dealt by friendly Warrior creatur
 	<!-- Creatures - Neutral -->
 	<!--...............................................................................-->
 	<Card Rarity="Common" Type="Unit" Name="Cre_Neu_070" DisplayName="Loyal Hound" Faction="Neutral" SubType="Melee" Race="Hound" Cost="1" MightLevel="1" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="1" ID="743" Unique="False"/>
-	<Card UseXmlDescription="True" Rarity="Common" Type="Unit" Name="Cre_Neu_071" DisplayName="Blind Seer" Faction="Neutral" SubType="Melee|Shooter" Race="Human|Seer" Cost="3" MightLevel="1" MagicLevel="0" DestinyLevel="2" Attack="1" Retaliate="1" HP="4" ID="744" Unique="False">
+	<Card Rarity="Common" Type="Unit" Name="Cre_Neu_071" DisplayName="Blind Seer" Faction="Neutral" SubType="Melee|Shooter" Race="Human|Seer" Cost="3" MightLevel="1" MagicLevel="0" DestinyLevel="2" Attack="1" Retaliate="1" HP="4" ID="744" Unique="False">
         <Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
             <Target Zone="Battleground" CardType="Fortune" Amount="1" Side="Any" Cancelable="False">
                 <Effect Type="Kill" />

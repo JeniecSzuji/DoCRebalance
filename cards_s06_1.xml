@@ -42,7 +42,7 @@
 		</Target>
 		<Description>Friendly Prime creatures cannot be enchanted by enemy spells.</Description>
 	</Card>
-	<Card NotLocalized="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Aca_082" DisplayName="Generator Titan" Faction="Academy" School="Prime" SubType="Magic|Melee" Race="Construct|Titan" Cost="6" MightLevel="5" MagicLevel="5" DestinyLevel="0" Attack="4" Retaliate="4" HP="8" ID="810">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Aca_082" DisplayName="Generator Titan" Faction="Academy" School="Prime" SubType="Magic|Melee" Race="Construct|Titan" Cost="6" MightLevel="5" MagicLevel="5" DestinyLevel="0" Attack="4" Retaliate="4" HP="8" ID="810">
 		<Ability Type="Shockwave" Value="3"/>
 		<Trigger Type="OnUnitDeath" Side="Friendly" ExecuteOncePerTurn="True">
 			<CardFilter IncludeRaces="Construct"/>
@@ -143,7 +143,7 @@
 	<!--...............................................................................-->
 	<!-- Creatures - Inferno -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Inf_080" DisplayName="Channeling Breeder" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="819">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Inf_080" DisplayName="Channeling Breeder" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="819">
 		<Target Zone="Battleground" CardType="Unit" Amount="All" Side="Friendly" Shape="AdjacentOnly">
 			<CardFilter IncludeRaces="Breeder" IncludeAbility="Stackable"/>
 			<Variable Type="CardStackSize" UseCurrentTarget="True"/>
@@ -187,7 +187,7 @@
 		</Trigger>
 		<Description>Whenever a spell from a school other than Dark or Fire is played, deal 1 damage to that spell's controller's Hero.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Inf_083" DisplayName="Breeder Matron" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="5" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="8" ID="822">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Inf_083" DisplayName="Breeder Matron" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="5" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="8" ID="822">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Amount="All" Side="Friendly" CardType="Unit">
 				<CardFilter IncludeRaces="Breeder"/>
@@ -247,7 +247,7 @@
 		</Trigger>
 		<Description>When Lich Tactician enters the battleground, increase the size of each friendly adjacent stacks by 1.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Nec_083" DisplayName="Bone Setter" Faction="Necropolis" SubType="Magic|Melee|Shooter" Race="Human|Wizard" Cost="5" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="0" Retaliate="0" HP="8" ID="828">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Nec_083" DisplayName="Bone Setter" Faction="Necropolis" SubType="Magic|Melee|Shooter" Race="Human|Wizard" Cost="5" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="0" Retaliate="0" HP="8" ID="828">
 		<Trigger Type="OnThisCardDeploy">
 			<Target Zone="BattlegroundPosition" Amount="Self" Side="Friendly" Shape="AdjacentOnly">
 				<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
@@ -351,7 +351,7 @@ Bone Setter gains +[1:ATK] and +[1:RET] for each battleground position with at l
 		</Trigger>
 		<Description>The first time an Enrage counter is put on Bloodsnake Shaman in a turn, it deals 1 damage to all enemy creatures on the same row.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Str_084" DisplayName="Bloodtiger Warrior" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="838">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Str_084" DisplayName="Bloodtiger Warrior" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="5" MightLevel="4" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="2" HP="7" ID="838">
 		<Ability Type="Bloodthirst" Value="1"/>
 		<Target Zone="Battleground" Amount="Self">
 			<Variable Type="CounterCount" CounterType="Enrage"/>
@@ -367,7 +367,7 @@ Bone Setter gains +[1:ATK] and +[1:RET] for each battleground position with at l
 		<Description>While there are 3 or more Enrage counters on Bloodtiger Warrior, it gains Charge.
 Whenever Bloodtiger Warrior destroys a creature, put 1 Enrage counter on all other friendly creatures with Bloodthirst.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_085" DisplayName="Bloodhydra Shaman" Faction="Stronghold" SubType="Magic|Shooter" Race="Orc|Shaman" Cost="5" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="839">
+	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_085" DisplayName="Bloodhydra Shaman" Faction="Stronghold" SubType="Magic|Shooter" Race="Orc|Shaman" Cost="5" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="839">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="AttackAnywhere"/>
 		<Ability Type="Bloodthirst" Value="1"/>
@@ -378,7 +378,7 @@ Whenever Bloodtiger Warrior destroys a creature, put 1 Enrage counter on all oth
 		</Target>
 		<Description>While there are 3 or more Enrage counters on Bloodhydra Shaman, it gains Sweep Attack.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_086" DisplayName="Bloodshark Warrior" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="840">
+	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Str_086" DisplayName="Bloodshark Warrior" Faction="Stronghold" SubType="Melee" Race="Orc|Warrior" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="2" Retaliate="1" HP="5" ID="840">
 		<Ability Type="Bloodthirst" Value="1"/>
 		<Trigger Type="OnThisCardDeath">
 			<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
@@ -404,7 +404,7 @@ Whenever Bloodtiger Warrior destroys a creature, put 1 Enrage counter on all oth
 		<Description>When Bloodshark Warrior dies with 3 or more Enrage counters, put 1 Enrage counter on all friendly creatures with Bloodthirst.
 At the end of your turn, if it has 3 or more Enrage counters, remove 1, then put 1 Enrage counter on all other friendly creatures with Bloodthirst.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Str_087" DisplayName="Bloodmask Shaman" Faction="Stronghold" SubType="Magic|Shooter" Race="Orc|Shaman" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="841">
+	<Card Rarity="Rare" Unique="False" Type="Unit" Name="Cre_Str_087" DisplayName="Bloodmask Shaman" Faction="Stronghold" SubType="Magic|Shooter" Race="Orc|Shaman" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="2" Retaliate="2" HP="6" ID="841">
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="Bloodthirst" Value="1"/>
 		<Ability Type="Bloodmask" Value="0"/>
@@ -422,7 +422,7 @@ At the end of your turn, if it has 3 or more Enrage counters, remove 1, then put
 	<!--...............................................................................-->
 	<!-- Creatures - Neutral -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Unit" Name="Cre_Neu_080" DisplayName="Rabid Dog" Faction="Neutral" SubType="Melee" Race="Hound" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="3" HP="2" ID="842">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Neu_080" DisplayName="Rabid Dog" Faction="Neutral" SubType="Melee" Race="Hound" Cost="3" MightLevel="3" MagicLevel="0" DestinyLevel="0" Attack="3" Retaliate="3" HP="2" ID="842">
         	<Target Zone="Hand" CardType="Unit" Amount="Self">
             		<Variable Type="DeadCardLastTurnCount" Side="Enemy" ValueModifier="-1.0x">
                 		<CardFilter Side="Friendly" IncludeCardType="Unit" />
@@ -440,7 +440,7 @@ At the end of your turn, if it has 3 or more Enrage counters, remove 1, then put
 		<Ability Type="AttackCost" Value="1"/>
 		<Description>To attack with Mercenary Archer, you must pay [1:RESOURCES].</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Epic" Unique="True" Type="Unit" Name="Cre_Neu_083" DisplayName="Raya, Chosen of the Waves" Faction="Neutral" School="Water" SchoolsAligned="True" SubType="Magic|Shooter" Race="Naga|Priest" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="845">
+	<Card Rarity="Epic" Unique="True" Type="Unit" Name="Cre_Neu_083" DisplayName="Raya, Chosen of the Waves" Faction="Neutral" School="Water" SchoolsAligned="True" SubType="Magic|Shooter" Race="Naga|Priest" Cost="4" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="3" Retaliate="2" HP="6" ID="845">
 		<Ability Type="WaterAligned"/>
 		<Ability Type="ImmuneToRetaliate"/>
 		<Ability Type="FortuneWard"/>

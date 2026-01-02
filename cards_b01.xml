@@ -8,7 +8,7 @@
     <!--...............................................................................-->
     <!-- Heros - Haven-->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Hav_004" DisplayName="Siegfried, Champion of Faith" Faction="Haven" MightLevel="2" MagicLevel="0" DestinyLevel="1" HP="20" ID="1">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Hav_004" DisplayName="Siegfried, Champion of Faith" Faction="Haven" MightLevel="2" MagicLevel="0" DestinyLevel="1" HP="20" ID="1">
         <School Name="Light"/>
         <Description>If your [MIGHT] level is 5 or more and your [DESTINY] level is 2 or more, all non-token melee creatures you deploy gain +[1:HEALTH].</Description>
 		<DescriptionChinese>如果你的[MIGHT]等级不小于5，[DESTINY]等级不小于2，你部署的所有非衍生近战生物获得+[1:HEALTH]。</DescriptionChinese>
@@ -298,7 +298,7 @@
             </Subgroup>
         </Target>
     </Card>
-    <Card NotLocalized="True" UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Str_001" DisplayName="Kelthor, Lord of Fury" Faction="Stronghold" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="19">
+    <Card Rarity="Heroic" Type="Hero" Name="Her_Str_001" DisplayName="Kelthor, Lord of Fury" Faction="Stronghold" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="19">
         <School Name="Air" />
         <School Name="Fire" />
         <Description>[0:RESOURCES]: Choose target friendly creature with Enrage. Remove all Enrage counters from it. Deal damage to another target creature equal to the number of Enrage counters removed this way.</Description>

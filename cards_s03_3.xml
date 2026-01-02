@@ -9,7 +9,7 @@
     <!--....................................................................-->
     <!-- Spells - Air -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Air_050" DisplayName="Air Trap" School="Air" Cost="1" MagicLevel="3" ID="573">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Air_050" DisplayName="Air Trap" School="Air" Cost="1" MagicLevel="3" ID="573">
         <Ongoing Duration="Permanent" />
         <Target Zone="BattlegroundLine" Amount="1" Side="Enemy" />
         <Trigger Type="OnDeployThisLine">
@@ -108,7 +108,7 @@ Remove 1 from all damage dealt to enchanted creature.</Description>
         <Description>Until your next turn:
 All friendly creatures gain Anchored.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Ear_052" DisplayName="Deep Roots" School="Earth" Cost="4" MagicLevel="4" ID="581">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Ear_052" DisplayName="Deep Roots" School="Earth" Cost="4" MagicLevel="4" ID="581">
         <Ongoing Duration="Permanent" />
         <Target Zone="Battleground" Amount="All" CardType="Unit">
             <CardFilter ExcludeUnitType="Flyer" />
@@ -120,7 +120,7 @@ All non-flyer creatures gain Anchored.</Description>
     <!--....................................................................-->
     <!-- Spells - Fire -->
     <!--....................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Spell" Name="Spe_Fir_050" DisplayName="Fiery Death" School="Fire" Cost="3" MagicLevel="3" ID="582">
+    <Card Rarity="Common" Type="Spell" Name="Spe_Fir_050" DisplayName="Fiery Death" School="Fire" Cost="3" MagicLevel="3" ID="582">
         <Ongoing Duration="Permanent" />
         <Target Zone="Battleground" Amount="1" CardType="Unit" />
         <Trigger Type="OnEnchantedCardDeath">
@@ -137,7 +137,7 @@ When enchanted creature dies, deal 3 damage to all creatures.</Description>
         </Target>
         <Description>Deal 2 damage to all creatures on target line.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="2" MagicLevel="3" ID="584">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Fir_052" DisplayName="Mass Rage" School="Fire" Cost="2" MagicLevel="3" ID="584">
 	<Ongoing Duration="Permanent" />
         <Target Zone="Battleground" Amount="All" CardType="Unit" Side="Enemy">
             <Effect Type="ModifyAbility" Ability="Berserk" />
@@ -175,7 +175,7 @@ Enchanted creature gains Heal 2.</Description>
         <Description>Deal 3 damage to all creatures that attacked your creature during opponent's last turn.</Description>
 		<DescriptionChinese>对所有对方上回合攻击过你生物的生物造成3点伤害。</DescriptionChinese>
 	</Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Spell" Name="Spe_Lig_052" DisplayName="Lay of Hands" School="Light" Cost="3" MagicLevel="1" ID="587">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Lig_052" DisplayName="Lay of Hands" School="Light" Cost="3" MagicLevel="1" ID="587">
         <Target Zone="Battleground" Side="Friendly" CardType="Unit" Amount="1">
             <Effect Type="RemoveCounter" CounterType="Any" Value="Infinite" />
         </Target>        
@@ -271,7 +271,7 @@ Friendly creatures cannot be prevented from attacking and are unaffected by Bers
         <Description>[2:RESOURCES]: Until your next turn, target creature gains Magic Shield.</Description>
 		<DescriptionChinese>[2:RESOURCES]: 持续到本方下回合开始，指定生物获得魔法护盾能力。</DescriptionChinese>
 	</Card>
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Event" Name="Eve_Neu_052" DisplayName="Graduation Day" Cost="2" Faction="Neutral" ID="596">
+    <Card Rarity="Rare" Type="Event" Name="Eve_Neu_052" DisplayName="Graduation Day" Cost="2" Faction="Neutral" ID="596">
         <Target Zone="None" Side="Any">
             <Effect Type="IncreaseLevel" Value="1" LevelType="Magic" />
         </Target>

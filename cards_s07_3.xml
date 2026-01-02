@@ -12,7 +12,7 @@
 	<!--....................................................................-->
 	<!-- Spells - Air -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Air_090" DisplayName="Blast of Wind" School="Air" Cost="3" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="982">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Air_090" DisplayName="Blast of Wind" School="Air" Cost="3" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="982">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Target Zone="Battleground" Amount="1" CardType="Unit">
 			<Effect Type="ModifyAbility" Ability="AreaCannotAttack"/>
@@ -40,7 +40,7 @@ Friendly air creatures gains Shockwave 2.</Description>
 	<!--....................................................................-->
 	<!-- Spells - Dark -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Spell" Name="Spe_Dar_090" DisplayName="Darkness Curse" School="Dark" Cost="3" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="985">
+	<Card Rarity="Common" Unique="False" Type="Spell" Name="Spe_Dar_090" DisplayName="Darkness Curse" School="Dark" Cost="3" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="985">
 		<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
 <CardFilter ExcludeSchool="Dark"/>
 <Effect Type="AddCounter" CounterType="Crippling" Value="1"/>
@@ -85,7 +85,7 @@ Enchanted creature gains +[3:HEALTH].</Description>
 		</Target>
 		<Description>Destroy target flyer creature.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Ear_092" DisplayName="Nature's Wrath" School="Earth" Cost="5" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="990">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Ear_092" DisplayName="Nature's Wrath" School="Earth" Cost="5" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="990">
 		<Target Zone="BattlegroundPosition" Amount="2" Side="Friendly" BattlegroundPositionState="DontCare">
 			<Effect Type="PopulateStack" Name="s07_Tok_Neu_001"/>
 		</Target>
@@ -94,7 +94,7 @@ Enchanted creature gains +[3:HEALTH].</Description>
 	<!--....................................................................-->
 	<!-- Spells - Fire -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Spell" Name="Spe_Fir_090" DisplayName="Fire Splash" School="Fire" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="991">
+	<Card Rarity="Common" Unique="False" Type="Spell" Name="Spe_Fir_090" DisplayName="Fire Splash" School="Fire" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="991">
 		<Target Zone="BattlegroundPosition" CardType="Unit" Amount="1" Shape="SelfAndAdjacent">
 <Effect Type="Damage" Value="1"/>
 </Target>
@@ -168,7 +168,7 @@ Friendly prime creatures gains Magic Resist.</Description>
 		<Description>Permanent:
 When a magic creature is about to be played, negate that creature and then destroy Dissolve.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Pri_092" DisplayName="Magic Steal" School="Prime" Cost="4" MightLevel="1" MagicLevel="4" DestinyLevel="0" ID="999">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Pri_092" DisplayName="Magic Steal" School="Prime" Cost="4" MightLevel="1" MagicLevel="4" DestinyLevel="0" ID="999">
 		<Target Zone="Hand" Amount="1" Side="Enemy">
 			<CardFilter IncludeCardType="Unit" IncludeUnitType="Magic"/>
 			<Effect Type="Play" Free="True" CancelDestination="Graveyard"/>

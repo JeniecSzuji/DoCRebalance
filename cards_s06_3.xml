@@ -24,7 +24,7 @@
 		<Description>Permanent:
 All creatures gain Swift.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Spell" Name="Spe_Air_082" DisplayName="Wind Wall" School="Air" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="881">
+	<Card Rarity="Common" Unique="False" Type="Spell" Name="Spe_Air_082" DisplayName="Wind Wall" School="Air" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="881">
 		<Ongoing Duration="UntilYourNextTurn"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1">
 			<Effect Type="ModifyAbility" Ability="WindWallEffect"/>
@@ -46,7 +46,7 @@ Enchanted creature and all adjacent creatures gain Range Reflect 2.</Description
 		</Target>
 		<Description>Destroy target creature with [1:ATK] or less.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Spell" Name="Spe_Dar_081" DisplayName="Flaying Darkness" School="Dark" Cost="2" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="883">
+	<Card Rarity="Uncommon" Unique="False" Type="Spell" Name="Spe_Dar_081" DisplayName="Flaying Darkness" School="Dark" Cost="2" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="883">
         	<Ongoing Duration="Permanent" />
 		<Ability Type="Endurable"/>
 		<Target Zone="Battleground" CardType="Unit" Amount="1" />
@@ -88,7 +88,7 @@ At the beginning of opponent's turn, put 1 crippling counter on an enemy creatur
 		</Target>
 		<Description>Double the number of poison counters on all creatures.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Ear_082" DisplayName="Nature's Revenge" School="Earth" Cost="4" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="887">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Ear_082" DisplayName="Nature's Revenge" School="Earth" Cost="4" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="887">
 		<Target Zone="Battleground" CardType="Unit" Amount="All">
 			<CardFilter IncludeOccupant="True"/>
 			<Effect Type="Damage" Value="2"/>
@@ -103,7 +103,7 @@ At the beginning of opponent's turn, put 1 crippling counter on an enemy creatur
 	<!--....................................................................-->
 	<!-- Spells - Fire -->
 	<!--....................................................................-->
-	<Card UseXmlDescription="True" Rarity="Common" Unique="False" Type="Spell" Name="Spe_Fir_080" DisplayName="Forked Firebolt" School="Fire" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="888">
+	<Card Rarity="Common" Unique="False" Type="Spell" Name="Spe_Fir_080" DisplayName="Forked Firebolt" School="Fire" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="888">
 		<Target Zone="Battleground" Amount="1" CardType="Unit">
 			<Effect Type="Damage" Value="3"/>
 		</Target>
@@ -112,7 +112,7 @@ At the beginning of opponent's turn, put 1 crippling counter on an enemy creatur
 		</Target>
 		<Description>Deal 3 damage to target creature and deal 2 damage to another target creature.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Fir_081" DisplayName="Collateral Damage" School="Fire" Cost="3" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="889">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Fir_081" DisplayName="Collateral Damage" School="Fire" Cost="3" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="889">
 		<Ongoing Duration="Permanent"/>
 		<Target Zone="Battleground" Amount="1" CardType="Unit">
 			<Effect Type="ModifyAbility" Ability="Tremple"/>
@@ -121,7 +121,7 @@ At the beginning of opponent's turn, put 1 crippling counter on an enemy creatur
 		<Description>Enchant creature. Permanent:
 Whenever enchanted creature attacks and destroys a creature, deal 1 damage and redirect any overkill damage to enemy Hero.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Uncommon" Unique="False" Type="Spell" Name="Spe_Fir_082" DisplayName="Ragefire" School="Fire" Cost="4" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="890">
+	<Card Rarity="Uncommon" Unique="False" Type="Spell" Name="Spe_Fir_082" DisplayName="Ragefire" School="Fire" Cost="4" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="890">
 		<Ongoing Duration="Permanent"/>
 		<Target Zone="Battleground" Amount="All" CardType="Unit" Side="Friendly">
 			<CardFilter IncludeSchool="Fire"/>
@@ -150,7 +150,7 @@ Friendly Fire creatures gain Area Blast 2 and +[1:ATK].</Description>
 		<Description>Enchant Creature. Permanent:
 Enchanted creature is Immobilized and gains Cannot Attack and Phased.</Description>
 	</Card>
-	<Card UseXmlDescription="True" Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Lig_082" DisplayName="Avenging Wings" School="Light" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="893">
+	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Lig_082" DisplayName="Avenging Wings" School="Light" Cost="3" MightLevel="0" MagicLevel="2" DestinyLevel="0" ID="893">
 		<Ongoing Duration="Permanent"/>
 <Target Zone="Hero" Amount="All"/>
 <Trigger Type="OnPostAttack" Side="Enemy">

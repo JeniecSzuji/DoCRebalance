@@ -96,7 +96,7 @@
 	<!--...............................................................................-->
 	<!-- Heroes Necropolis -->
 	<!--...............................................................................-->
-	<Card UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Nec_008" DisplayName="Sveltana, Hierophant of the Spider Queen" Faction="Necropolis" School="Dark|Air" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="19" ID="703">
+	<Card Rarity="Heroic" Type="Hero" Name="Her_Nec_008" DisplayName="Sveltana, Hierophant of the Spider Queen" Faction="Necropolis" School="Dark|Air" MightLevel="1" MagicLevel="2" DestinyLevel="0" HP="19" ID="703">
 		<Description>If your [MIGHT] level is 4 or more and your [MAGIC] level is 4 or more, all friendly creatures with Incorporeal gain +[1:HEALTH].</Description>
         	<Target Zone="None" Side="Friendly">
             		<Effect Type="ChoiceOption" />
@@ -143,7 +143,7 @@
 	<!--...............................................................................-->
 	<!-- Heroes Stronghold -->
 	<!--...............................................................................-->
-	<Card NotLocalized="True" UseXmlDescription="True" Rarity="Heroic" Type="Hero" Name="Her_Str_008" DisplayName="Matewa, Voice of Thunder" Faction="Stronghold" School="Air|Water" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="705">
+	<Card Rarity="Heroic" Type="Hero" Name="Her_Str_008" DisplayName="Matewa, Voice of Thunder" Faction="Stronghold" School="Air|Water" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="705">
 		<Description>[2:RESOURCES]: Target friendly creature gains Shockwave 2 until end of turn.</Description>
 		<Target Zone="None" Side="Friendly">
 			<Effect Type="ChoiceOption"/>

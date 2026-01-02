@@ -8,7 +8,7 @@
     <!--...............................................................................-->
     <!-- Fortune - Haven -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Unique="True" Type="Fortune" Name="For_Hav_005" DisplayName="Prison" Faction="Haven" Cost="5" DestinyLevel="5" ID="126">
+    <Card Rarity="Rare" Unique="True" Type="Fortune" Name="For_Hav_005" DisplayName="Prison" Faction="Haven" Cost="5" DestinyLevel="5" ID="126">
         <Ongoing Duration="UntilYourNextTurn"/>
 			<Variable Type="PillagedResources" Side="Enemy"/>
         <Target Zone="Hero" Amount="All" Side="Enemy">
@@ -35,7 +35,7 @@ When Prison leaves the battleground during your opponent's turn, they gain half 
         </Target>
         <Description>Gain [5:RESOURCES].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Hav_004" DisplayName="Fountain of Youth" Faction="Haven" Cost="2" DestinyLevel="2" ID="128">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Hav_004" DisplayName="Fountain of Youth" Faction="Haven" Cost="2" DestinyLevel="2" ID="128">
         <Ongoing Duration="UntilYourNextTurn"/>
         <Target Zone="Hero" Amount="All" Side="Friendly"/>
         <Trigger Type="OnCardPlay" Side="Enemy">
@@ -55,7 +55,7 @@ Whenever opponent plays a card, your hero gains [2:HEALTH].</Description>
         </Target>
         <Description>For each friendly creature on the battleground, gain [1:RESOURCES].</Description>
     </Card>
-    <Card UseXmlDescription="True" NotLocalized="True" Rarity="Common" Type="Fortune" Name="For_Hav_006" DisplayName="Fortified Outpost" Faction="Haven" Cost="2" DestinyLevel="2" ID="130">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_006" DisplayName="Fortified Outpost" Faction="Haven" Cost="2" DestinyLevel="2" ID="130">
         <Target Zone="None" Side="Friendly">
             <Effect Type="ChoiceOption"/>
             <Subgroup>
@@ -89,7 +89,7 @@ Whenever opponent plays a card, your hero gains [2:HEALTH].</Description>
         </Target>
         <Description>Choose one: Draw a card OR If there are fewer friendly creatures than enemy creatures on the battleground, deploy 2 Human Soldier melee-shooter token creatures with [1:ATK]/[1:RET]/[1:HEALTH] and Stackable.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Hav_001" DisplayName="Dwarven Smith" Faction="Haven" Cost="1" DestinyLevel="1" ID="131">
+    <Card Rarity="Common" Type="Fortune" Name="For_Hav_001" DisplayName="Dwarven Smith" Faction="Haven" Cost="1" DestinyLevel="1" ID="131">
         <Target Zone="Hand" Side="Friendly" Amount="1">
             <Effect Type="MoveCardTo" Destination="Library"/>
         </Target>
@@ -101,7 +101,7 @@ Whenever opponent plays a card, your hero gains [2:HEALTH].</Description>
 		</Target>
         <Description>Take a card from your hand and put it on the top of your library. Heal 2 damage from your hero. Put a +[1:ATK] counter on target friendly creature.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Epic" Type="Fortune" Name="For_Hav_003" DisplayName="Cassandra's Imperial Devotion" Faction="Haven" Cost="4" DestinyLevel="4" Unique="True" ID="132">
+    <Card Rarity="Epic" Type="Fortune" Name="For_Hav_003" DisplayName="Cassandra's Imperial Devotion" Faction="Haven" Cost="4" DestinyLevel="4" Unique="True" ID="132">
         <Target Zone="None" Side="Friendly">
             <Variable Type="TargetCount">
                 <Target Zone="Battleground" CardType="Unit" ExcludeToken="True" Amount="All" >
@@ -197,7 +197,7 @@ At the end of opponent's turn, if they didn't play a card of the chosen type dur
         <Description>Until your next turn:
 Whenever opponent plays a card, they discard a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Inf_003" DisplayName="Chaos Rift" Faction="Inferno" Cost="1" DestinyLevel="2" ID="137">
+    <Card Rarity="Common" Type="Fortune" Name="For_Inf_003" DisplayName="Chaos Rift" Faction="Inferno" Cost="1" DestinyLevel="2" ID="137">
         <Target Zone="Library" Side="Friendly" Amount="1">
             <CardFilter IncludeFaction="Inferno" IncludeCardType="Fortune" ExcludeUnique="True" ExcludeCardID="For_Inf_003"/>
             <Effect Type="MoveCardTo" Destination="Hand"/>
@@ -244,7 +244,7 @@ Whenever opponent plays a card, they discard a card.</Description>
     <!--...............................................................................-->
     <!-- Fortune - Necropolis -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Rare" Type="Building" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="4" MightLevel="2" DestinyLevel="2" ID="140">
+    <Card Rarity="Rare" Type="Building" Name="For_Nec_004" DisplayName="Altar of Eternal Servitude" Faction="Necropolis" Cost="4" MightLevel="2" DestinyLevel="2" ID="140">
 		<Target Zone="Battleground" CardType="Unit" Amount="Occupant">
 			<Effect Type="ModifyAbility" Ability="SurviveOnce"/>
 		</Target>
@@ -272,7 +272,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         </Target>
         <Description>Discard a fortune card. Take target non-unique fortune card from your graveyard and put it into your hand.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_007" DisplayName="No Rest for the Wicked" Faction="Necropolis" Cost="1" DestinyLevel="1" ID="143">	
+    <Card Rarity="Common" Type="Fortune" Name="For_Nec_007" DisplayName="No Rest for the Wicked" Faction="Necropolis" Cost="1" DestinyLevel="1" ID="143">	
 	<Ongoing Duration="Repeatable"/>
 	<Target Zone="Graveyard" Side="Friendly" CardType="Unit" Amount="1" AllowDuplicate="True">
 		<Effect Type="Banish"/>
@@ -285,7 +285,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Description>Banish target creature card form your graveyard: your next creature card costs [1:RESOURCES] less to play.
 You can repeat this as many times as you want.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Nec_005" DisplayName="Graveyard" Faction="Necropolis" Cost="2" DestinyLevel="2" ID="144">
+    <Card Rarity="Common" Type="Fortune" Name="For_Nec_005" DisplayName="Graveyard" Faction="Necropolis" Cost="2" DestinyLevel="2" ID="144">
         <Target Zone="None" Side="Friendly">
             <Effect Type="ChoiceOption"/>
             <Subgroup>
@@ -353,7 +353,7 @@ You can repeat this as many times as you want.</Description>
         </Target>
         <Description>Choose target friendly creature. Deal damage equal to the remaining [HEALTH] of the chosen creature to another target creature and destroy the chosen creature.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Str_007" DisplayName="Orc Camp" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="155">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Str_007" DisplayName="Orc Camp" Faction="Stronghold" Cost="2" DestinyLevel="2" ID="155">
         <Target Zone="Battleground" Side="Friendly" Amount="All" CardType="Unit">
             <CardFilter IncludeAbility="Enrage|Bloodthirst"/>
         </Target>
@@ -400,7 +400,7 @@ When Blood Pool enters the battleground, deal 2 damage to your hero.</Descriptio
         </Target>
         <Description>Choose one: Draw a card OR If your hero's remaining health is less than opponent's, deal 3 damage to enemy hero.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Str_004" DisplayName="Blood Shaman Hut" Faction="Stronghold" Cost="1" DestinyLevel="1" Zone="Battleground" ID="158">
+    <Card Rarity="Common" Type="Fortune" Name="For_Str_004" DisplayName="Blood Shaman Hut" Faction="Stronghold" Cost="1" DestinyLevel="1" Zone="Battleground" ID="158">
         <Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="Hand" Side="Friendly" Amount="1">
             <Effect Type="MoveCardTo" Destination="Library" Duration="Immediate"/>
@@ -435,7 +435,7 @@ All friendly creatures gain Attack Anywhere.</Description>
     <!--...............................................................................-->
     <!-- Fortune - Neutral -->
     <!--...............................................................................-->
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_002" DisplayName="Ambush Spot" Faction="Neutral" Cost="1" DestinyLevel="2" ID="161">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_002" DisplayName="Ambush Spot" Faction="Neutral" Cost="1" DestinyLevel="2" ID="161">
         <Ongoing Duration="Permanent" />
         <Trigger Type="OnCardPlay" Side="Enemy">
 	<CardFilter IncludeCardType="Unit"/>
@@ -449,7 +449,7 @@ All friendly creatures gain Attack Anywhere.</Description>
         <Description>Permanent:
 When opponent plays a creature, deal 3 damage to it and destroy Ambush Spot.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Uncommon" Type="Fortune" Name="For_Neu_017" DisplayName="Altar of Shadows" Faction="Neutral" Cost="3" DestinyLevel="3" ID="162">
+    <Card Rarity="Uncommon" Type="Fortune" Name="For_Neu_017" DisplayName="Altar of Shadows" Faction="Neutral" Cost="3" DestinyLevel="3" ID="162">
         <Variable Type="CardPlayedCount"/>
         <PlayabilityCondition Operator="LesserThan" ValueA="Variable" ValueB="1"/>
         <Ongoing Duration="UntilYourNextTurn"/>
@@ -493,7 +493,7 @@ Your hero and all friendly creatures gain Magic Shield.</Description>
         </Target>
         <Description>Draw a card. Gain [4:RESOURCES].</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_009" DisplayName="Dragon Vein" Faction="Neutral" Cost="2" DestinyLevel="1" ID="166">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_009" DisplayName="Dragon Vein" Faction="Neutral" Cost="2" DestinyLevel="1" ID="166">
         <Target Zone="None" Side="Friendly">
             <Effect Type="IncreaseLevel" Value="1" LevelType="Magic"/>
         </Target>
@@ -509,7 +509,7 @@ Draw a card.</Description>
         </Target>
         <Description>Draw 3 cards.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_020" DisplayName="Weapon Supplies" Faction="Neutral" Cost="2" DestinyLevel="1" ID="168">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_020" DisplayName="Weapon Supplies" Faction="Neutral" Cost="2" DestinyLevel="1" ID="168">
         <Target Zone="None" Side="Friendly">
             <Effect Type="IncreaseLevel" Value="1" LevelType="Might"/>
         </Target>
@@ -614,7 +614,7 @@ Opponent cannot play cards of that type.</Description>
         </Target>
         <Description>Choose target friendly creature. Deploy a creature with the same name as that creature from your hand for free.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_003" DisplayName="Cartographer" Faction="Neutral" Cost="2" DestinyLevel="1" ID="177">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_003" DisplayName="Cartographer" Faction="Neutral" Cost="2" DestinyLevel="1" ID="177">
         <Target Zone="None" Side="Friendly">
             <Effect Type="IncreaseLevel" Value="1" LevelType="Destiny"/>
         </Target>
@@ -624,7 +624,7 @@ Opponent cannot play cards of that type.</Description>
         <Description>Increase your [DESTINY] level by 1.
 Draw a card.</Description>
     </Card>
-    <Card UseXmlDescription="True" Rarity="Common" Type="Fortune" Name="For_Neu_014" DisplayName="Rally Flag" Faction="Neutral" Cost="2" DestinyLevel="2" ID="178">
+    <Card Rarity="Common" Type="Fortune" Name="For_Neu_014" DisplayName="Rally Flag" Faction="Neutral" Cost="2" DestinyLevel="2" ID="178">
         <Ongoing Duration="UntilEndOfTurn"/>
         <Target Zone="Hero" Amount="All" Side="Friendly">
             <Effect Type="IncreaseLevel" Value="3" LevelType="Might"/>
