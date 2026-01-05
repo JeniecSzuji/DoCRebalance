@@ -144,7 +144,7 @@ At the beginning of your turn, deploy 2 Skeleton melee-shooter token creature wi
 	<!--....................................................................-->
 	<!-- Fortune - Sanctuary -->
 	<!--....................................................................-->
-	<Card Rarity="Common" Unique="False" Type="Fortune" Name="For_San_080" DisplayName="Blackmail" Faction="Sanctuary" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="1" ID="859">
+	<Card Rarity="Common" Unique="False" Type="Fortune" Name="For_San_080" DisplayName="Blackmail" Faction="Sanctuary" Cost="2" MightLevel="0" MagicLevel="0" DestinyLevel="2" ID="859">
 		<Ongoing Duration="Permanent"/>
 		<Trigger Type="OnUnitDamageHero" Side="Enemy">
 			<CardFilter IncludeRaces="Spy" Side="Friendly"/>
@@ -441,3 +441,4 @@ Whenever a creature at Fountain of Rejuvenation dies from combat damage, return 
 		<Description>While a creature is at War Banner, all creatures that share a creature type with it gain +[1:ATK].</Description>
 	</Card>
 </Cards>
+
