@@ -186,15 +186,15 @@ While you control more creatures than your opponent, target creature is immobili
 					<Subgroup>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable" ValueB="1"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable" ValueB="2"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 					</Subgroup>
 				</Target>
@@ -205,15 +205,15 @@ While you control more creatures than your opponent, target creature is immobili
 					<Subgroup>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable2" ValueB="0"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable2" ValueB="1"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 						<Target Zone="BattlegroundPosition" Amount="1" Side="Friendly" BattlegroundPositionState="DontCare" Cancelable="False">
 							<Condition Operator="GreaterThan" ValueA="Variable2" ValueB="2"/>
-							<Effect Type="PopulateStack" Name="Tok_Nec_001"/>
+							<Effect Type="PopulateStack" Name="s06_Tok_Nec_001"/>
 						</Target>
 					</Subgroup>
 				</Target>				
@@ -438,6 +438,7 @@ Whenever a friendly creature dies, increase your [MIGHT] level by 1.</Descriptio
 <Description>Decrease opponent's [MIGHT], [MAGIC] or [DESTINY] level by one. Draw a card.</Description>
     </Card>
 </Cards>
+
 
 
 
