@@ -282,7 +282,7 @@ Whenever opponent plays a card, they discard a card.</Description>
 			<CardFilter IncludeCardType="Unit"/>
 		</Effect>
 	</Target>
-        <Description>Banish target creature card form your graveyard: your next creature card costs [1:RESOURCES] less to play.
+        <Description>Banish target creature card from your graveyard: your next creature card costs [1:RESOURCES] less to play.
 You can repeat this as many times as you want.</Description>
     </Card>
     <Card Rarity="Common" Type="Fortune" Name="For_Nec_005" DisplayName="Graveyard" Faction="Necropolis" Cost="2" DestinyLevel="2" ID="144">
@@ -657,5 +657,6 @@ Increase your [MIGHT] level by 3.</Description>
         <Description>Choose one: Destroy target friendly creature and target enemy creature OR Destroy target friendly creature. Take target creature card from your graveyard and deploy it for free.</Description>
     </Card>
 </Cards>
+
 
 
