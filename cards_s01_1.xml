@@ -76,7 +76,7 @@
     <Card Rarity="Uncommon" Type="Unit" Name="Cre_Nec_021" DisplayName="Moonsilk Spinner" Faction="Necropolis" SubType="Melee|Shooter" Race="Spider" Cost="4" MightLevel="3" Attack="2" Retaliate="2" HP="6" ID="269">
         <Ability Type="Crippling" Value="2"/>
     </Card>
-    <Card Rarity="Epic" Type="Unit" Name="Cre_Nec_023" DisplayName="Vampire Assassin" Faction="Necropolis" SubType="Melee" Race="Vampire|Assassin" Cost="4" MightLevel="3" Attack="1" Retaliate="1" HP="5" ID="270">
+    <Card Rarity="Epic" Type="Unit" Name="Cre_Nec_023" DisplayName="Vampire Assassin" Faction="Necropolis" SubType="Melee" Race="Vampire|Assassin" Cost="4" MightLevel="3" Attack="1" Retaliate="1" HP="4" ID="270">
         <Ability Type="PreemptiveStrike"/>
 	<Trigger Type="OnThisDamageUnit" Side="Enemy" DamageIncludeFlags="Combat">
             <Target Zone="Battleground" CardType="Unit" Amount="FromTrigger">
@@ -311,3 +311,4 @@ Players cannot search their library.</Description>
         <Description>When Void Wraith dies during opponent's turn, it deals 3 damage to enemy hero.</Description>
     </Card>
 </Cards>
+
