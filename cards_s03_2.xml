@@ -550,7 +550,7 @@ At the beginning of your turn, return Eternal Battlefield to its owner's hand.</
 			</Target>
 		</Trigger>
         <Description>Until end of turn.
-When Harvesting the Dead enters the battleground, banish target creature card with a cost of 5 [RESOURCES] or less form your graveyard and deploy its copy as a token with 1 crippling counter on it. You can repeat this for each Harvesting the Dead card in your graveyard, up to 3 times.</Description>
+When Harvesting the Dead enters the battleground, banish target creature card with a cost of 5 [RESOURCES] or less from your graveyard and deploy its copy as a token with 1 crippling counter on it. You can repeat this for each Harvesting the Dead card in your graveyard, up to 3 times.</Description>
     </Card>
     <Card Rarity="Uncommon" Type="Fortune" Name="For_Nec_052" DisplayName="Death is not the End" Faction="Necropolis" Cost="3" DestinyLevel="3" ID="556">
         <Target Zone="Graveyard" Side="Friendly" Amount="1">
@@ -779,5 +779,6 @@ Prevent [RESOURCES] gain from cards and abilities.</Description>
         <Description>Search your library for a Unique card and play it for free. Shuffle your library.</Description>
     </Card>
 </Cards>
+
 
 
