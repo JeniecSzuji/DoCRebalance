@@ -1,0 +1,485 @@
+<Campaigns>
+	<!-- C1 -->
+    <Campaign id="1">
+	
+		<Encounters>
+		
+			<!-- C1E1 -->
+			<Encounter id="1" Type="Tutorial" DeckPlayer="deckC1M0E1.txt" DeckOpponent="deckC1M0E1AI.txt" ScriptedReplay="C1M0E1.replay" DisableAutomaticPreview="true">
+				<Tutorials>
+					<Tutorial Ref="C1M0E1_Step1"/>
+					<Tutorial Ref="C1M0E1_Step2"/>
+					<Tutorial Ref="C1M0E1_Step3"/>
+					<!--	<Tutorial Ref="C1M0E1_Step4"/> -->
+					<!--	<Tutorial Ref="C1M0E1_Step5"/> -->
+					<Tutorial Ref="C1M0E1_Step6"/>
+					<!--Tutorial Ref="C1M0E1_Step7"/--> 
+					<Tutorial Ref="C1M0E1_Step8"/>
+					<!--Tutorial Ref="C1M0E1_Step9"/-->
+					<Tutorial Ref="C1M0E1_Step10"/> <!-- ipad also -->
+					<Tutorial Ref="C1M0E1_Step11"/>
+					<Tutorial Ref="C1M0E1_Step12"/>
+					<Tutorial Ref="C1M0E1_Step13"/>
+					<Tutorial Ref="C1M0E1_Step14"/>
+					<Tutorial Ref="C1M0E1_Step15"/>
+					<!--Tutorial Ref="C1M0E1_Step16"/-->
+					<Tutorial Ref="C1M0E1_Step17"/>
+					<Tutorial Ref="C1M0E1_Step18"/>
+					<!--Tutorial Ref="C1M0E1_Step19"/-->
+					<Tutorial Ref="C1M0E1_Step20"/>
+					<!--Tutorial Ref="C1M0E1_Step21"/-->
+					<Tutorial Ref="C1M0E1_Step22"/>
+					<!--Tutorial Ref="C1M0E1_Step23"/-->
+				</Tutorials>
+				
+				<Rules>
+					<Rule Ref="C1M0E1_Rule"/>
+				</Rules>
+				
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C1E2 -->
+			<Encounter id="2" Type="Tutorial" DeckPlayer="deckC1M0E2.txt" DeckOpponent="deckC1M0E2AI.txt" ScriptedReplay="C1M0E2.replay" DisableAutomaticPreview="true">
+				<Tutorials>
+					<Tutorial Ref="C1M0E2_Step2"/>
+					<Tutorial Ref="C1M0E2_Step3"/>
+					<!--Tutorial Ref="C1M0E2_Step4"/-->
+					<Tutorial Ref="C1M0E2_Step5"/>
+					<!--Tutorial Ref="C1M0E2_Step6"/-->
+					<Tutorial Ref="C1M0E2_Step7"/>
+					<!--Tutorial Ref="C1M0E2_Step8"/-->
+					<Tutorial Ref="C1M0E2_Step9"/>
+					<Tutorial Ref="C1M0E2_Step10"/>
+					<!--Tutorial Ref="C1M0E2_Step11"/-->
+					<Tutorial Ref="C1M0E2_Step12"/>
+					<!-- Skip the following steps -->
+					<!-- <Tutorial Ref="C1M0E2_Step13"/> -->
+					<!-- <Tutorial Ref="C1M0E2_Step14"/> -->
+					<!-- <Tutorial Ref="C1M0E2_Step15"/> -->
+					<!--<Tutorial Ref="C1M0E2_Step16"/> -->
+					<Tutorial Ref="C1M0E2_Step17"/>
+					<Tutorial Ref="C1M0E2_Step18"/>
+					<Tutorial Ref="C1M0E2_Step19"/>
+					<Tutorial Ref="C1M0E2_Step20"/>
+					<Tutorial Ref="C1M0E2_Step21"/>  
+					<Tutorial Ref="C1M0E2_Step22"/>													
+					<Tutorial Ref="C1M0E2_Step23"/>
+					<!-- <Tutorial Ref="C1M0E2_Step24"/>	ipad also --> 
+					<Tutorial Ref="C1M0E2_Step25"/>	
+					<Tutorial Ref="C1M0E2_Step26"/>	
+				</Tutorials>
+				
+				<Rules>
+					<Rule Ref="C1M0E2_Rule"/>
+				</Rules>
+				
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C1E3 -->
+			<Encounter id="3" Type="Tutorial" DeckPlayer="deckC1M0E3.txt" DeckOpponent="deckC1M0E3AI.txt" ScriptedReplay="C1M0E3.replay" DisableAutomaticPreview="true">
+				<Tutorials>
+					<Tutorial Ref="C1M0E3_Step1"/>
+					<Tutorial Ref="C1M0E3_Step2"/>
+					<Tutorial Ref="C1M0E3_Step3"/>
+					<Tutorial Ref="C1M0E3_Step4"/>
+					<Tutorial Ref="C1M0E3_Step5"/>
+					<!--Tutorial Ref="C1M0E3_Step6"/-->
+					<!--Tutorial Ref="C1M0E3_Step7"/-->
+					<Tutorial Ref="C1M0E3_Step8"/>
+					<Tutorial Ref="C1M0E3_Step9"/>
+					<Tutorial Ref="C1M0E3_Step10"/>
+					<Tutorial Ref="C1M0E3_Step11"/>
+					<Tutorial Ref="C1M0E3_Step12"/>
+					<Tutorial Ref="C1M0E3_Step13"/>
+					<Tutorial Ref="C1M0E3_Step14"/>
+					<Tutorial Ref="C1M0E3_Step15"/>
+					<Tutorial Ref="C1M0E3_Step16"/>
+					<Tutorial Ref="C1M0E3_Step17"/>
+					<!--Tutorial Ref="C1M0E3_Step18"/-->
+					<Tutorial Ref="C1M0E3_Step19"/>
+					<Tutorial Ref="C1M0E3_Step20"/>
+					<!--Tutorial Ref="C1M0E3_Step21"/-->
+				</Tutorials>
+				
+				<Rules>
+					<Rule Ref="C1M0E3_Rule"/>
+				</Rules>
+				
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C1E4 -->
+			<Encounter id="4" Type="Tutorial" DeckPlayer="deckC1M0E4.txt" DeckOpponent="deckC1M0E4AI.txt" ScriptedReplay="C1M0E4.replay" DisableAutomaticPreview="true">
+				<Tutorials>
+					<Tutorial Ref="C1M0E4_Step99"/>
+					<Tutorial Ref="C1M0E4_Step1"/>
+					<!--Tutorial Ref="C1M0E4_Step2"/-->
+					<Tutorial Ref="C1M0E4_Step3"/>
+					<Tutorial Ref="C1M0E4_Step4"/>
+					<Tutorial Ref="C1M0E4_Step5"/>
+					<Tutorial Ref="C1M0E4_Step6"/>
+					<Tutorial Ref="C1M0E4_Step7"/>
+					<Tutorial Ref="C1M0E4_Step8"/>
+					<Tutorial Ref="C1M0E4_Step9"/>
+					<!--Tutorial Ref="C1M0E4_Step10"/-->
+					<Tutorial Ref="C1M0E4_Step11"/>
+					<Tutorial Ref="C1M0E4_Step12"/>
+					<Tutorial Ref="C1M0E4_Step13"/>
+					<!--Tutorial Ref="C1M0E4_Step14"/-->
+				</Tutorials>
+				
+				<Rules>
+					<Rule Ref="C1M0E4_Rule"/>
+			    </Rules>
+				
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C1E5 -->
+			<Encounter id="5" Type="Tutorial" DeckPlayer="deckC1M0E5.txt" DeckOpponent="deckC1M0E5AI.txt" ScriptedReplay="C1M0E5.replay" DisableAutomaticPreview="true">
+				<Tutorials>
+					<Tutorial Ref="C1M0E2_Step1"/>
+					<Tutorial Ref="C1M0E5_Step1"/>
+					<Tutorial Ref="C1M0E5_Step2"/>
+					<Tutorial Ref="C1M0E5_Step3"/> 
+					<!--Tutorial Ref="C1M0E5_Step4"/-->
+					<Tutorial Ref="C1M0E5_Step5"/>
+					<Tutorial Ref="C1M0E5_Step6"/>
+					<Tutorial Ref="C1M0E5_Step7"/>
+					<!--Tutorial Ref="C1M0E5_Step8"/-->
+					<Tutorial Ref="C1M0E5_Step9"/>
+					<!--Tutorial Ref="C1M0E5_Step10"/-->
+					<Tutorial Ref="C1M0E5_Step11"/>
+				</Tutorials>
+				
+			   <Rules>
+					<Rule Ref="C1M0E5_Rule"/>
+			   </Rules>
+			   
+			   <Reward XP="200" Currency="1000" PaidCurrency="0"></Reward>
+			</Encounter>
+			
+			<!-- C1E6 -->
+			<Encounter id="6" Type="Tutorial" DeckOpponent="deckC1M0E6AI.txt" ScriptedReplay="C1M0E6.replay" DisableAutomaticPreview="true">	
+				<Tutorials>
+					<Tutorial Ref="C1M0E6_Step1"/>
+					<!--Tutorial Ref="C1M0E6_Step2"/-->
+					<Tutorial Ref="C1M0E6_Step3"/>
+					<!--Tutorial Ref="C1M0E6_Step4"/-->
+					<Tutorial Ref="C1M0E6_Step5"/>
+					<Tutorial Ref="C1M0E6_Step6"/>														
+					<Tutorial Ref="C1M0E6_Step7"/>
+					<Tutorial Ref="C1M0E6_Step8"/>
+				</Tutorials>
+				
+				<Rules>
+					<Rule Ref="C1M0E6_Rule"/>
+				</Rules>
+				
+				<Reward XP="1000" Currency="20000" PaidCurrency="0"/>
+			</Encounter>
+		
+		</Encounters>
+		
+	</Campaign>
+	
+	<!-- C2 -->
+    <Campaign id="2">
+	
+		<Encounters>
+		
+		<!-- C2E1 -->
+		<Encounter id="1" Type="Normal" DeckOpponent="deckC2E1AI.txt">
+			<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+		</Encounter>
+		
+		<!-- C2E2 -->
+		<Encounter id="2" Type="Normal" DeckOpponent="deckC2E2AI.txt" LockedByAchievement="true">
+			<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			<Rules>
+				<Rule Ref="C2E2_Rule"/>
+			</Rules>
+		</Encounter>
+		
+		<!-- C2E3 -->
+		<Encounter id="3" Type="Normal" DeckOpponent="deckC2E3AI.txt">
+			<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+		</Encounter>
+		
+		<!-- C2E4 -->
+		<Encounter id="4" Type="Normal" DeckOpponent="deckC2E4AI.txt">
+			<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+		</Encounter>
+		
+		<!-- C2E5 -->
+		<Encounter id="5" Type="Normal" DeckOpponent="deckC2E5AI.txt">
+			<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+		</Encounter>
+		
+		</Encounters>
+		
+	</Campaign>
+	
+	<!-- C3 -->
+	<Campaign id="3">
+	
+		<Encounters>
+		
+			<!-- C3E1 -->
+			<Encounter id="1" Type="Normal" DeckOpponent="deckC3E1AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C3E2 -->
+			<Encounter id="2" Type="Normal" DeckOpponent="deckC3E2AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C3E3 -->
+			<Encounter id="3" Type="Normal" DeckOpponent="deckC3E3AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C3E3_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C3E4 -->
+			<Encounter id="4" Type="Normal" DeckOpponent="deckC3E4AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C3E5 -->
+			<Encounter id="5" Type="Normal" DeckOpponent="deckC3E5AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+		</Encounters>
+		
+	</Campaign>
+
+	<!-- C4 -->
+	<Campaign id="4">
+	
+		<Encounters>
+		
+			<!-- C4E1 -->
+			<Encounter id="1" Type="Normal" DeckOpponent="deckC4E1AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C4E2 -->
+			<Encounter id="2" Type="Normal" DeckOpponent="deckC4E2AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C4E2_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C4E3 -->
+			<Encounter id="3" Type="Normal" DeckOpponent="deckC4E3AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C4E4 -->
+			<Encounter id="4" Type="Normal" DeckOpponent="deckC4E4AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C4E5 -->
+			<Encounter id="5" Type="Normal" DeckOpponent="deckC4E5AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C4E5_Rule"/>
+				</Rules>
+			</Encounter>
+            
+		</Encounters>	
+	</Campaign>
+	
+	<!-- C5 -->
+	<Campaign id="5">
+	
+		<Encounters>
+		
+			<!-- C5E1 -->
+			<Encounter id="1" Type="Normal" DeckOpponent="deckC5E1AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C5E2 -->
+			<Encounter id="2" Type="Normal" DeckOpponent="deckC5E2AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C5E3 -->
+			<Encounter id="3" Type="Normal" DeckOpponent="deckC5E3AI.txt">
+				<Rules>
+					<Rule Ref="C5E3_Rule"/>
+				</Rules>
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C5E4 -->
+			<Encounter id="4" Type="Normal" DeckOpponent="deckC5E4AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+			<!-- C5E5 -->
+			<Encounter id="5" Type="Normal" DeckOpponent="deckC5E5AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+			</Encounter>
+			
+		</Encounters>
+		
+	</Campaign>
+
+	<!-- C6 -->
+	<Campaign id="6">
+	
+		<Encounters>
+		
+			<!-- C6E1 -->
+			<Encounter id="1" Type="Normal" DeckOpponent="deckC6E1AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C6E1_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C6E2 -->
+			<Encounter id="2" Type="Normal" DeckOpponent="deckC6E2AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C6E2_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C6E3 -->
+			<Encounter id="3" Type="Normal" DeckOpponent="deckC6E3AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C6E3_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C6E4 -->
+			<Encounter id="4" Type="Normal" DeckOpponent="deckC6E4AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C6E4_Rule"/>
+				</Rules>
+			</Encounter>
+			
+			<!-- C6E5 -->
+			<Encounter id="5" Type="Normal" DeckOpponent="deckC6E5AI.txt">
+				<Reward XP="200" Currency="5000" PaidCurrency="0"/>
+				<Rules>
+					<Rule Ref="C6E5_Rule"/>
+				</Rules>
+			</Encounter>
+			
+		</Encounters>
+		
+	</Campaign>
+	
+    <!-- C1000, the world of puzzles -->
+    <Campaign id="1000">
+        <Encounters>
+        
+            <!-- C1000E1 -->
+            <Encounter id="1" Type="Puzzle" DeckPlayer="deckC1000E1PZ.txt" DeckOpponent="deckC1000E1AI.txt">
+                <Reward XP="200" Currency="1000" PaidCurrency="0"/>
+                
+                <Rules>
+                    <Rule Ref="C1000E1_Rule"/>
+                </Rules>
+            </Encounter>
+        
+            <!-- C1000E2 -->
+			<Encounter id="2" Type="Puzzle" DeckPlayer="deckC1000E2PZ.txt" DeckOpponent="deckC1000E2AI.txt">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			
+                <Rules>
+                    <Rule Ref="C1000E2_Rule"/>
+                </Rules>
+			</Encounter>
+        
+            <!-- C1000E3 -->
+			<Encounter id="3" Type="Puzzle" DeckPlayer="deckC1000E3PZ.txt" DeckOpponent="deckC1000E3AI.txt">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+                
+                <Rules>
+                    <Rule Ref="C1000E3_Rule"/>
+                </Rules>
+			</Encounter>
+		
+        
+			<!-- C1000E4 -->
+			<Encounter id="4" Type="Puzzle" DeckPlayer="deckC1000E4PZ.txt" DeckOpponent="deckC1000E4AI.txt">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+			
+				<Rules>
+					<Rule Ref="C1000E4_Rule"/>
+				</Rules>
+			</Encounter>
+            
+			<!-- C1000E5 -->
+			<Encounter id="5" Type="Puzzle" DeckPlayer="deckC1000E5PZ.txt" DeckOpponent="deckC1000E5AI.txt">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E5_Rule"/>
+				</Rules>
+			</Encounter>
+            
+            <!-- C1000E6 -->
+			<Encounter id="6" Type="Puzzle" DeckPlayer="deckC1000E6PZ.txt" DeckOpponent="deckC1000E6AI.txt" HideIfLocked="true">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E6_Rule"/>
+				</Rules>
+			</Encounter>
+            
+            <!-- C1000E7 -->
+			<Encounter id="7" Type="Puzzle" DeckPlayer="deckC1000E7PZ.txt" DeckOpponent="deckC1000E7AI.txt" HideIfLocked="true">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E7_Rule"/>
+				</Rules>
+			</Encounter>
+            
+            <!-- C1000E8 -->
+			<Encounter id="8" Type="Puzzle" DeckPlayer="deckC1000E8PZ.txt" DeckOpponent="deckC1000E8AI.txt" HideIfLocked="true">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E8_Rule"/>
+				</Rules>
+			</Encounter>
+            
+            <!-- C1000E9 -->
+			<Encounter id="9" Type="Puzzle" DeckPlayer="deckC1000E9PZ.txt" DeckOpponent="deckC1000E9AI.txt" HideIfLocked="true">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E9_Rule"/>
+				</Rules>
+			</Encounter>
+            
+            <!-- C1000E10 -->
+			<Encounter id="10" Type="Puzzle" DeckPlayer="deckC1000E10PZ.txt" DeckOpponent="deckC1000E10AI.txt" HideIfLocked="true">
+				<Reward XP="200" Currency="1000" PaidCurrency="0"/>
+				
+				<Rules>
+					<Rule Ref="C1000E10_Rule"/>
+				</Rules>
+			</Encounter>
+						
+		</Encounters>
+    </Campaign>
+
+</Campaigns>
