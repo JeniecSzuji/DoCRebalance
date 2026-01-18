@@ -427,11 +427,6 @@ All creatures gain +[1:ATK] and +[1:RET] for each other creature with the same n
         <Target Zone="Battleground" CardType="Unit" Amount="Occupant">
             <Effect Type="ModifyAbility" Ability="Crippling" Value="1" />
         </Target>
-        <Trigger Type="OnOccupantCardDeathByDamage" DamageIncludeFlags="Combat">
-            <Target Zone="None" Amount="Self">
-                <Effect Type="Kill" />
-            </Target>
-        </Trigger>
         <Description>Creatures at Soul Spire gain Crippling 1.</Description>
     </Card>
     <!--....................................................................-->
@@ -543,3 +538,4 @@ Haven creatures at Tower of the Inventor gain Preemptive Strike.</Description>
 Academy creatures at Tower of the Elders gain Magic Guard 2 instead.</Description>
     </Card>
 </Cards>
+
