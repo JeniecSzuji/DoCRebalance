@@ -233,7 +233,7 @@ Whenever a creature with poison counters on it dies, put the same number of pois
 		<Description>Adjacent friendly Air creature gain +[1:ATK]. Adjacent friendly Earth creature gain +[1:HEALTH].</Description>
 	</Card>
 	<Card Rarity="Epic" Unique="False" Type="Unit" Name="Cre_Str_102" DisplayName="Bone Ancestor" Faction="Stronghold" SubType="Magic|Melee" Race="Orc|Spirit" Cost="5" MightLevel="5" MagicLevel="1" DestinyLevel="0" Attack="4" Retaliate="2" HP="7" ID="1028" School="Earth">
-		<Ability Type="Regeneration" Value="1"/>
+		<Ability Type="Regenerate" Value="1"/>
 		<Target Zone="Battleground" Amount="All" Shape="AdjacentOnly" CardType="Unit" Side="Friendly">
 			<CardFilter IncludeSchool="Earth"/>
 			<Effect Type="ModifyAbility" Ability="Regenerate" Value="1"/>
@@ -425,4 +425,5 @@ Whenever a creature with poison counters on it dies, put the same number of pois
     <!-- s04 - Erg Hunter -->
     	
 </Cards>
+
 
