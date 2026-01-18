@@ -124,7 +124,7 @@
     <Card Rarity="Rare" Type="Unit" Name="Cre_San_013" DisplayName="Mizu-Kami" Faction="Sanctuary" School="Water" SubType="Magic|Melee" Race="Spirit" Cost="5" MightLevel="3" MagicLevel="2" Attack="3" Retaliate="1" HP="5" ID="104">
         <Ability Type="MagicShield"/>
     </Card>
-    <Card Rarity="Uncommon" Type="Unit" Name="Cre_San_009" DisplayName="Yuki-Onna" Faction="Sanctuary" School="Water" SubType="Shooter" Race="Spirit" Cost="5" MightLevel="4" MagicLevel="2" Attack="2" Retaliate="2" HP="8" ID="105">
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_San_009" DisplayName="Yuki-Onna" Faction="Sanctuary" School="Water" SubType="Magic|Shooter" Race="Spirit" Cost="5" MightLevel="4" MagicLevel="2" Attack="2" Retaliate="2" HP="8" ID="105">
         <Ability Type="ImmuneToRetaliate"/>
         <Ability Type="Hypnotize"/>
 		<Trigger Type="OnTurnEnd" Side="Friendly">
@@ -311,4 +311,5 @@ Players cannot search their library.</Description>
         <Description>When Void Wraith dies during opponent's turn, it deals 3 damage to enemy hero.</Description>
     </Card>
 </Cards>
+
 
