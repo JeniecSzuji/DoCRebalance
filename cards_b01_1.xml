@@ -460,19 +460,39 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="Incorporeal" />
 	<Ability Type="Crippling" Value="1"/>
     </Card>
-    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="119" >
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="0" MightLevel="0" Attack="3" Retaliate="3" HP="7" ID="119" >
 	<Description>At the beginning of your turn, you may destroy target friendly creature. If you do, heal all damage from Angry Wyvern and put +[1:ATK] counter on it. </Description>
-	<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
-		<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="True" CantTargetSelf="True">
-			<Effect Type="Kill"/>
+		<Variable Type="TargetCount">
+			<Target Zone="Battleground" Amount="All" Side="Friendly" CardType="Unit" MustBeTargetable="True" CantTargetSelf="True"/>
+		</Variable>
+		<Trigger Type="OnSupplyPhaseBegin" Side="Friendly">
+			<Target Zone="None">
+				<Effect Type="FreezeVariable" EvaluationOrder="First"/>
 				<Subgroup>
-					<Target Zone="Battleground" Amount="Self">
-						<Effect Type="Heal" Value="Infinite"/>
-						<Effect Type="AddCounter" CounterType="Fierce" Value="1"/>
+					<Target Zone="None">
+						<Effect Type="FreezeVariable" Unfreeze="True"/>
+						<Subgroup>
+							<Target Zone="None">
+								<Effect Type="FreezeVariable"/>
+								<Subgroup>				
+									<Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly" Cancelable="True" CantTargetSelf="True">
+										<Effect Type="Kill" EvaluationOrder="First"/>
+									</Target>
+									<Target Zone="Battleground" Amount="Self">
+										<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+										<Effect Type="Heal" Value="Infinite" EvaluationOrder="Last"/>
+										<Effect Type="AddCounter" CounterType="Fierce" Value="1" EvaluationOrder="Last"/>
+									</Target>
+								</Subgroup>
+							</Target>
+						</Subgroup>
 					</Target>
 				</Subgroup>
-		</Target>
-	</Trigger>
+			</Target>
+			<Target Zone="None">
+				<Effect Type="FreezeVariable" Unfreeze="True" EvaluationOrder="Last"/>
+			</Target>
+		</Trigger>
     </Card>
     <Card Rarity="Common" Type="Unit" Name="Cre_Neu_004" DisplayName="Rogue Mercenary" Faction="Neutral" SubType="Melee" Race="Human|Mercenary" Cost="2" MightLevel="2" Attack="2" Retaliate="2" HP="4" ID="120">
         <Description>To attack with Rogue Mercenary, you must pay [1:RESOURCES].</Description>
@@ -522,3 +542,4 @@ Whenever opponent plays a card, they discard a card.</Description>
         </Target>
     </Card>
 </Cards>
+
