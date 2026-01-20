@@ -281,17 +281,15 @@ Ambush: Deal 1 damage to ambushed creature.
     <Card Rarity="Rare" Type="Unit" Name="Cre_Neu_062" DisplayName="Soul Consuming Wraith" Faction="Neutral" School="Prime" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="1" DestinyLevel="2" Attack="2" Retaliate="1" HP="5" ID="614">
         <Ability Type="ImmuneToRetaliate" />
         <Trigger Type="OnTurnBegin" Side="Friendly">
-            <Target Zone="Graveyard" Amount="1" Side="Enemy" Random="True">
-                <Effect Type="Banish" />
-            </Target>
-        </Trigger>
-        <Trigger Type="OnTurnBegin" Side="Friendly">
             <Target Zone="Hero" Amount="All" Side="Friendly">
                 <Variable Type="TargetCount" MustBeTargetable="True">
                     <Target Zone="Graveyard" Amount="All" Side="Enemy" />
                 </Variable>
                 <Condition Operator="LesserThan" ValueA="Variable" ValueB="1" />
-                <Effect Type="Heal" Value="1" />
+                <Effect Type="Heal" Value="1" EvaluationOrder="First" />
+            </Target>
+            <Target Zone="Graveyard" Amount="1" Side="Enemy" Random="True">
+                <Effect Type="Banish" EvaluationOrder="Last"/>
             </Target>
         </Trigger>
         <Description>At the begining of your turn, banish a random card from enemy graveyard. If you can't, heal 1 damage from your Hero.</Description>
@@ -305,5 +303,6 @@ Ambush: Deal 1 damage to ambushed creature.
         <Ability Type="PreemptiveStrike" />
     </Card>
 </Cards>
+
 
 
