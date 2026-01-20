@@ -252,11 +252,8 @@ Whenever a player plays a spell card, they must lower their [MAGIC] level by 1. 
             <Effect Type="GlobalEffect" GlobalEffectType="ModifyCost" Value="Variable">
                 <CardFilter IncludeCardType="Spell" />
             </Effect>
-            <Effect Type="GlobalEffect" GlobalEffectType="ModifyCost" Value="1ma">
-                <CardFilter IncludeCardType="Spell" />
-            </Effect>
         </Target>
-	<Target Zone="Hand" Side="Friendly" Amount="1">
+		<Target Zone="Hand" Side="Friendly" Amount="1">
             <Effect Type="MoveCardTo" Destination="Library" Duration="Immediate" />
         </Target>
         <Description>Until end of turn:
@@ -779,6 +776,7 @@ Prevent [RESOURCES] gain from cards and abilities.</Description>
         <Description>Search your library for a Unique card and play it for free. Shuffle your library.</Description>
     </Card>
 </Cards>
+
 
 
 
