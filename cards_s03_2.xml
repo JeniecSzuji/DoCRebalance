@@ -29,7 +29,7 @@ At the beginning of your turn, return Shifting Sands to its owner's hand.</Descr
     <Card Rarity="Common" Type="Fortune" Name="For_Aca_002" DisplayName="Unraveled Fate" Faction="Academy" Cost="1" DestinyLevel="3" ID="529">
 		<Ongoing Duration="Permanent" />
 		<Trigger Type="OnTurnBegin" Side="Friendly">
-			<Target Zone="Library" Side="Enemy" Amount="1" AutoTakeFirstInputs="True">
+			<Target Zone="Library" Side="Enemy" Amount="1" AutoTakeFirstInputs="True" ForceExecute="True" >
 				<Effect Type="MoveCardTo" Destination="Graveyard" />
 			</Target>
 		</Trigger>
@@ -779,6 +779,7 @@ Prevent [RESOURCES] gain from cards and abilities.</Description>
         <Description>Search your library for a Unique card and play it for free. Shuffle your library.</Description>
     </Card>
 </Cards>
+
 
 
 
