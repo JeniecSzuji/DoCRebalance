@@ -460,7 +460,7 @@ Whenever opponent plays a card, they discard a card.</Description>
         <Ability Type="Incorporeal" />
 	<Ability Type="Crippling" Value="1"/>
     </Card>
-    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="0" MightLevel="0" Attack="3" Retaliate="3" HP="7" ID="119" >
+    <Card Rarity="Uncommon" Type="Unit" Name="Cre_Neu_015" DisplayName="Angry Wyvern" Faction="Neutral" SubType="Flyer" Race="Wyvern" Cost="5" MightLevel="5" Attack="3" Retaliate="3" HP="7" ID="119" >
 	<Description>At the beginning of your turn, you may destroy target friendly creature. If you do, heal all damage from Angry Wyvern and put +[1:ATK] counter on it. </Description>
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Amount="All" Side="Friendly" CardType="Unit" MustBeTargetable="True" CantTargetSelf="True"/>
@@ -542,4 +542,5 @@ Whenever opponent plays a card, they discard a card.</Description>
         </Target>
     </Card>
 </Cards>
+
 
