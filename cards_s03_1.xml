@@ -501,7 +501,7 @@ While Crusader Chaplain has no damage, it cannot be targeted.</Description>
         </Target>
         <Description>Whenever a player plays a card or uses an ability targeting a single creature, it must target Imp Jester if possible.</Description>
     </Card>
-    <Card Rarity="Rare" Type="Unit" Name="Cre_Inf_054" DisplayName="Abyssal Worm" Faction="Inferno" SubType="Melee" Race="Demon|Worm" Cost="6" MightLevel="6" Attack="8" Retaliate="4" HP="8" ID="502">
+    <Card Rarity="Rare" Type="Unit" Name="Cre_Inf_054" DisplayName="Abyssal Worm" Faction="Inferno" SubType="Melee" Race="Demon|Worm" Cost="6" MightLevel="6" Attack="6" Retaliate="3" HP="8" ID="502">
         <Ability Type="AttackAnywhere" />
         <Ability Type="KillOtherOnly" />
         <Description>Abyssal Worm can only be deployed on a position already occupied by another creature.
@@ -823,3 +823,4 @@ Ambush: Deal 2 Fire damage to ambushed creature.
         <Description>Sahaar Skirmisher can attack enemy hero even if there are creatures in front of it.</Description>
     </Card>
 </Cards>
+
