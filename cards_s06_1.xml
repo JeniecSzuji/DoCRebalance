@@ -187,7 +187,7 @@
 		</Trigger>
 		<Description>Whenever a spell from a school other than Dark or Fire is played, deal 1 damage to that spell's controller's Hero.</Description>
 	</Card>
-	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Inf_083" DisplayName="Breeder Matron" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="5" MightLevel="3" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="8" ID="822">
+	<Card Rarity="Common" Unique="False" Type="Unit" Name="Cre_Inf_083" DisplayName="Breeder Matron" Faction="Inferno" SubType="Magic|Melee" Race="Demon|Breeder" Cost="5" MightLevel="4" MagicLevel="1" DestinyLevel="0" Attack="1" Retaliate="0" HP="8" ID="822">
 		<Variable Type="TargetCount">
 			<Target Zone="Battleground" Amount="All" Side="Friendly" CardType="Unit">
 				<CardFilter IncludeRaces="Breeder"/>
@@ -477,6 +477,7 @@ At the beginning of each turn, deal 1 damage to all enemy creatures in the same 
 		<Description>Whenever Hasafah, Chosen of the Shadows attacks and destroys a creature, deploy a token that's a copy of that creature under your control after the attack.</Description>
 	</Card>
 </Cards>
+
 
 
 
