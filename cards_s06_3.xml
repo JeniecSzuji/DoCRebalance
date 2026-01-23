@@ -152,13 +152,14 @@ Enchanted creature is Immobilized and gains Cannot Attack and Phased.</Descripti
 	</Card>
 	<Card Rarity="Rare" Unique="False" Type="Spell" Name="Spe_Lig_082" DisplayName="Avenging Wings" School="Light" Cost="3" MightLevel="0" MagicLevel="4" DestinyLevel="0" ID="893">
 		<Ongoing Duration="Permanent"/>
-<Target Zone="Hero" Amount="All"/>
-<Trigger Type="OnPostAttack" Side="Enemy">
-<Target Zone="Battleground" Amount="FromTrigger" Side="Enemy" CardType="Unit">
-<Effect Type="Damage" Value="1"/>
-</Target>
-</Trigger>
-<Description>Permanent: Whenever an enemy creature attacks, deal 1 damage to it.</Description>
+		<Target Zone="Hero" Amount="All"/>
+		<Trigger Type="OnPostAttackUnit" Side="Enemy">
+			<Target Zone="Battleground" Amount="FromTrigger" Side="Enemy" CardType="Unit">
+				<Effect Type="Damage" Value="1"/>
+			</Target>
+		</Trigger>
+		<Description>Permanent:
+Whenever a friendly creature is attacked, deal 1 damage to its attacker.</Description>
 	</Card>
 	<!--....................................................................-->
 	<!-- Spells - Prime -->
@@ -247,6 +248,7 @@ Friendly Water creatures gain Frozen Touch.</Description>
 		<Description>[1:RESOURCES]: The damage of the next spell you play this turn cannot be prevented or reduced.</Description>
 	</Card>
 </Cards>
+
 
 
 
