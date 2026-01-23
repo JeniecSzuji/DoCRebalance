@@ -11,17 +11,18 @@
 	<!--....................................................................-->
 	<Card Rarity="Uncommon" Type="Spell" Name="Spe_Air_070" DisplayName="Lightning Burst" School="Air" Cost="4" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="779" Unique="False">
 		<Target Zone="BattlegroundPosition" Amount="1" CardType="Unit" BattlegroundPositionState="NoUnit" Shape="AdjacentOnly">
-<Effect Type="Damage" Value="2"/>
-</Target>
-<Target Zone="BattlegroundPosition" Amount="1" CardType="Unit" BattlegroundPositionState="NoUnit" Shape="AdjacentOnly" CantTargetPrevious="True">
-<Effect Type="Damage" Value="2"/>
-</Target>
-<Description>Choose 2 target battleground positions with no creature. For each of those positions, deal 2 damage to all creatures adjacent to that position.</Description>
+			<Effect Type="Damage" Value="2"/>
+		</Target>
+		<Target Zone="BattlegroundPosition" Amount="1" CardType="Unit" BattlegroundPositionState="NoUnit" Shape="AdjacentOnly" CantTargetPrevious="True">
+			<Effect Type="Damage" Value="2"/>
+		</Target>
+		<Description>Choose 2 target battleground positions with no creature. For each of those positions, deal 2 damage to all creatures adjacent to that position.</Description>
 	</Card>
 	<Card Rarity="Rare" Type="Spell" Name="Spe_Air_071" DisplayName="Lightning Curse" School="Air" Cost="2" MightLevel="0" MagicLevel="3" DestinyLevel="0" ID="780" Unique="False">
 		<Ongoing Duration="Permanent"/>
-		<Effect ModifyAbility="Immobilized"/>
-		<Target Zone="Battleground" Amount="1" CardType="Unit"/>
+		<Target Zone="Battleground" Amount="1" CardType="Unit">
+			<Effect Type="ModifyAbility" Ability="Immobilized"/>
+		</Target>
 		<Trigger Type="OnDeployAdjacent">
 			<Target Zone="Battleground" CardType="Unit" Amount="FromTrigger">
 				<Effect Type="Damage" Value="4"/>
@@ -276,4 +277,5 @@ Other friendly ongoing Water spells cannot be destroyed by enemy effects.</Descr
 		<Description>[4:RESOURCES]: Until end of turn, all creatures that share a creature type with target creature gain +[1:ATK] and +[1:RET].</Description>
 	</Card>
 </Cards>
+
 
