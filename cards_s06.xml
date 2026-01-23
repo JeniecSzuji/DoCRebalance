@@ -136,11 +136,11 @@ Friendly Beastman creatures adjacent to a friendly Wizard creature gain +[1:ATK]
 	<!-- Heroes Stronghold -->
 	<!--...............................................................................-->
 	<Card Rarity="Heroic" Type="Hero" Name="Her_Str_009" DisplayName="Toghrul" Faction="Stronghold" School="Earth|Fire" MightLevel="1" MagicLevel="1" DestinyLevel="1" HP="20" ID="807">
-        <Description>[1:RESOURCES]: Choose target friendly creature with Bloodthirst. Deal damage to another target creature equal to the number of Enrage counters on the first creature.</Description>
+        <Description>[1:RESOURCES]: Choose target friendly creature with Bloodthirst. Deal damage to another target creature equal to the number of Enrage counters on the first creature. Then remove 1 Enrage counter from it.</Description>
         <Target Zone="None" Side="Friendly">
             <Effect Type="ChoiceOption" />
             <Subgroup>
-                <TemplateEffect Name="HeroAbilities" />
+                <TemplateEffect Name="HeroAbilities"/>
                 <!-- HeroAbilities template contains 4 options, so the value of the next one must be 4 -->
                 <Target Zone="None" Side="Friendly">
                     <Variable Type="Resources" Side="Friendly" />
@@ -149,15 +149,21 @@ Friendly Beastman creatures adjacent to a friendly Wizard creature gain +[1:ATK]
                     <Effect Type="GainResources" Value="-1" Duration="Immediate" />
                 </Target>
                 <Target Zone="Battleground" CardType="Unit" Amount="1" Side="Friendly">
-                    <Option Value="4" DisplayText="Enrage damage." />
-                    <CardFilter IncludeAbility="Bloodthirst" />
+                    <Option Value="4" DisplayText="[1:RESOURCES]: Enrage damage."/>
+                    <CardFilter IncludeAbility="Bloodthirst"/>
+					<Subgroup>
+						<Target Zone="Battleground" CardType="Unit" Amount="Same" Side="Friendly">
+							<Effect Type="RemoveCounter" CounterType="Enrage" Value="1" Duration="Immediate"/>
+						</Target>
+					</Subgroup>
                 </Target>
                 <Target Zone="Battleground" CardType="Unit" Amount="1" CantTargetPrevious="True" Side="Any">
-                    <Option Value="4" />
-                    <Variable Type="CounterCount" CounterType="Enrage" UseLastTarget="True" />
-                    <Effect Type="Damage" Value="Variable" Duration="Immediate" />
+                    <Option Value="4"/>
+                    <Variable Type="CounterCount" CounterType="Enrage" UseLastTarget="True"/>
+                    <Effect Type="Damage" Value="Variable" Duration="Immediate"/>
                 </Target>
             </Subgroup>
         </Target>
 	</Card>
 </Cards>
+
