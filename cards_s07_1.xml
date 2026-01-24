@@ -428,7 +428,7 @@ If the number of crippling counters on an enemy creature is greater than its cos
 		<Ability Type="AreaBlast" Value="2"/>
 		<Description></Description>
 	</Card>
-	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Neu_092" DisplayName="Magma Elemental" Faction="Neutral" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="2" DestinyLevel="0" Attack="2" Retaliate="2" HP="3" ID="948" School="Fire">
+	<Card Rarity="Uncommon" Unique="False" Type="Unit" Name="Cre_Neu_092" DisplayName="Magma Elemental" Faction="Neutral" SubType="Magic|Melee" Race="Spirit" Cost="3" MightLevel="3" MagicLevel="2" DestinyLevel="0" Attack="2" Retaliate="2" HP="4" ID="948" School="Fire">
 		<Target Zone="Battleground" Side="Friendly" CardType="Unit" Amount="All">
 			<CardFilter IncludeSchool="Fire"/>
 			<Effect Type="ModifyDamage" Value="0.0x" DamageIncludeFlags="Fire" Side="Friendly"/>
@@ -463,4 +463,5 @@ Arcane Eagle gains +[1:ATK] for each other friendly spirit creature.</Descriptio
 		<Description>When Arianna, Chosen of the Void enters the battleground, banish another target non-hero, non-event card from the battleground.</Description>
 	</Card>
 </Cards>
+
 
