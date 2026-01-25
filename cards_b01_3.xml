@@ -573,7 +573,7 @@ At end of turn, if damage was prevented in this way this turn, destroy Martyr.</
         </Target>
         <Description>Choose a spell card from your hand with a cost equal to or less than the number of enemy creatures on the battleground. Play this spell for free.</Description>
     </Card>
-    <Card Rarity="Rare" Type="Spell" Name="Spe_Pri_009" DisplayName="Time Jump" School="Prime" Cost="6" MagicLevel="6" ID="236">
+    <Card Rarity="Rare" Type="Spell" Name="Spe_Pri_009" DisplayName="Time Jump" School="Prime" Cost="7" MagicLevel="6" ID="236">
         <Target Zone="None" Side="Friendly">
           <Effect Type="GainResourcesProduction" Value="-1"/>
         </Target>
@@ -795,4 +795,5 @@ Week of Knowledge can only be played if you haven't played any card this turn.</
         <Description>[1:RESOURCES]: The next creature you deploy this turn gains +[1:ATK]</Description>
     </Card>
 </Cards>
+
 
