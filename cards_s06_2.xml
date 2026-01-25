@@ -80,6 +80,11 @@ The first time that one or more friendly Construct dies in a turn, return them t
 				<CardFilter IncludeCardType="Spell" IncludeOngoingType="Immediate"/>
 			</Effect>
 		</Target>
+		<Target Zone="Hero" Amount="All" Side="Any">
+			<Effect Type="GlobalEffect" GlobalEffectType="ModifyDamage" Value="-1">
+				<CardFilter IncludeCardID="Spe_Fir_072"/>
+			</Effect>
+		</Target>
 		<Description>Permanent:
 If an instant spell would deal damage, it deals 1 more damage instead.</Description>
 	</Card>
@@ -447,6 +452,7 @@ When a creature at Elemental Spire dies from combat damage, destroy Elemental Sp
 		<Description>While a creature is at War Banner, all friendly creatures that share a creature type with it gain +[1:ATK].</Description>
 	</Card>
 </Cards>
+
 
 
 
