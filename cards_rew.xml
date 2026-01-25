@@ -225,8 +225,8 @@ At the beginning of your turn, you may destroy target creature with a cost of [2
 		</Target>
         <Variable Type="Level" Side="Friendly" LevelType="Might"/>
         <Variable2 Type="Level" Side="Friendly" LevelType="Destiny"/>
-        <Variable3 Type="TargetCount">
-            <Target Zone="Battleground" Amount="All" Side="Any" CardType="Unit" MustBeTargetable="True" >
+        <Variable3 Type="TargetCount" MustBeTargetable="True">
+            <Target Zone="Battleground" Amount="All" Side="Any" CardType="Unit">
                 <CardFilter BaseMaxCost="True" Value="2" IncludeCardType="Unit"/>
             </Target>
         </Variable3>
@@ -412,4 +412,5 @@ When no building on the battleground, destroy [THIS].</Description>
 		<Description>[1:RESOURCE]: Relocate target building.</Description>
 	</Card-->
 </Cards>
+
 
