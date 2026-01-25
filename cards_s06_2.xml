@@ -328,7 +328,7 @@ Construct creatures at Storm Terrace gain Shockwave 2.</Description>
 	<!--....................................................................-->
 	<!-- Building - Inferno -->
 	<!--....................................................................-->
-	<Card Rarity="Common" Unique="False" Type="Building" Name="Bui_Inf_080" DisplayName="Recycling Chamber" Faction="Inferno" Cost="3" MightLevel="2" MagicLevel="1" DestinyLevel="1" ID="871">
+	<Card Rarity="Common" Unique="False" Type="Building" Name="Bui_Inf_080" DisplayName="Recycling Chamber" Faction="Inferno" Cost="3" MightLevel="2" MagicLevel="2" DestinyLevel="1" ID="871">
 		<Trigger Type="OnThisCardBuild">
 			<Target Zone="Battleground" Amount="Self">
 				<Effect Type="PopulateStack" Name="s06_Tok_Inf_001"/>
@@ -452,6 +452,7 @@ When a creature at Elemental Spire dies from combat damage, destroy Elemental Sp
 		<Description>While a creature is at War Banner, all friendly creatures that share a creature type with it gain +[1:ATK].</Description>
 	</Card>
 </Cards>
+
 
 
 
