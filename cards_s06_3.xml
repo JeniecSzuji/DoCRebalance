@@ -26,14 +26,11 @@ All creatures gain Swift.</Description>
 	</Card>
 	<Card Rarity="Common" Unique="False" Type="Spell" Name="Spe_Air_082" DisplayName="Wind Wall" School="Air" Cost="1" MightLevel="0" MagicLevel="1" DestinyLevel="0" ID="881">
 		<Ongoing Duration="UntilYourNextTurn"/>
-		<Target Zone="Battleground" CardType="Unit" Amount="1">
-			<Effect Type="ModifyAbility" Ability="WindWallEffect"/>
-		</Target>
-		<Target Zone="None" Amount="Same">
-			<Effect Type="ModifyAbility" Ability="RangeReflect" Value="2"/>
-		</Target>
-		<Description>Enchant Creature. Until your next turn:
-Enchanted creature and all adjacent creatures gain Range Reflect 2.</Description>
+        <Target Zone="BattlegroundLine" CardType="Unit" Amount="1">
+            <Effect Type="ModifyAbility" Ability="RangeReflect" Value="2"/>
+        </Target>
+		<Description>Enchant line. Until your next turn:
+Creatures at enchanted line gain Range Reflect 2.</Description>
 	</Card>
 	<!--....................................................................-->
 	<!-- Spells - Dark -->
@@ -248,6 +245,7 @@ Friendly Water creatures gain Frozen Touch.</Description>
 		<Description>[1:RESOURCES]: The damage of the next spell you play this turn cannot be prevented or reduced.</Description>
 	</Card>
 </Cards>
+
 
 
 
