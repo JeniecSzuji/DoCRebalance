@@ -766,11 +766,8 @@ When Rotting Mummy dies with poison counters on it, put the same number of poiso
             <Target Zone="BattlegroundColumn" Amount="Self" Side="Enemy" CardType="Unit" BattlegroundPositionState="DontCare">
                 <Effect Type="Damage" Value="1" />
             </Target>
-            <Target Zone="BattlegroundColumn" Amount="Self" Side="Friendly" Shape="AdjacentOnly" CardType="Unit" BattlegroundPositionState="DontCare">
-                <Effect Type="Damage" Value="1" />
-            </Target>
         </Trigger>
-    <Description>At the end of your turn, deal 1 damage to all other creatures in the same row as Burning Sand Elemental.
+    <Description>At the end of your turn, deal 1 damage to all enemy creatures in the same row as Burning Sand Elemental.
 Ambush: Deal 2 Fire damage to ambushed creature.
 (Ambush abilities trigger when an enemy creature is deployed in the same row as this creature.)</Description>
     </Card>
@@ -823,4 +820,5 @@ Ambush: Deal 2 Fire damage to ambushed creature.
         <Description>Sahaar Skirmisher can attack enemy hero even if there are creatures in front of it.</Description>
     </Card>
 </Cards>
+
 
