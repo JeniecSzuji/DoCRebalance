@@ -608,12 +608,6 @@
         </Target>
     </Trigger>
     </TemplateEffect>
-
-    <TemplateEffect Name="WindWallEffect">
-        <Target Zone="Battleground" CardType="Unit" Amount="Self" Shape="AdjacentOnly">
-            <Effect Type="ModifyAbility" Ability="RangeReflect" Value="2" OwnerAbility="WindWallEffect"/>
-        </Target>
-    </TemplateEffect>
 	
     <TemplateEffect Name="ExtraDD">
 	<Trigger Type="OnThisPostDeadlyCombat">
@@ -713,6 +707,7 @@
 	<TemplateEffect Name="BastionTL"/>
 	
 </Cards>
+
 
 
 
