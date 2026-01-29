@@ -669,19 +669,19 @@
     </Trigger>
     </TemplateEffect>
 	
-    <TemplateEffect Name="SihamTarget"/>
+    <TemplateEffect Name="SihamTarget">
+		<Trigger Type="OnThisCardDeath">
+			<Target Zone="Hero" Amount="All" Side="Any" ForceExecute="True">
+				<Variable Type="AbilityValue" Ability="SihamHealMe" UseCurrentTarget="True"/>
+				<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
+				<Effect Type="Heal" Value="1"/>
+		</Target>	
+		</Trigger>
+	</TemplateEffect>
 
     <TemplateEffect Name="SihamHealMe"/>
 
     <TemplateEffect Name="SihamHealOpp">
-	<Trigger Type="OnUnitDeath" ExecuteOncePerTransaction="True">
-		<CardFilter IncludeAbility="SihamTarget"/>
-        <Target Zone="Hero" Amount="All" Side="Enemy">
-			<Variable Type="AbilityValue" Ability="SihamHealMe" UseCurrentTarget="True"/>
-			<Condition Operator="GreaterThan" ValueA="Variable" ValueB="0"/>
-			<Effect Type="Heal" Value="1"/>
-		</Target>			
-    </Trigger>
 	<Trigger Type="OnTurnBegin" Side="Enemy">
 		<Target Zone="Hero" Amount="All" Side="Enemy" ForceExecute="True">
 			<Effect Type="ModifyAbilityValue" Ability="SihamHealMe" Value="1="/>
@@ -707,6 +707,7 @@
 	<TemplateEffect Name="BastionTL"/>
 	
 </Cards>
+
 
 
 
