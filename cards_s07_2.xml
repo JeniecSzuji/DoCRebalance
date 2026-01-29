@@ -120,12 +120,12 @@
 			<Effect Type="ModifyRetaliate" Value="-1"/>
 		</Target>
 		<Trigger Type="OnUnitDeath" Side="Friendly">
-<CardFilter IncludeFaction="Inferno"/>
-<Target Zone="Battleground" Amount="Self">
-<Effect Type="Kill"/>
-</Target>
-</Trigger>
-<Description>Pernament:
+			<CardFilter IncludeRaces="Demon"/>
+			<Target Zone="Battleground" Amount="Self">
+				<Effect Type="Kill"/>
+			</Target>
+		</Trigger>
+		<Description>Pernament:
 While you have a fire card in your graveyard, your creatures gains +[1:ATK] and +[1:RET]. While you have a dark card in your graveyard, your opponent's creatures gains -[1:ATK] and -[1:RET]. When a friendly Demon creature dies, destroy Ritual of the Dark Flame.</Description>
 	</Card>
 	<!--....................................................................-->
@@ -482,3 +482,4 @@ While a Wizard creature is at Crimson Tower, friendly Beastmen cannot be targert
 		<Description>Creatures at Warding Pillars gain Spell Resist and cannot be targeted.</Description>
 	</Card>
 </Cards>
+
